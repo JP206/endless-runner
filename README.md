@@ -21,3 +21,5 @@ Sebastián Rodríguez - Juan Pedro Cosentino - Martín Salvagno - Rodrigo López
 * Seba, Juan: programación
 * Martincho: arte, animación
 * Mainfreim: arte, game design
+* Rodri: arte
+* Ruso: música, sfx
