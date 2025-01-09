@@ -16,7 +16,7 @@ Crear un endless runner con mecánicas simples en un mes
 * Víboras
 * Pájaros
 * Tigres
-Sebastián Rodríguez - Juan Pedro Cosentino - Martín Salvagno - Rodrigo López - Gastón Martínez
+
 # Roles
 * Seba, Juan: programación
 * Martincho: arte, animación
