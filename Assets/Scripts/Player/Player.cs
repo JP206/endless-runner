@@ -4,11 +4,12 @@ public class Player : MonoBehaviour
 {
     Rigidbody2D rb;
     [SerializeField] float jumpForce;
-    [SerializeField] GameObject proyectile;
+    ProyectilePool pool;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        pool = GetComponent<ProyectilePool>();
     }
 
     void Update()
@@ -20,7 +21,11 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            Instantiate(proyectile, transform.position, Quaternion.identity);
+            GameObject proyectile = pool.GetPooledObject();
+            if (proyectile)
+            {
+                proyectile.transform.position = transform.position;
+            }
         }
     }
 }

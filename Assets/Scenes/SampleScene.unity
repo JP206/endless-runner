@@ -584,7 +584,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 10
-  proyectile: {fileID: 7872876388826652706, guid: dc06a20dfecc268419df53f2c4e14723, type: 3}
 --- !u!61 &1779151800
 BoxCollider2D:
   m_ObjectHideFlags: 0

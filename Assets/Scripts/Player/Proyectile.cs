@@ -6,7 +6,7 @@ public class Proyectile : MonoBehaviour
     {
         if (transform.position.x > 10)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
 
         transform.position += new Vector3(5 * Time.deltaTime, 0, 0);
