@@ -130,9 +130,9 @@ GameObject:
   - component: {fileID: 115318304}
   - component: {fileID: 115318303}
   - component: {fileID: 115318305}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -402,11 +402,11 @@ GameObject:
   - component: {fileID: 1388506762}
   m_Layer: 0
   m_Name: Obstacle manager
-  m_TagString: Untagged
+  m_TagString: ObstacleSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1388506762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,27 +444,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1569515188}
-  - component: {fileID: 1569515187}
+  - component: {fileID: 1569515189}
   m_Layer: 0
   m_Name: Enemy Spawner
-  m_TagString: Untagged
+  m_TagString: EnemySpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1569515187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1569515186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1249d6c1affb31d43844f2ea0412892d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obstacle: {fileID: 4423290081467962367, guid: f30ef0b3c7822a94ab15a0fc36753151, type: 3}
 --- !u!4 &1569515188
 Transform:
   m_ObjectHideFlags: 0
@@ -480,6 +467,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1569515189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569515186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46c99195d9efa341b64310cb8a27a5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 4423290081467962367, guid: c56ade196ed804b4897725c15c5858ab, type: 3}
 --- !u!1 &1779151795
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,9 +494,9 @@ GameObject:
   - component: {fileID: 1779151800}
   - component: {fileID: 1779151801}
   - component: {fileID: 1779151802}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -565,8 +565,8 @@ Transform:
   m_GameObject: {fileID: 1779151795}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.75, y: -3.58, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -7.05, y: -0.0674, z: 0}
+  m_LocalScale: {x: 1, y: 8.0252, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
