@@ -58,7 +58,6 @@ public class Enemy : MonoBehaviour
 
             if (hit.collider != null && hit.collider.CompareTag("Player"))
             {
-                Debug.Log($"¡Jugador detectado dentro del cono de visión! Objeto: {hit.collider.name}");
                 playerTarget = hit.collider.transform;
                 chaseDirection = (playerTarget.position - transform.position).normalized;
                 break;
@@ -77,7 +76,6 @@ public class Enemy : MonoBehaviour
 
         if (distanceToPlayer <= straightMoveDistance)
         {
-            Debug.Log("Jugador muy cerca. Moviéndose en línea recta hacia la izquierda.");
             moveInStraightLine = true;
             chaseDirection = -transform.right; 
         }
@@ -86,7 +84,6 @@ public class Enemy : MonoBehaviour
 
         if (distanceToPlayer > detectionRadius * 1.5f)
         {
-            Debug.Log("Jugador fuera de rango. Enemigo vuelve a la búsqueda...");
             playerTarget = null;
             moveInStraightLine = false;
         }
