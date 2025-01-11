@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-
     private const string TIGGER_LAYER_NAME = "Tigger";
     void Update()
     {
