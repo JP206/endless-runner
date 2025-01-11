@@ -400,13 +400,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1388506763}
   - component: {fileID: 1388506762}
+  - component: {fileID: 1388506764}
   m_Layer: 0
   m_Name: Obstacle manager
   m_TagString: ObstacleSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1388506762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,7 +420,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1249d6c1affb31d43844f2ea0412892d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 4423290081467962367, guid: f30ef0b3c7822a94ab15a0fc36753151, type: 3}
 --- !u!4 &1388506763
 Transform:
   m_ObjectHideFlags: 0
@@ -435,6 +435,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1388506764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388506761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fabed5d2d3eb9c4592f2229c7b2592e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstaclePrefab: {fileID: 4423290081467962367, guid: f30ef0b3c7822a94ab15a0fc36753151, type: 3}
+  poolSize: 5
 --- !u!1 &1569515186
 GameObject:
   m_ObjectHideFlags: 0
