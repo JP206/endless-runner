@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5506869656017467515}
   - component: {fileID: 5574630463099036187}
+  - component: {fileID: -708567309863479888}
   - component: {fileID: 8462923250326402734}
-  - component: {fileID: 3812120835629348110}
   - component: {fileID: 4586403072369000471}
+  - component: {fileID: 3812120835629348110}
   - component: {fileID: 7765421582705650874}
   - component: {fileID: 6237730188447300723}
   m_Layer: 0
@@ -92,6 +93,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-708567309863479888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5224276101356549848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 669ead67e8dadde4ba6b30110487caac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proyectilePrefab: {fileID: 0}
+  poolSize: 0
 --- !u!114 &8462923250326402734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,6 +121,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 10
   proyectile: {fileID: 7872876388826652706, guid: dc06a20dfecc268419df53f2c4e14723, type: 3}
+--- !u!114 &4586403072369000471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5224276101356549848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d108b95c259b4d489fcfe005b78dbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  anchoActor: 1
+  detectionInterval: 0.05
+  lookAhead: 4
 --- !u!61 &3812120835629348110
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -152,24 +185,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.0322332, y: 3.0031996}
   m_EdgeRadius: 0
---- !u!114 &4586403072369000471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5224276101356549848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d108b95c259b4d489fcfe005b78dbe1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detectionLayerMask:
-    serializedVersion: 2
-    m_Bits: 64
-  anchoActor: 1
-  detectionInterval: 0.05
-  lookAhead: 4
 --- !u!50 &7765421582705650874
 Rigidbody2D:
   serializedVersion: 5
