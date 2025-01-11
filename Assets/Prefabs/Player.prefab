@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: 3812120835629348110}
   - component: {fileID: 7765421582705650874}
   - component: {fileID: 6237730188447300723}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,7 +120,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 10
-  proyectile: {fileID: 7872876388826652706, guid: dc06a20dfecc268419df53f2c4e14723, type: 3}
 --- !u!114 &4586403072369000471
 MonoBehaviour:
   m_ObjectHideFlags: 0
