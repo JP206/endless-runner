@@ -17,7 +17,6 @@ public class PlayerSpacialDetector : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("No se encontró BoxCollider2D en el objeto Player.");
             anchoActor = 0.5f; 
         }
 
