@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: 18ca3f2575c8ea34384bd222acbda083
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5734146396085938918
+    second: caverncola-corriendo-2.gif_0
+  - first:
+      213: 5981869094804994070
+    second: caverncola-corriendo-2.gif_1
+  - first:
+      213: 3287476581409563134
+    second: caverncola-corriendo-2.gif_2
+  - first:
+      213: -7667109518720125713
+    second: caverncola-corriendo-2.gif_3
+  - first:
+      213: 6078041766663779596
+    second: caverncola-corriendo-2.gif_4
+  - first:
+      213: 2053459426851890867
+    second: caverncola-corriendo-2.gif_5
+  - first:
+      213: 4121594896655903315
+    second: caverncola-corriendo-2.gif_6
+  - first:
+      213: 763343237047780783
+    second: caverncola-corriendo-2.gif_7
+  - first:
+      213: 6065071610761553693
+    second: caverncola-corriendo-2.gif_8
+  - first:
+      213: -5702320826749349023
+    second: caverncola-corriendo-2.gif_9
+  - first:
+      213: 8530086684600335975
+    second: caverncola-corriendo-2.gif_10
+  - first:
+      213: 7820924041163953465
+    second: caverncola-corriendo-2.gif_11
+  - first:
+      213: 664468217953453998
+    second: caverncola-corriendo-2.gif_12
+  - first:
+      213: 8357841720053353136
+    second: caverncola-corriendo-2.gif_13
+  - first:
+      213: 5665473949510703729
+    second: caverncola-corriendo-2.gif_14
+  - first:
+      213: -821026253899535743
+    second: caverncola-corriendo-2.gif_15
+  - first:
+      213: 2090817311923050400
+    second: caverncola-corriendo-2.gif_16
+  - first:
+      213: -7600058348818036
+    second: caverncola-corriendo-2.gif_17
+  - first:
+      213: -8136631833473942497
+    second: caverncola-corriendo-2.gif_18
+  - first:
+      213: 1908275449470640957
+    second: caverncola-corriendo-2.gif_19
+  - first:
+      213: -6976237528163307554
+    second: caverncola-corriendo-2.gif_20
+  - first:
+      213: 3797015778387805963
+    second: caverncola-corriendo-2.gif_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 120
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_0
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 2283
+        width: 357
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eae9c434c7c39f40800000000000000
+      internalID: 5734146396085938918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_1
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 2284
+        width: 356
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6183db89f3ed30350800000000000000
+      internalID: 5981869094804994070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_2
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 2304
+        width: 372
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1255278867f9d20800000000000000
+      internalID: 3287476581409563134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_3
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 2304
+        width: 371
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe4bbaac384f89590800000000000000
+      internalID: -7667109518720125713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_4
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 2238
+        width: 363
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c057bffa8ca895450800000000000000
+      internalID: 6078041766663779596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_5
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1697
+        width: 363
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b62f22187a5f7c10800000000000000
+      internalID: 2053459426851890867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_6
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1696
+        width: 317
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35aec3ba8b8d23930800000000000000
+      internalID: 4121594896655903315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_7
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 1696
+        width: 319
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa50ee531a0f79a00800000000000000
+      internalID: 763343237047780783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_8
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 1695
+        width: 292
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17afb0fe767b2450800000000000000
+      internalID: 6065071610761553693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_9
+      rect:
+        serializedVersion: 2
+        x: 2322
+        y: 1711
+        width: 264
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1631b469b694dd0b0800000000000000
+      internalID: -5702320826749349023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_10
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1170
+        width: 262
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e74e235a4f06670800000000000000
+      internalID: 8530086684600335975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_11
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 1191
+        width: 317
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 935d3e87af0898c60800000000000000
+      internalID: 7820924041163953465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_12
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 1191
+        width: 316
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea707afd25aa83900800000000000000
+      internalID: 664468217953453998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_13
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 1219
+        width: 330
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba48bc33c40df370800000000000000
+      internalID: 8357841720053353136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_14
+      rect:
+        serializedVersion: 2
+        x: 2262
+        y: 1219
+        width: 329
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a90d44a8ecf9e40800000000000000
+      internalID: 5665473949510703729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_15
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 616
+        width: 302
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18a6c09d8f02b94f0800000000000000
+      internalID: -821026253899535743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_16
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 616
+        width: 302
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7196f7443140d10800000000000000
+      internalID: 2090817311923050400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_17
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 615
+        width: 290
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c81b8d589cff4eff0800000000000000
+      internalID: -7600058348818036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_18
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 615
+        width: 285
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c76a90570e41f80800000000000000
+      internalID: -8136631833473942497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_19
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 615
+        width: 284
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d33eb4b296e8b7a10800000000000000
+      internalID: 1908275449470640957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_20
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 80
+        width: 303
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edfa3190eec6f2f90800000000000000
+      internalID: -6976237528163307554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverncola-corriendo-2.gif_21
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 123
+        width: 356
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07cb55abb5b1b430800000000000000
+      internalID: 3797015778387805963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cf3b852475998734faad3c4e3d8413eb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      caverncola-corriendo-2.gif_0: 5734146396085938918
+      caverncola-corriendo-2.gif_1: 5981869094804994070
+      caverncola-corriendo-2.gif_10: 8530086684600335975
+      caverncola-corriendo-2.gif_11: 7820924041163953465
+      caverncola-corriendo-2.gif_12: 664468217953453998
+      caverncola-corriendo-2.gif_13: 8357841720053353136
+      caverncola-corriendo-2.gif_14: 5665473949510703729
+      caverncola-corriendo-2.gif_15: -821026253899535743
+      caverncola-corriendo-2.gif_16: 2090817311923050400
+      caverncola-corriendo-2.gif_17: -7600058348818036
+      caverncola-corriendo-2.gif_18: -8136631833473942497
+      caverncola-corriendo-2.gif_19: 1908275449470640957
+      caverncola-corriendo-2.gif_2: 3287476581409563134
+      caverncola-corriendo-2.gif_20: -6976237528163307554
+      caverncola-corriendo-2.gif_21: 3797015778387805963
+      caverncola-corriendo-2.gif_3: -7667109518720125713
+      caverncola-corriendo-2.gif_4: 6078041766663779596
+      caverncola-corriendo-2.gif_5: 2053459426851890867
+      caverncola-corriendo-2.gif_6: 4121594896655903315
+      caverncola-corriendo-2.gif_7: 763343237047780783
+      caverncola-corriendo-2.gif_8: 6065071610761553693
+      caverncola-corriendo-2.gif_9: -5702320826749349023
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
