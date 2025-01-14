@@ -27,5 +27,9 @@ public class Player : MonoBehaviour
                 proyectile.transform.position = transform.position;
             }
         }
+
+        // esto despues se saca cuando no haya rigidbody
+        transform.rotation = Quaternion.Euler(0, 0, 0);
+        transform.position = new Vector3(-7, transform.position.y, 0);
     }
 }
