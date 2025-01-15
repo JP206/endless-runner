@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  posY: -4
 --- !u!60 &7201208508507980127
 PolygonCollider2D:
   m_ObjectHideFlags: 0
