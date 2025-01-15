@@ -315,4 +315,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  position: 2
+  posY: -1.5
