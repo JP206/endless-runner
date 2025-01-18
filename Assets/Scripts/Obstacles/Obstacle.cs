@@ -2,15 +2,23 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
+    [SerializeField] float speed;
+    [SerializeField] float posY;
+
     void Update()
     {
         int layerIndex = gameObject.layer;
 
-        if (transform.position.x < -10)
+        if (transform.position.x < -15)
         {
             gameObject.SetActive(false);
         }
 
-        transform.position -= new Vector3(5 * Time.deltaTime, 0, 0);
+        transform.position -= new Vector3(speed * Time.deltaTime, 0, 0);
+    }
+
+    public float GetPosY()
+    {
+        return posY;
     }
 }

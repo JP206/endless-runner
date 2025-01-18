@@ -109,6 +109,8 @@ MonoBehaviour:
   targetMask:
     serializedVersion: 2
     m_Bits: 256
+  stopChaseDistance: 1
+  straightMoveDistance: 2
 --- !u!58 &81646212983640945
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -88,4 +88,10 @@ public class Enemy : MonoBehaviour
             moveInStraightLine = false;
         }
     }
+
+    public void DestroyEnemy()
+    {
+        Debug.Log("Enemigo destruido" + gameObject);
+        //Destroy(gameObject);
+    }
 }

@@ -2,30 +2,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    Rigidbody2D rb;
-    [SerializeField] float jumpForce;
-    ProyectilePool pool;
-
-    void Start()
+    PlayerMovement playerMovement;
+    public void InitializeReferences(PlayerMovement playerMovement)
     {
-        rb = GetComponent<Rigidbody2D>();
-        pool = GetComponent<ProyectilePool>();
+        this.playerMovement = playerMovement;
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            GameObject proyectile = pool.GetPooledObject();
-            if (proyectile)
-            {
-                proyectile.transform.position = transform.position;
-            }
-        }
+        playerMovement.MovementY();
     }
 }
