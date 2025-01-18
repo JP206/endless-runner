@@ -8,6 +8,7 @@ TagManager:
   - ObstacleSpawner
   - Obstacle
   - Enemy
+  - Floor
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Obstacle
   - Player
   - Proyectile
-  - 
+  - Floor
   - 
   - 
   - 
