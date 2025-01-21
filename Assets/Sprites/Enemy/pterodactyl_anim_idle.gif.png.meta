@@ -1,73 +1,91 @@
 fileFormatVersion: 2
-guid: b6eb1ffcad3778b4dbcf244e73ba62f2
+guid: e1b9e59fde4881040b5bec3da167c289
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5734146396085938918
-    second: caverncola-corriendo-2.gif_0
+      213: 8471412430511368646
+    second: pterodactyl_anim_idle.gif_0
   - first:
-      213: 5981869094804994070
-    second: caverncola-corriendo-2.gif_1
+      213: -4996053473288485068
+    second: pterodactyl_anim_idle.gif_1
   - first:
-      213: 3287476581409563134
-    second: caverncola-corriendo-2.gif_2
+      213: -1794347137427400507
+    second: pterodactyl_anim_idle.gif_2
   - first:
-      213: -7667109518720125713
-    second: caverncola-corriendo-2.gif_3
+      213: 3451315383082364652
+    second: pterodactyl_anim_idle.gif_3
   - first:
-      213: 6078041766663779596
-    second: caverncola-corriendo-2.gif_4
+      213: 682982736318647565
+    second: pterodactyl_anim_idle.gif_4
   - first:
-      213: 2053459426851890867
-    second: caverncola-corriendo-2.gif_5
+      213: -6882767819703133529
+    second: pterodactyl_anim_idle.gif_5
   - first:
-      213: 4121594896655903315
-    second: caverncola-corriendo-2.gif_6
+      213: -605073187850368787
+    second: pterodactyl_anim_idle.gif_6
   - first:
-      213: 763343237047780783
-    second: caverncola-corriendo-2.gif_7
+      213: -3584439768453341887
+    second: pterodactyl_anim_idle.gif_7
   - first:
-      213: 6065071610761553693
-    second: caverncola-corriendo-2.gif_8
+      213: 1198311026503026522
+    second: pterodactyl_anim_idle.gif_8
   - first:
-      213: -5702320826749349023
-    second: caverncola-corriendo-2.gif_9
+      213: -6690599940696823077
+    second: pterodactyl_anim_idle.gif_9
   - first:
-      213: 8530086684600335975
-    second: caverncola-corriendo-2.gif_10
+      213: 4291514344997562683
+    second: pterodactyl_anim_idle.gif_10
   - first:
-      213: 7820924041163953465
-    second: caverncola-corriendo-2.gif_11
+      213: -1012699731051396808
+    second: pterodactyl_anim_idle.gif_11
   - first:
-      213: 664468217953453998
-    second: caverncola-corriendo-2.gif_12
+      213: 3731422337283296679
+    second: pterodactyl_anim_idle.gif_12
   - first:
-      213: 8357841720053353136
-    second: caverncola-corriendo-2.gif_13
+      213: -4642249218669551919
+    second: pterodactyl_anim_idle.gif_13
   - first:
-      213: 5665473949510703729
-    second: caverncola-corriendo-2.gif_14
+      213: -8883198871110650301
+    second: pterodactyl_anim_idle.gif_14
   - first:
-      213: -821026253899535743
-    second: caverncola-corriendo-2.gif_15
+      213: 6328162970769922417
+    second: pterodactyl_anim_idle.gif_15
   - first:
-      213: 2090817311923050400
-    second: caverncola-corriendo-2.gif_16
+      213: -1704529716878489490
+    second: pterodactyl_anim_idle.gif_16
   - first:
-      213: -7600058348818036
-    second: caverncola-corriendo-2.gif_17
+      213: 4099811463838529850
+    second: pterodactyl_anim_idle.gif_17
   - first:
-      213: -8136631833473942497
-    second: caverncola-corriendo-2.gif_18
+      213: -5489089169950760866
+    second: pterodactyl_anim_idle.gif_18
   - first:
-      213: 1908275449470640957
-    second: caverncola-corriendo-2.gif_19
+      213: -4282798664292858771
+    second: pterodactyl_anim_idle.gif_19
   - first:
-      213: -6976237528163307554
-    second: caverncola-corriendo-2.gif_20
+      213: -3512529268596952634
+    second: pterodactyl_anim_idle.gif_20
   - first:
-      213: 3797015778387805963
-    second: caverncola-corriendo-2.gif_21
+      213: -8621418589249683706
+    second: pterodactyl_anim_idle.gif_21
+  - first:
+      213: -1636740536298797126
+    second: pterodactyl_anim_idle.gif_22
+  - first:
+      213: 2121664064779897048
+    second: pterodactyl_anim_idle.gif_23
+  - first:
+      213: 5710224492728118868
+    second: pterodactyl_anim_idle.gif_24
+  - first:
+      213: 2668867589438944583
+    second: pterodactyl_anim_idle.gif_25
+  - first:
+      213: 1776571642122356262
+    second: pterodactyl_anim_idle.gif_26
+  - first:
+      213: -1541553049949357012
+    second: pterodactyl_anim_idle.gif_27
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -114,7 +132,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 120
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -147,59 +165,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Win64
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -215,7 +181,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_0
+      name: pterodactyl_anim_idle.gif_0
       rect:
         serializedVersion: 2
         x: 0
@@ -228,16 +194,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8206d8b4314a3d444870cb8b2562d3d6
-      internalID: -1430364339
+      spriteID: 6c9657ad8b0809570800000000000000
+      internalID: 8471412430511368646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_1
+      name: pterodactyl_anim_idle.gif_1
       rect:
         serializedVersion: 2
         x: 540
@@ -250,16 +216,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b982ff5ea44cbd74ebc24e13dc25fb0e
-      internalID: -1482679762
+      spriteID: 43788c516d37aaab0800000000000000
+      internalID: -4996053473288485068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_2
+      name: pterodactyl_anim_idle.gif_2
       rect:
         serializedVersion: 2
         x: 1080
@@ -272,16 +238,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 81b1115e81f04e04d91df10ce576ddc0
-      internalID: -2032051001
+      spriteID: 5c896ed09c23917e0800000000000000
+      internalID: -1794347137427400507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_3
+      name: pterodactyl_anim_idle.gif_3
       rect:
         serializedVersion: 2
         x: 1620
@@ -294,16 +260,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6240c1eb874db234983aa049082ee255
-      internalID: -409949653
+      spriteID: cee27781e0985ef20800000000000000
+      internalID: 3451315383082364652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_4
+      name: pterodactyl_anim_idle.gif_4
       rect:
         serializedVersion: 2
         x: 2160
@@ -316,16 +282,38 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d9cee2f06df848743b806d46e5e3c581
-      internalID: -1118682162
+      spriteID: d0d4ff91e217a7900800000000000000
+      internalID: 682982736318647565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_5
+      name: pterodactyl_anim_idle.gif_5
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 2160
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aada1b622f7b70a0800000000000000
+      internalID: -6882767819703133529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_idle.gif_6
       rect:
         serializedVersion: 2
         x: 0
@@ -338,16 +326,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8030232b2e67eb2499397a3b5d4555e0
-      internalID: 631550090
+      spriteID: de8c01734295a97f0800000000000000
+      internalID: -605073187850368787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_6
+      name: pterodactyl_anim_idle.gif_7
       rect:
         serializedVersion: 2
         x: 540
@@ -360,16 +348,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d5ea437b13d6db64bab2a523a2d89b3d
-      internalID: -1497885875
+      spriteID: 14d1e829503814ec0800000000000000
+      internalID: -3584439768453341887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_7
+      name: pterodactyl_anim_idle.gif_8
       rect:
         serializedVersion: 2
         x: 1080
@@ -382,16 +370,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a9dd596aaf38cad40ab908880a82020d
-      internalID: -1229893336
+      spriteID: a578529978141a010800000000000000
+      internalID: 1198311026503026522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_8
+      name: pterodactyl_anim_idle.gif_9
       rect:
         serializedVersion: 2
         x: 1620
@@ -404,16 +392,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 436d501609b87f943a93cff3b3ae0b2e
-      internalID: 62036192
+      spriteID: bda24806dc63623a0800000000000000
+      internalID: -6690599940696823077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_9
+      name: pterodactyl_anim_idle.gif_10
       rect:
         serializedVersion: 2
         x: 2160
@@ -426,16 +414,38 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8460bddd03396844bb01dc9731ec8b0d
-      internalID: -812879948
+      spriteID: b39a2123f858e8b30800000000000000
+      internalID: 4291514344997562683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_10
+      name: pterodactyl_anim_idle.gif_11
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1620
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8314c8ac5fa22f1f0800000000000000
+      internalID: -1012699731051396808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_idle.gif_12
       rect:
         serializedVersion: 2
         x: 0
@@ -448,16 +458,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a5d40ed8e375c6e459f77f5a0b78dcae
-      internalID: 902861349
+      spriteID: 7ad8ab888dca8c330800000000000000
+      internalID: 3731422337283296679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_11
+      name: pterodactyl_anim_idle.gif_13
       rect:
         serializedVersion: 2
         x: 540
@@ -470,16 +480,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c19a89407ebd15f41a6a8d76b56b2ea3
-      internalID: 156836109
+      spriteID: 1dedd5a6eea639fb0800000000000000
+      internalID: -4642249218669551919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_12
+      name: pterodactyl_anim_idle.gif_14
       rect:
         serializedVersion: 2
         x: 1080
@@ -492,16 +502,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2d7d0b5086c1ade419939baa7bff47c7
-      internalID: 88502008
+      spriteID: 3467c4221b988b480800000000000000
+      internalID: -8883198871110650301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_13
+      name: pterodactyl_anim_idle.gif_15
       rect:
         serializedVersion: 2
         x: 1620
@@ -514,16 +524,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 93bb7b5a8b947074493c04001404b69b
-      internalID: -1884940152
+      spriteID: 1799581a1b622d750800000000000000
+      internalID: 6328162970769922417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_14
+      name: pterodactyl_anim_idle.gif_16
       rect:
         serializedVersion: 2
         x: 2160
@@ -536,16 +546,38 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b3a4a06c759c1364bbbfee8cd338ebb6
-      internalID: 1795471786
+      spriteID: e684c54e04b4858e0800000000000000
+      internalID: -1704529716878489490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_15
+      name: pterodactyl_anim_idle.gif_17
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1080
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a397b2cfdc475e830800000000000000
+      internalID: 4099811463838529850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_idle.gif_18
       rect:
         serializedVersion: 2
         x: 0
@@ -558,16 +590,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 49e168a6af613ed4b87be66065a4c7b5
-      internalID: 1330533599
+      spriteID: e5024ac7b76d2d3b0800000000000000
+      internalID: -5489089169950760866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_16
+      name: pterodactyl_anim_idle.gif_19
       rect:
         serializedVersion: 2
         x: 540
@@ -580,16 +612,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 895e93e3354c0d742812b5733a4afbcf
-      internalID: -794131414
+      spriteID: d648e4a5e417094c0800000000000000
+      internalID: -4282798664292858771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_17
+      name: pterodactyl_anim_idle.gif_20
       rect:
         serializedVersion: 2
         x: 1080
@@ -602,16 +634,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 740a58e6a7a11e6489408b968193b014
-      internalID: 1347762409
+      spriteID: 6c1bd1a8d3df04fc0800000000000000
+      internalID: -3512529268596952634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_18
+      name: pterodactyl_anim_idle.gif_21
       rect:
         serializedVersion: 2
         x: 1620
@@ -624,16 +656,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b05e50d434795684f9d333182c97b7ba
-      internalID: -1007210715
+      spriteID: 60fb2d7a8719a5880800000000000000
+      internalID: -8621418589249683706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_19
+      name: pterodactyl_anim_idle.gif_22
       rect:
         serializedVersion: 2
         x: 2160
@@ -646,16 +678,38 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 93676bbe561ce204b949319f989c007c
-      internalID: -654578986
+      spriteID: ab78d6077212949e0800000000000000
+      internalID: -1636740536298797126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_20
+      name: pterodactyl_anim_idle.gif_23
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 540
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8cae1d93aa17d10800000000000000
+      internalID: 2121664064779897048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_idle.gif_24
       rect:
         serializedVersion: 2
         x: 0
@@ -668,16 +722,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a22571ac5ac6f0e40b57a03fdfe3d6e1
-      internalID: -1223503982
+      spriteID: 45e6bcc0ceace3f40800000000000000
+      internalID: 5710224492728118868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caverncola-corriendo-2.gif_21
+      name: pterodactyl_anim_idle.gif_25
       rect:
         serializedVersion: 2
         x: 540
@@ -690,10 +744,54 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 78ed205b908ae1e4eaefb2e605a1f3f9
-      internalID: 485995236
+      spriteID: 745bf0daee8b90520800000000000000
+      internalID: 2668867589438944583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_idle.gif_26
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6264cbeee76a7a810800000000000000
+      internalID: 1776571642122356262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_idle.gif_27
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 0
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c39572bad4b9ae0800000000000000
+      internalID: -1541553049949357012
       vertices: []
       indices: 
       edges: []
@@ -702,7 +800,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cde22f38d7a5c3d4384defcbc995f9f1
+    spriteID: 62e907a792153ec4f9b49d48e6d2a0c2
     internalID: 0
     vertices: []
     indices: 
@@ -712,28 +810,34 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      caverncola-corriendo-2.gif_0: -1430364339
-      caverncola-corriendo-2.gif_1: -1482679762
-      caverncola-corriendo-2.gif_10: 902861349
-      caverncola-corriendo-2.gif_11: 156836109
-      caverncola-corriendo-2.gif_12: 88502008
-      caverncola-corriendo-2.gif_13: -1884940152
-      caverncola-corriendo-2.gif_14: 1795471786
-      caverncola-corriendo-2.gif_15: 1330533599
-      caverncola-corriendo-2.gif_16: -794131414
-      caverncola-corriendo-2.gif_17: 1347762409
-      caverncola-corriendo-2.gif_18: -1007210715
-      caverncola-corriendo-2.gif_19: -654578986
-      caverncola-corriendo-2.gif_2: -2032051001
-      caverncola-corriendo-2.gif_20: -1223503982
-      caverncola-corriendo-2.gif_21: 485995236
-      caverncola-corriendo-2.gif_3: -409949653
-      caverncola-corriendo-2.gif_4: -1118682162
-      caverncola-corriendo-2.gif_5: 631550090
-      caverncola-corriendo-2.gif_6: -1497885875
-      caverncola-corriendo-2.gif_7: -1229893336
-      caverncola-corriendo-2.gif_8: 62036192
-      caverncola-corriendo-2.gif_9: -812879948
+      pterodactyl_anim_idle.gif_0: 8471412430511368646
+      pterodactyl_anim_idle.gif_1: -4996053473288485068
+      pterodactyl_anim_idle.gif_10: 4291514344997562683
+      pterodactyl_anim_idle.gif_11: -1012699731051396808
+      pterodactyl_anim_idle.gif_12: 3731422337283296679
+      pterodactyl_anim_idle.gif_13: -4642249218669551919
+      pterodactyl_anim_idle.gif_14: -8883198871110650301
+      pterodactyl_anim_idle.gif_15: 6328162970769922417
+      pterodactyl_anim_idle.gif_16: -1704529716878489490
+      pterodactyl_anim_idle.gif_17: 4099811463838529850
+      pterodactyl_anim_idle.gif_18: -5489089169950760866
+      pterodactyl_anim_idle.gif_19: -4282798664292858771
+      pterodactyl_anim_idle.gif_2: -1794347137427400507
+      pterodactyl_anim_idle.gif_20: -3512529268596952634
+      pterodactyl_anim_idle.gif_21: -8621418589249683706
+      pterodactyl_anim_idle.gif_22: -1636740536298797126
+      pterodactyl_anim_idle.gif_23: 2121664064779897048
+      pterodactyl_anim_idle.gif_24: 5710224492728118868
+      pterodactyl_anim_idle.gif_25: 2668867589438944583
+      pterodactyl_anim_idle.gif_26: 1776571642122356262
+      pterodactyl_anim_idle.gif_27: -1541553049949357012
+      pterodactyl_anim_idle.gif_3: 3451315383082364652
+      pterodactyl_anim_idle.gif_4: 682982736318647565
+      pterodactyl_anim_idle.gif_5: -6882767819703133529
+      pterodactyl_anim_idle.gif_6: -605073187850368787
+      pterodactyl_anim_idle.gif_7: -3584439768453341887
+      pterodactyl_anim_idle.gif_8: 1198311026503026522
+      pterodactyl_anim_idle.gif_9: -6690599940696823077
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
