@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: a46c20cf4cf7e8949a9c0ac8ea03b8f9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4833296338566619500
+    second: muerte.gif_0
+  - first:
+      213: -8944956941131317648
+    second: muerte.gif_1
+  - first:
+      213: -6566226389736443082
+    second: muerte.gif_2
+  - first:
+      213: -7521448495778720528
+    second: muerte.gif_3
+  - first:
+      213: 5388330626068662394
+    second: muerte.gif_4
+  - first:
+      213: 8740054037116091939
+    second: muerte.gif_5
+  - first:
+      213: 12870823355502267
+    second: muerte.gif_6
+  - first:
+      213: -1370817493562729475
+    second: muerte.gif_7
+  - first:
+      213: -3423704070920421599
+    second: muerte.gif_8
+  - first:
+      213: 744387013414432245
+    second: muerte.gif_9
+  - first:
+      213: 2334981300705460412
+    second: muerte.gif_10
+  - first:
+      213: -3617113424610652436
+    second: muerte.gif_11
+  - first:
+      213: -199607401542136411
+    second: muerte.gif_12
+  - first:
+      213: -2885233041166505555
+    second: muerte.gif_13
+  - first:
+      213: -8774226701049370337
+    second: muerte.gif_14
+  - first:
+      213: 7840721449838853236
+    second: muerte.gif_15
+  - first:
+      213: 5718895882731092541
+    second: muerte.gif_16
+  - first:
+      213: 6024542241348476924
+    second: muerte.gif_17
+  - first:
+      213: 4183664933996903296
+    second: muerte.gif_18
+  - first:
+      213: 2248125087372255293
+    second: muerte.gif_19
+  - first:
+      213: 1737328950509523505
+    second: muerte.gif_20
+  - first:
+      213: -2904843202145253256
+    second: muerte.gif_21
+  - first:
+      213: -6052858211973512799
+    second: muerte.gif_22
+  - first:
+      213: 7912858471511473115
+    second: muerte.gif_23
+  - first:
+      213: 2357418736612449761
+    second: muerte.gif_24
+  - first:
+      213: -3970718380278521537
+    second: muerte.gif_25
+  - first:
+      213: 8281039871996700477
+    second: muerte.gif_26
+  - first:
+      213: -7172225332903052039
+    second: muerte.gif_27
+  - first:
+      213: -7111953260177966565
+    second: muerte.gif_28
+  - first:
+      213: 6159860418169006626
+    second: muerte.gif_29
+  - first:
+      213: 6468547496837513274
+    second: muerte.gif_30
+  - first:
+      213: -9089712973320047136
+    second: muerte.gif_31
+  - first:
+      213: -2225692001480830323
+    second: muerte.gif_32
+  - first:
+      213: -7588246565195906731
+    second: muerte.gif_33
+  - first:
+      213: -2353929086984599063
+    second: muerte.gif_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: muerte.gif_0
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 2262
+        width: 304
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e5a85869eacecb0800000000000000
+      internalID: -4833296338566619500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_1
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 2262
+        width: 304
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ef3b0fd012dd380800000000000000
+      internalID: -8944956941131317648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_2
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 2519
+        width: 25
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633b6fc43e310e4a0800000000000000
+      internalID: -6566226389736443082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_3
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 2268
+        width: 414
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f496b481727e9790800000000000000
+      internalID: -7521448495778720528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_4
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 2268
+        width: 465
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a784e23e72237ca40800000000000000
+      internalID: 5388330626068662394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_5
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 2252
+        width: 445
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32ef50807d8ea4970800000000000000
+      internalID: 8740054037116091939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_6
+      rect:
+        serializedVersion: 2
+        x: 2715
+        y: 2241
+        width: 371
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe421612f9bd2000800000000000000
+      internalID: 12870823355502267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_7
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 2468
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfb5d44a0c0e9fce0800000000000000
+      internalID: -1370817493562729475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_8
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 2480
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12fbabc794f8c70d0800000000000000
+      internalID: -3423704070920421599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_9
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 2480
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd2bf57b08945a00800000000000000
+      internalID: 744387013414432245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_10
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 2449
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb08ab92f15876020800000000000000
+      internalID: 2334981300705460412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_11
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 2447
+        width: 29
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cee09cd218e6dcdc0800000000000000
+      internalID: -3617113424610652436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_12
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 2377
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5adca88302ada3df0800000000000000
+      internalID: -199607401542136411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_13
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 2320
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9ec0fe5d795f7d0800000000000000
+      internalID: -2885233041166505555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_14
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1634
+        width: 371
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f196431ad4fab3680800000000000000
+      internalID: -8774226701049370337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_15
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 1661
+        width: 377
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c3e60ed96dfcc60800000000000000
+      internalID: 7840721449838853236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_16
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 1648
+        width: 397
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a71ad51899d5f40800000000000000
+      internalID: 5718895882731092541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_17
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 1663
+        width: 439
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cff59e5cf397b9350800000000000000
+      internalID: 6024542241348476924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_18
+      rect:
+        serializedVersion: 2
+        x: 2279
+        y: 1656
+        width: 354
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08bb42a671d5f0a30800000000000000
+      internalID: 4183664933996903296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_19
+      rect:
+        serializedVersion: 2
+        x: 2798
+        y: 1696
+        width: 383
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30a77b1bd1f23f10800000000000000
+      internalID: 2248125087372255293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_20
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1189
+        width: 377
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1325f19c97b3c1810800000000000000
+      internalID: 1737328950509523505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_21
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1229
+        width: 391
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8788ce78f7cefa7d0800000000000000
+      internalID: -2904843202145253256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_22
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1229
+        width: 391
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a1438f868deffba0800000000000000
+      internalID: -6052858211973512799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_23
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1229
+        width: 391
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdbb1601bde10dd60800000000000000
+      internalID: 7912858471511473115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_24
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 1216
+        width: 391
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed92aec9db37b020800000000000000
+      internalID: 2357418736612449761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_25
+      rect:
+        serializedVersion: 2
+        x: 2799
+        y: 1211
+        width: 352
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f316260cbac25e8c0800000000000000
+      internalID: -3970718380278521537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_26
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 670
+        width: 355
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37a53583e92ce270800000000000000
+      internalID: 8281039871996700477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_27
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 670
+        width: 355
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc714f4f03277c90800000000000000
+      internalID: -7172225332903052039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_28
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 670
+        width: 355
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a39ebc0344d4d90800000000000000
+      internalID: -7111953260177966565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_29
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 670
+        width: 355
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ae3faf9683c7550800000000000000
+      internalID: 6159860418169006626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_30
+      rect:
+        serializedVersion: 2
+        x: 2260
+        y: 670
+        width: 355
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a300eb13da5e4c950800000000000000
+      internalID: 6468547496837513274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_31
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 670
+        width: 355
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e5bffac53adad180800000000000000
+      internalID: -9089712973320047136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_32
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 130
+        width: 355
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d829e48bae0cc11e0800000000000000
+      internalID: -2225692001480830323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_33
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 130
+        width: 355
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5518b6504f121b690800000000000000
+      internalID: -7588246565195906731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte.gif_34
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 130
+        width: 355
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9c2df87f9255fd0800000000000000
+      internalID: -2353929086984599063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      muerte.gif_0: -4833296338566619500
+      muerte.gif_1: -8944956941131317648
+      muerte.gif_10: 2334981300705460412
+      muerte.gif_11: -3617113424610652436
+      muerte.gif_12: -199607401542136411
+      muerte.gif_13: -2885233041166505555
+      muerte.gif_14: -8774226701049370337
+      muerte.gif_15: 7840721449838853236
+      muerte.gif_16: 5718895882731092541
+      muerte.gif_17: 6024542241348476924
+      muerte.gif_18: 4183664933996903296
+      muerte.gif_19: 2248125087372255293
+      muerte.gif_2: -6566226389736443082
+      muerte.gif_20: 1737328950509523505
+      muerte.gif_21: -2904843202145253256
+      muerte.gif_22: -6052858211973512799
+      muerte.gif_23: 7912858471511473115
+      muerte.gif_24: 2357418736612449761
+      muerte.gif_25: -3970718380278521537
+      muerte.gif_26: 8281039871996700477
+      muerte.gif_27: -7172225332903052039
+      muerte.gif_28: -7111953260177966565
+      muerte.gif_29: 6159860418169006626
+      muerte.gif_3: -7521448495778720528
+      muerte.gif_30: 6468547496837513274
+      muerte.gif_31: -9089712973320047136
+      muerte.gif_32: -2225692001480830323
+      muerte.gif_33: -7588246565195906731
+      muerte.gif_34: -2353929086984599063
+      muerte.gif_4: 5388330626068662394
+      muerte.gif_5: 8740054037116091939
+      muerte.gif_6: 12870823355502267
+      muerte.gif_7: -1370817493562729475
+      muerte.gif_8: -3423704070920421599
+      muerte.gif_9: 744387013414432245
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
