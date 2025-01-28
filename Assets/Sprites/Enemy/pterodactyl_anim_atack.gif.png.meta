@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: 860e5e73efb8ae9499bbc4d7b1f22e64
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8245530733786776355
+    second: pterodactyl_anim_atack.gif_0
+  - first:
+      213: -5608515198593549903
+    second: pterodactyl_anim_atack.gif_1
+  - first:
+      213: -1033037996118897451
+    second: pterodactyl_anim_atack.gif_2
+  - first:
+      213: 6109890919062587830
+    second: pterodactyl_anim_atack.gif_3
+  - first:
+      213: 8282391706861868730
+    second: pterodactyl_anim_atack.gif_4
+  - first:
+      213: 6405440284380495965
+    second: pterodactyl_anim_atack.gif_5
+  - first:
+      213: -667814605523378660
+    second: pterodactyl_anim_atack.gif_6
+  - first:
+      213: 2982163897495335799
+    second: pterodactyl_anim_atack.gif_7
+  - first:
+      213: 2382429105716047591
+    second: pterodactyl_anim_atack.gif_8
+  - first:
+      213: 6406698277740348302
+    second: pterodactyl_anim_atack.gif_9
+  - first:
+      213: 7129385957787093451
+    second: pterodactyl_anim_atack.gif_10
+  - first:
+      213: -2057953634119339578
+    second: pterodactyl_anim_atack.gif_11
+  - first:
+      213: -9029166774195811
+    second: pterodactyl_anim_atack.gif_12
+  - first:
+      213: -2421839243669457431
+    second: pterodactyl_anim_atack.gif_13
+  - first:
+      213: 1657122183818942524
+    second: pterodactyl_anim_atack.gif_14
+  - first:
+      213: -1782783016528044069
+    second: pterodactyl_anim_atack.gif_15
+  - first:
+      213: -7630642345546582132
+    second: pterodactyl_anim_atack.gif_16
+  - first:
+      213: -2947128757245556617
+    second: pterodactyl_anim_atack.gif_17
+  - first:
+      213: -5144260882731197688
+    second: pterodactyl_anim_atack.gif_18
+  - first:
+      213: 6518676200663245047
+    second: pterodactyl_anim_atack.gif_19
+  - first:
+      213: -5162160050176513658
+    second: pterodactyl_anim_atack.gif_20
+  - first:
+      213: -7466183068960783470
+    second: pterodactyl_anim_atack.gif_21
+  - first:
+      213: -255149061181663888
+    second: pterodactyl_anim_atack.gif_22
+  - first:
+      213: 6092884693455908229
+    second: pterodactyl_anim_atack.gif_23
+  - first:
+      213: 995455523045728920
+    second: pterodactyl_anim_atack.gif_24
+  - first:
+      213: -5333873259349867676
+    second: pterodactyl_anim_atack.gif_25
+  - first:
+      213: 9091168027893547221
+    second: pterodactyl_anim_atack.gif_26
+  - first:
+      213: 5006922196649229436
+    second: pterodactyl_anim_atack.gif_27
+  - first:
+      213: -3389737535059331221
+    second: pterodactyl_anim_atack.gif_28
+  - first:
+      213: 1760583253595188193
+    second: pterodactyl_anim_atack.gif_29
+  - first:
+      213: 2064017758068136015
+    second: pterodactyl_anim_atack.gif_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 120
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2700
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3234de304820e6270800000000000000
+      internalID: 8245530733786776355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_1
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 2700
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b9b37e542d8a22b0800000000000000
+      internalID: -5608515198593549903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_2
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2700
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dc0ad17a69e9a1f0800000000000000
+      internalID: -1033037996118897451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_3
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 2700
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b94c175b61bac450800000000000000
+      internalID: 6109890919062587830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_4
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2700
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab6942a1067f0f270800000000000000
+      internalID: 8282391706861868730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_5
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 2700
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d500a7c4002b4e850800000000000000
+      internalID: 6405440284380495965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e16fd87227bb6f0800000000000000
+      internalID: -667814605523378660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_7
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 2160
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773343cb346c26920800000000000000
+      internalID: 2982163897495335799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_8
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2160
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eea1c426a6101120800000000000000
+      internalID: 2382429105716047591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_9
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 2160
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8302d3b32a29e850800000000000000
+      internalID: 6406698277740348302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_10
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2160
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9ce8861caa0f260800000000000000
+      internalID: 7129385957787093451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_11
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 2160
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c1b712c21ea073e0800000000000000
+      internalID: -2057953634119339578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1620
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d996ec9450cefdff0800000000000000
+      internalID: -9029166774195811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_13
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1620
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e53bf11a06e36ed0800000000000000
+      internalID: -2421839243669457431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_14
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1620
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3892fba8d74ff610800000000000000
+      internalID: 1657122183818942524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_15
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 1620
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf1f34ca484247e0800000000000000
+      internalID: -1782783016528044069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_16
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1620
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8774a137338a1690800000000000000
+      internalID: -7630642345546582132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_17
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1620
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7784a058202b917d0800000000000000
+      internalID: -2947128757245556617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b9edc8bf9eb98b0800000000000000
+      internalID: -5144260882731197688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_19
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1080
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f06352977df67a50800000000000000
+      internalID: 6518676200663245047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_20
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1080
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689248fd8c25c58b0800000000000000
+      internalID: -5162160050176513658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_21
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 1080
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2938e8a6e0ac26890800000000000000
+      internalID: -7466183068960783470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_22
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1080
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0751e7bd747857cf0800000000000000
+      internalID: -255149061181663888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_23
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1080
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58daad2e8564e8450800000000000000
+      internalID: 6092884693455908229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89267d8268190dd00800000000000000
+      internalID: 995455523045728920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_25
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 540
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4630f7bd7864af5b0800000000000000
+      internalID: -5333873259349867676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_26
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 540
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d0cbff77215a2e70800000000000000
+      internalID: 9091168027893547221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_27
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 540
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7cbb45c5392c7540800000000000000
+      internalID: 5006922196649229436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_28
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 540
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b67faf4ebab35f0d0800000000000000
+      internalID: -3389737535059331221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_29
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 540
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ebea042429de6810800000000000000
+      internalID: 1760583253595188193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactyl_anim_atack.gif_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f48dfbf173dd4ac10800000000000000
+      internalID: 2064017758068136015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7773d12a5d947bb47b91b1ccd17bed53
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pterodactyl_anim_atack.gif_0: 8245530733786776355
+      pterodactyl_anim_atack.gif_1: -5608515198593549903
+      pterodactyl_anim_atack.gif_10: 7129385957787093451
+      pterodactyl_anim_atack.gif_11: -2057953634119339578
+      pterodactyl_anim_atack.gif_12: -9029166774195811
+      pterodactyl_anim_atack.gif_13: -2421839243669457431
+      pterodactyl_anim_atack.gif_14: 1657122183818942524
+      pterodactyl_anim_atack.gif_15: -1782783016528044069
+      pterodactyl_anim_atack.gif_16: -7630642345546582132
+      pterodactyl_anim_atack.gif_17: -2947128757245556617
+      pterodactyl_anim_atack.gif_18: -5144260882731197688
+      pterodactyl_anim_atack.gif_19: 6518676200663245047
+      pterodactyl_anim_atack.gif_2: -1033037996118897451
+      pterodactyl_anim_atack.gif_20: -5162160050176513658
+      pterodactyl_anim_atack.gif_21: -7466183068960783470
+      pterodactyl_anim_atack.gif_22: -255149061181663888
+      pterodactyl_anim_atack.gif_23: 6092884693455908229
+      pterodactyl_anim_atack.gif_24: 995455523045728920
+      pterodactyl_anim_atack.gif_25: -5333873259349867676
+      pterodactyl_anim_atack.gif_26: 9091168027893547221
+      pterodactyl_anim_atack.gif_27: 5006922196649229436
+      pterodactyl_anim_atack.gif_28: -3389737535059331221
+      pterodactyl_anim_atack.gif_29: 1760583253595188193
+      pterodactyl_anim_atack.gif_3: 6109890919062587830
+      pterodactyl_anim_atack.gif_30: 2064017758068136015
+      pterodactyl_anim_atack.gif_4: 8282391706861868730
+      pterodactyl_anim_atack.gif_5: 6405440284380495965
+      pterodactyl_anim_atack.gif_6: -667814605523378660
+      pterodactyl_anim_atack.gif_7: 2982163897495335799
+      pterodactyl_anim_atack.gif_8: 2382429105716047591
+      pterodactyl_anim_atack.gif_9: 6406698277740348302
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
