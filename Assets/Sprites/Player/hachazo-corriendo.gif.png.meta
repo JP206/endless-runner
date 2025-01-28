@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: d93524a54f3702f42816e4cb494eda6a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3381842493542297170
+    second: hachazo-corriendo.gif_0
+  - first:
+      213: 5215076987558222544
+    second: hachazo-corriendo.gif_1
+  - first:
+      213: -4532584986757786811
+    second: hachazo-corriendo.gif_2
+  - first:
+      213: -7637436988411960026
+    second: hachazo-corriendo.gif_3
+  - first:
+      213: 5424780710650492730
+    second: hachazo-corriendo.gif_4
+  - first:
+      213: -7880940998351966495
+    second: hachazo-corriendo.gif_5
+  - first:
+      213: 2812004815423533140
+    second: hachazo-corriendo.gif_6
+  - first:
+      213: -2911417046526196914
+    second: hachazo-corriendo.gif_7
+  - first:
+      213: 3674392100994635993
+    second: hachazo-corriendo.gif_8
+  - first:
+      213: 2466513088124722764
+    second: hachazo-corriendo.gif_9
+  - first:
+      213: -457568804166133600
+    second: hachazo-corriendo.gif_10
+  - first:
+      213: 2872666012631692509
+    second: hachazo-corriendo.gif_11
+  - first:
+      213: 8302794938298879360
+    second: hachazo-corriendo.gif_12
+  - first:
+      213: 3403617113527732069
+    second: hachazo-corriendo.gif_13
+  - first:
+      213: 8648053707079516714
+    second: hachazo-corriendo.gif_14
+  - first:
+      213: -7415950798166167633
+    second: hachazo-corriendo.gif_15
+  - first:
+      213: 5681459578742290460
+    second: hachazo-corriendo.gif_16
+  - first:
+      213: -5399756501666449478
+    second: hachazo-corriendo.gif_17
+  - first:
+      213: -6483486105730731363
+    second: hachazo-corriendo.gif_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_0
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 2270
+        width: 313
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25ee8e184d7beee20800000000000000
+      internalID: 3381842493542297170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_1
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 2270
+        width: 313
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dad8b7b3ecaf5840800000000000000
+      internalID: 5215076987558222544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_2
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 2271
+        width: 326
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 543980e18f50911c0800000000000000
+      internalID: -4532584986757786811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_3
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 2271
+        width: 326
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625a64f168f520690800000000000000
+      internalID: -7637436988411960026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_4
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 2236
+        width: 353
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a37b6ba8051b84b40800000000000000
+      internalID: 5424780710650492730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1696
+        width: 353
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee2b61cae541a290800000000000000
+      internalID: -7880940998351966495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_6
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 1696
+        width: 353
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 450f1022b7f360720800000000000000
+      internalID: 2812004815423533140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_7
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 1695
+        width: 297
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e430acc1f919897d0800000000000000
+      internalID: -2911417046526196914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_8
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 1695
+        width: 297
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d85949e5201ef230800000000000000
+      internalID: 3674392100994635993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_9
+      rect:
+        serializedVersion: 2
+        x: 2270
+        y: 1693
+        width: 430
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e9683e590da3220800000000000000
+      internalID: 2466513088124722764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_10
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1408
+        width: 377
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8906fc89366a9f0800000000000000
+      internalID: -457568804166133600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_11
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1460
+        width: 39
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd4ff39b482cdd720800000000000000
+      internalID: 2872666012631692509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_12
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 1449
+        width: 135
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d473c9104793370800000000000000
+      internalID: 8302794938298879360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_13
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 1157
+        width: 276
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 567c24b4bb31c3f20800000000000000
+      internalID: 3403617113527732069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_14
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1153
+        width: 315
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2289f8f60f040870800000000000000
+      internalID: 8648053707079516714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_15
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1153
+        width: 339
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fafe78b5a00451990800000000000000
+      internalID: -7415950798166167633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_16
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1153
+        width: 339
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18bcac926998de40800000000000000
+      internalID: 5681459578742290460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_17
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1153
+        width: 339
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7b09422163015b0800000000000000
+      internalID: -5399756501666449478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hachazo-corriendo.gif_18
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 650
+        width: 313
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d923db1ecb70606a0800000000000000
+      internalID: -6483486105730731363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hachazo-corriendo.gif_0: 3381842493542297170
+      hachazo-corriendo.gif_1: 5215076987558222544
+      hachazo-corriendo.gif_10: -457568804166133600
+      hachazo-corriendo.gif_11: 2872666012631692509
+      hachazo-corriendo.gif_12: 8302794938298879360
+      hachazo-corriendo.gif_13: 3403617113527732069
+      hachazo-corriendo.gif_14: 8648053707079516714
+      hachazo-corriendo.gif_15: -7415950798166167633
+      hachazo-corriendo.gif_16: 5681459578742290460
+      hachazo-corriendo.gif_17: -5399756501666449478
+      hachazo-corriendo.gif_18: -6483486105730731363
+      hachazo-corriendo.gif_2: -4532584986757786811
+      hachazo-corriendo.gif_3: -7637436988411960026
+      hachazo-corriendo.gif_4: 5424780710650492730
+      hachazo-corriendo.gif_5: -7880940998351966495
+      hachazo-corriendo.gif_6: 2812004815423533140
+      hachazo-corriendo.gif_7: -2911417046526196914
+      hachazo-corriendo.gif_8: 3674392100994635993
+      hachazo-corriendo.gif_9: 2466513088124722764
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
