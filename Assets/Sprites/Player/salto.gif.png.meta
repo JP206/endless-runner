@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: eb8a6b4e8ad8b5040b6e800b405cf39d
+=======
+guid: e68dcd1be38005640b4183146d72b279
+>>>>>>> origin/main
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -82,7 +86,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 1
+=======
+    filterMode: 0
+>>>>>>> origin/main
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -120,7 +128,11 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 1
+=======
+    textureCompression: 0
+>>>>>>> origin/main
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -141,6 +153,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -180,6 +193,8 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+>>>>>>> origin/main
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -187,20 +202,34 @@ TextureImporter:
       name: salto.gif_0
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 132
         y: 1693
         width: 320
         height: 294
+=======
+        x: 0
+        y: 1620
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: f8ad9b70c9dde0410800000000000000
       internalID: 1445336192646765199
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: b017734dcc2d4144f974365b559e879b
+      internalID: -1819586355
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -209,20 +238,34 @@ TextureImporter:
       name: salto.gif_1
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 701
         y: 1692
         width: 317
         height: 272
+=======
+        x: 540
+        y: 1620
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 4cf82cf3c3acc6d70800000000000000
       internalID: 9037820912342306756
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebc87197e571e94c9b093606c0164af
+      internalID: 1960839714
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -231,20 +274,34 @@ TextureImporter:
       name: salto.gif_2
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1241
         y: 1692
         width: 317
         height: 272
+=======
+        x: 1080
+        y: 1620
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: d03fb9fd3d48d2a30800000000000000
       internalID: 4192152873676305165
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139187eb838eec64db40a9942ce2c930
+      internalID: 940468430
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -253,20 +310,34 @@ TextureImporter:
       name: salto.gif_3
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1781
         y: 1692
         width: 317
         height: 272
+=======
+        x: 1620
+        y: 1620
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 4decd02d73eda24c0800000000000000
       internalID: -4311389361925140780
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3af8a7259b4b304fb92f63e4988b045
+      internalID: -1379857248
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -275,20 +346,34 @@ TextureImporter:
       name: salto.gif_4
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 179
         y: 1167
         width: 217
         height: 360
+=======
+        x: 0
+        y: 1080
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: aa753dde536671620800000000000000
       internalID: 2744774879714957226
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ac18aee159f8b4ba295d9b80471ce6
+      internalID: -1763789492
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -297,20 +382,34 @@ TextureImporter:
       name: salto.gif_5
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 693
         y: 1188
         width: 258
         height: 357
+=======
+        x: 540
+        y: 1080
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 058786c3951833f10800000000000000
       internalID: 2248282859253561424
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd1272386ebbc904ea8b2ce9bffd0488
+      internalID: 202142312
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -319,20 +418,34 @@ TextureImporter:
       name: salto.gif_6
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1233
         y: 1188
         width: 258
         height: 357
+=======
+        x: 1080
+        y: 1080
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 62a0ccff9748d1a70800000000000000
       internalID: 8799334906469288486
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4496a189acc763e48901dde7e964016e
+      internalID: -1236863304
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -341,20 +454,34 @@ TextureImporter:
       name: salto.gif_7
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1753
         y: 1210
         width: 275
         height: 357
+=======
+        x: 1620
+        y: 1080
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 2d47372efbd606cb0800000000000000
       internalID: -4872774125909478190
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb51b7712fa0d540865af68aee5d787
+      internalID: 1252532964
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -363,20 +490,34 @@ TextureImporter:
       name: salto.gif_8
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 133
         y: 670
         width: 275
         height: 357
+=======
+        x: 0
+        y: 540
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 5c09b1b6571e00350800000000000000
       internalID: 5981028199572410565
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798d68ed7e22633479ea7fa9a65da254
+      internalID: 100446629
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -385,20 +526,34 @@ TextureImporter:
       name: salto.gif_9
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 689
         y: 654
         width: 224
         height: 400
+=======
+        x: 540
+        y: 540
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 247be67c811083230800000000000000
       internalID: 3618643506528958274
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463a72a45368abb40b06aff42f49789c
+      internalID: -321422709
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -407,20 +562,34 @@ TextureImporter:
       name: salto.gif_10
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1229
         y: 654
         width: 224
         height: 400
+=======
+        x: 1080
+        y: 540
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 0c2b0b228fafb1740800000000000000
       internalID: 5123964944704910016
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9590368f91aa8e34c91b0dfdfc3d7686
+      internalID: -864973057
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -429,20 +598,34 @@ TextureImporter:
       name: salto.gif_11
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1758
         y: 633
         width: 216
         height: 414
+=======
+        x: 1620
+        y: 540
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 64dc0a39567a16d80800000000000000
       internalID: -8259136186910454458
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8bfff2f426dbd459b1d843530dc3d8
+      internalID: -1628837271
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -451,20 +634,34 @@ TextureImporter:
       name: salto.gif_12
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 138
         y: 93
         width: 216
         height: 414
+=======
+        x: 0
+        y: 0
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 2fd5770c2005c2b90800000000000000
       internalID: -7265344126106247694
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaaf250008100b54aaaa6a66511ced4e
+      internalID: 19056581
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -473,20 +670,34 @@ TextureImporter:
       name: salto.gif_13
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 672
         y: 73
         width: 320
         height: 294
+=======
+        x: 540
+        y: 0
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 430ff5fced6ddf370800000000000000
       internalID: 8358072735919763508
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51f73f0a988a6840a12e7ac1a0a1cff
+      internalID: 1180953370
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -495,20 +706,34 @@ TextureImporter:
       name: salto.gif_14
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1212
         y: 73
         width: 320
         height: 294
+=======
+        x: 1080
+        y: 0
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 786439fb7cb057430800000000000000
       internalID: 3779940414787896967
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191a8fd684a5b2c4886b1ff4ff020035
+      internalID: -935550534
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -517,20 +742,34 @@ TextureImporter:
       name: salto.gif_15
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1794
         y: 69
         width: 331
         height: 261
+=======
+        x: 1620
+        y: 0
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 0696994e81dc5ba00800000000000000
       internalID: 771748417962076512
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62fae24bb496799428fcd5ed60ba7ad5
+      internalID: -1704657279
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -539,7 +778,11 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: 
+=======
+    spriteID: 95ec832e7a1367f4d87b420b251f0d9a
+>>>>>>> origin/main
     internalID: 0
     vertices: []
     indices: 
@@ -549,6 +792,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< HEAD
       salto.gif_0: 1445336192646765199
       salto.gif_1: 9037820912342306756
       salto.gif_10: 5123964944704910016
@@ -565,6 +809,24 @@ TextureImporter:
       salto.gif_7: -4872774125909478190
       salto.gif_8: 5981028199572410565
       salto.gif_9: 3618643506528958274
+=======
+      salto.gif_0: -1819586355
+      salto.gif_1: 1960839714
+      salto.gif_10: -864973057
+      salto.gif_11: -1628837271
+      salto.gif_12: 19056581
+      salto.gif_13: 1180953370
+      salto.gif_14: -935550534
+      salto.gif_15: -1704657279
+      salto.gif_2: 940468430
+      salto.gif_3: -1379857248
+      salto.gif_4: -1763789492
+      salto.gif_5: 202142312
+      salto.gif_6: -1236863304
+      salto.gif_7: 1252532964
+      salto.gif_8: 100446629
+      salto.gif_9: -321422709
+>>>>>>> origin/main
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: d93524a54f3702f42816e4cb494eda6a
+=======
+guid: 9da1401915c77cb44a6e99c1536e6f94
+>>>>>>> origin/main
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -91,7 +95,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 1
+=======
+    filterMode: 0
+>>>>>>> origin/main
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -129,7 +137,11 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 1
+=======
+    textureCompression: 0
+>>>>>>> origin/main
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -150,6 +162,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -189,6 +202,8 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+>>>>>>> origin/main
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -196,20 +211,34 @@ TextureImporter:
       name: hachazo-corriendo.gif_0
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 92
         y: 2270
         width: 313
         height: 321
+=======
+        x: 0
+        y: 2160
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 25ee8e184d7beee20800000000000000
       internalID: 3381842493542297170
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5f6f6ba8a94f748a6adcb3e442b7f5
+      internalID: -217199572
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -218,20 +247,34 @@ TextureImporter:
       name: hachazo-corriendo.gif_1
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 632
         y: 2270
         width: 313
         height: 321
+=======
+        x: 540
+        y: 2160
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 0dad8b7b3ecaf5840800000000000000
       internalID: 5215076987558222544
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02551b96abbe8134595c430386c0c0c4
+      internalID: -1468235533
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -240,20 +283,34 @@ TextureImporter:
       name: hachazo-corriendo.gif_2
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1160
         y: 2271
         width: 326
         height: 356
+=======
+        x: 1080
+        y: 2160
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 543980e18f50911c0800000000000000
       internalID: -4532584986757786811
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cef18fea49ff354785441e3b3030e83
+      internalID: -2015479859
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -262,20 +319,34 @@ TextureImporter:
       name: hachazo-corriendo.gif_3
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1700
         y: 2271
         width: 326
         height: 356
+=======
+        x: 1620
+        y: 2160
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 625a64f168f520690800000000000000
       internalID: -7637436988411960026
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5abe7e2d917bfca49bb2e5711d1c7106
+      internalID: -1947645700
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -284,20 +355,34 @@ TextureImporter:
       name: hachazo-corriendo.gif_4
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2208
         y: 2236
         width: 353
         height: 366
+=======
+        x: 2160
+        y: 2160
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: a37b6ba8051b84b40800000000000000
       internalID: 5424780710650492730
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eadb421a7a92f749aaa1d9c05fd3dc0
+      internalID: -735608118
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -306,20 +391,34 @@ TextureImporter:
       name: hachazo-corriendo.gif_5
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 48
         y: 1696
         width: 353
         height: 366
+=======
+        x: 0
+        y: 1620
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 1ee2b61cae541a290800000000000000
       internalID: -7880940998351966495
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527ea6f0821f6ed42b39ef40d379c3d1
+      internalID: 108620134
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -328,20 +427,34 @@ TextureImporter:
       name: hachazo-corriendo.gif_6
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 588
         y: 1696
         width: 353
         height: 366
+=======
+        x: 540
+        y: 1620
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 450f1022b7f360720800000000000000
       internalID: 2812004815423533140
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc76cfa428672f42b30cd446c13aa8e
+      internalID: -1292448317
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -350,20 +463,34 @@ TextureImporter:
       name: hachazo-corriendo.gif_7
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1189
         y: 1695
         width: 297
         height: 286
+=======
+        x: 1080
+        y: 1620
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: e430acc1f919897d0800000000000000
       internalID: -2911417046526196914
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f6e7dff4b44a34bb5ab4fc15aa75f7
+      internalID: -2129452223
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -372,20 +499,34 @@ TextureImporter:
       name: hachazo-corriendo.gif_8
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1729
         y: 1695
         width: 297
         height: 286
+=======
+        x: 1620
+        y: 1620
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 9d85949e5201ef230800000000000000
       internalID: 3674392100994635993
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81a292e41c375847a558c8b8d77258a
+      internalID: 744384829
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -394,20 +535,34 @@ TextureImporter:
       name: hachazo-corriendo.gif_9
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2270
         y: 1693
         width: 430
         height: 336
+=======
+        x: 2160
+        y: 1620
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: c4e9683e590da3220800000000000000
       internalID: 2466513088124722764
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b38ef155d81de1428e99de40214ed58
+      internalID: 1269992724
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -416,20 +571,34 @@ TextureImporter:
       name: hachazo-corriendo.gif_10
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 164
         y: 1408
         width: 377
         height: 76
+=======
+        x: 0
+        y: 1080
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 0a8906fc89366a9f0800000000000000
       internalID: -457568804166133600
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f3fe51fd5a54743b1abc3068eb3027
+      internalID: -559352095
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -438,20 +607,34 @@ TextureImporter:
       name: hachazo-corriendo.gif_11
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 874
         y: 1460
         width: 39
         height: 10
+=======
+        x: 540
+        y: 1080
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: dd4ff39b482cdd720800000000000000
       internalID: 2872666012631692509
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52bd5fafbeeb5c24a934c4531cf305a9
+      internalID: 1973369209
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -460,20 +643,34 @@ TextureImporter:
       name: hachazo-corriendo.gif_12
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 946
         y: 1449
         width: 135
         height: 21
+=======
+        x: 1080
+        y: 1080
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 08d473c9104793370800000000000000
       internalID: 8302794938298879360
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee35151437da87549ad2b0338d032fe9
+      internalID: -218362704
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -482,20 +679,34 @@ TextureImporter:
       name: hachazo-corriendo.gif_13
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2285
         y: 1157
         width: 276
         height: 343
+=======
+        x: 1620
+        y: 1080
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 567c24b4bb31c3f20800000000000000
       internalID: 3403617113527732069
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55758a5bac6d6b14f8001dd47c86a76d
+      internalID: -1551506985
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -504,20 +715,34 @@ TextureImporter:
       name: hachazo-corriendo.gif_14
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 110
         y: 1153
         width: 315
         height: 289
+=======
+        x: 2160
+        y: 1080
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: a2289f8f60f040870800000000000000
       internalID: 8648053707079516714
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2c4c1eea209b544aa63fa20c44380d
+      internalID: -1156141255
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -526,16 +751,24 @@ TextureImporter:
       name: hachazo-corriendo.gif_15
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 660
         y: 1153
         width: 339
         height: 305
+=======
+        x: 0
+        y: 540
+        width: 540
+        height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: fafe78b5a00451990800000000000000
@@ -606,6 +839,12 @@ TextureImporter:
       bones: []
       spriteID: d923db1ecb70606a0800000000000000
       internalID: -6483486105730731363
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605bf017992b7cb45a5609ec5d9531b1
+      internalID: -1844734301
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -614,7 +853,11 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: 
+=======
+    spriteID: d94c12684732b8e49a6b5fb75f300db8
+>>>>>>> origin/main
     internalID: 0
     vertices: []
     indices: 
@@ -624,6 +867,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< HEAD
       hachazo-corriendo.gif_0: 3381842493542297170
       hachazo-corriendo.gif_1: 5215076987558222544
       hachazo-corriendo.gif_10: -457568804166133600
@@ -643,6 +887,24 @@ TextureImporter:
       hachazo-corriendo.gif_7: -2911417046526196914
       hachazo-corriendo.gif_8: 3674392100994635993
       hachazo-corriendo.gif_9: 2466513088124722764
+=======
+      hachazo-corriendo.gif_0: -217199572
+      hachazo-corriendo.gif_1: -1468235533
+      hachazo-corriendo.gif_10: -559352095
+      hachazo-corriendo.gif_11: 1973369209
+      hachazo-corriendo.gif_12: -218362704
+      hachazo-corriendo.gif_13: -1551506985
+      hachazo-corriendo.gif_14: -1156141255
+      hachazo-corriendo.gif_15: -1844734301
+      hachazo-corriendo.gif_2: -2015479859
+      hachazo-corriendo.gif_3: -1947645700
+      hachazo-corriendo.gif_4: -735608118
+      hachazo-corriendo.gif_5: 108620134
+      hachazo-corriendo.gif_6: -1292448317
+      hachazo-corriendo.gif_7: -2129452223
+      hachazo-corriendo.gif_8: 744384829
+      hachazo-corriendo.gif_9: 1269992724
+>>>>>>> origin/main
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
