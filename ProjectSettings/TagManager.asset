@@ -9,6 +9,10 @@ TagManager:
   - Obstacle
   - Enemy
   - Floor
+  - Background
+  - Sun
+  - Mountain
+  - Rocks
   layers:
   - Default
   - TransparentFX
