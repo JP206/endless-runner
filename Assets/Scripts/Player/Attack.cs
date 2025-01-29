@@ -15,16 +15,6 @@ public class Attack : MonoBehaviour
 
     public void OnPerformAttack()
     {
-        PerformAttack();
         animator.SetTrigger("attack");
-    }
-
-    public void PerformAttack()
-    {
-        Enemy _enemy = playerSpacialDetector.DetectEnemy(transform.localScale.x, attackRange);
-        if (_enemy != null) {
-            //_enemy.DestroyEnemy();
-            Debug.Log("GOLPEE ENEMIGO"); 
-        }
     }
 }

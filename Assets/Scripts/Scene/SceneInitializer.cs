@@ -22,7 +22,6 @@ public class SceneInitializer : MonoBehaviour
     public void OnAttack()
     {
         ShootProyectile();
-        bool enemyDetected = _playerSpacialDetector.DetectEnemy(transform.localScale.x, 0.5f);
         _attack.OnPerformAttack();
     }
 
