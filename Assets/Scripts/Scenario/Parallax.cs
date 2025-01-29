@@ -19,7 +19,13 @@ public class Parallax : MonoBehaviour
     
         if (spriteRenderer.bounds.max.x <= camMaxX)
         {
-            transform.position = new Vector2(camMinX + spriteRenderer.bounds.extents.x, transform.position.y);
+            Vector3 spawnPoint = new Vector3(transform.position.x + spriteRenderer.bounds.extents.x * 2, transform.position.y, 0);
+            Instantiate(gameObject, spawnPoint, Quaternion.identity);
+        }
+
+        if (spriteRenderer.bounds.max.x <= camMinX)
+        {
+            Destroy(gameObject);
         }
     }
 }

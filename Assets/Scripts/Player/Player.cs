@@ -10,6 +10,6 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        playerMovement.MovementY();
+        //playerMovement.MovementY();
     }
 }
