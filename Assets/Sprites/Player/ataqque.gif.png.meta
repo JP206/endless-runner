@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 35f4265ff6a02df4ca4dc9602641c080
+=======
 guid: ac508f5cc1cc4a747ab11872bca14716
+>>>>>>> origin/main
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -91,7 +95,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
+    filterMode: 1
+=======
     filterMode: 0
+>>>>>>> origin/main
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -129,7 +137,11 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
+    textureCompression: 1
+=======
     textureCompression: 0
+>>>>>>> origin/main
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -150,6 +162,48 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+>>>>>>> origin/main
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -157,20 +211,34 @@ TextureImporter:
       name: ataqque.gif_0
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+        x: 132
+        y: 1693
+        width: 320
+        height: 294
+=======
         x: 0
         y: 1620
         width: 540
         height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab15a2aab93ffb60800000000000000
+      internalID: 7782002154874936228
+=======
       tessellationDetail: 0
       bones: []
       spriteID: 7eb522e3cb1f41a45be346b50acf599d
       internalID: 194575542
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -179,20 +247,34 @@ TextureImporter:
       name: ataqque.gif_1
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+        x: 630
+        y: 1692
+        width: 302
+        height: 310
+=======
         x: 540
         y: 1620
         width: 540
         height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c201130435aa7460800000000000000
+      internalID: 7240280993759822534
+=======
       tessellationDetail: 0
       bones: []
       spriteID: 71ebdbd073c8dec40b2249fadd31d53f
       internalID: -804450959
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -201,20 +283,34 @@ TextureImporter:
       name: ataqque.gif_2
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+        x: 1163
+        y: 1694
+        width: 306
+        height: 310
+=======
         x: 1080
         y: 1620
         width: 540
         height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
+      tessellationDetail: -1
+      bones: []
+      spriteID: f98f20ebad751c9a0800000000000000
+      internalID: -6214589413792221025
+=======
       tessellationDetail: 0
       bones: []
       spriteID: 79a5978c25e9a194aa12219259063092
       internalID: 1451785174
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -223,20 +319,34 @@ TextureImporter:
       name: ataqque.gif_3
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+        x: 1703
+        y: 1694
+        width: 306
+        height: 310
+=======
         x: 1620
         y: 1620
         width: 540
         height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d7af74b30de27cc0800000000000000
+      internalID: -3714646142458288175
+=======
       tessellationDetail: 0
       bones: []
       spriteID: df3ff82e04b27904d850bee21c44a991
       internalID: 900396649
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -245,20 +355,34 @@ TextureImporter:
       name: ataqque.gif_4
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+        x: 36
+        y: 1156
+        width: 365
+        height: 320
+=======
         x: 0
         y: 1080
         width: 540
         height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc1255f4a9507c90800000000000000
+      internalID: -7174135641375892263
+=======
       tessellationDetail: 0
       bones: []
       spriteID: 1c8feffcb5c9e5144a4724789a7e52d3
       internalID: 1901152987
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -267,20 +391,34 @@ TextureImporter:
       name: ataqque.gif_5
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+        x: 643
+        y: 1156
+        width: 297
+        height: 323
+=======
         x: 540
         y: 1080
         width: 540
         height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d319502e2cf56e0800000000000000
+      internalID: -1846543046186812015
+=======
       tessellationDetail: 0
       bones: []
       spriteID: 6deae0fb879509b418f282466b53f585
       internalID: -386530027
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -289,20 +427,34 @@ TextureImporter:
       name: ataqque.gif_6
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+        x: 1183
+        y: 1156
+        width: 297
+        height: 323
+=======
         x: 1080
         y: 1080
         width: 540
         height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0890e6e66e6cdb7e0800000000000000
+      internalID: -1748022387352401536
+=======
       tessellationDetail: 0
       bones: []
       spriteID: ba29f189df2b02d489e4b76662462130
       internalID: 1535122860
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -311,20 +463,34 @@ TextureImporter:
       name: ataqque.gif_7
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+        x: 1695
+        y: 1317
+        width: 465
+        height: 168
+=======
         x: 1620
         y: 1080
         width: 540
         height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21dabb7c403f9ee10800000000000000
+      internalID: 2227578692567805202
+=======
       tessellationDetail: 0
       bones: []
       spriteID: 730020eead471e24c89abd9c361247b5
       internalID: 1441984766
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -333,20 +499,34 @@ TextureImporter:
       name: ataqque.gif_8
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+        x: 1699
+        y: 1160
+        width: 391
+        height: 248
+=======
         x: 0
         y: 540
         width: 540
         height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2c7fb85ea863610800000000000000
+      internalID: 1600619436077204133
+=======
       tessellationDetail: 0
       bones: []
       spriteID: e16ed7804e4c87e4f8bc9d180516e0cc
       internalID: -126384095
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -355,20 +535,34 @@ TextureImporter:
       name: ataqque.gif_9
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+        x: 119
+        y: 862
+        width: 417
+        height: 78
+=======
         x: 540
         y: 540
         width: 540
         height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
+      tessellationDetail: -1
+      bones: []
+      spriteID: 678759a5e6edb6f20800000000000000
+      internalID: 3417069307838167158
+=======
       tessellationDetail: 0
       bones: []
       spriteID: 4b21db1b7e22a1e48bfaeb07177043a3
       internalID: -1794610014
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -377,20 +571,34 @@ TextureImporter:
       name: ataqque.gif_10
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+        x: 671
+        y: 622
+        width: 345
+        height: 322
+=======
         x: 1080
         y: 540
         width: 540
         height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74a40953c40e5ac80800000000000000
+      internalID: -8311990919321597369
+=======
       tessellationDetail: 0
       bones: []
       spriteID: 96811623e1373f54d8f418cc1dd09076
       internalID: -1191679093
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -399,20 +607,34 @@ TextureImporter:
       name: ataqque.gif_11
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+        x: 904
+        y: 898
+        width: 177
+        height: 28
+=======
         x: 1620
         y: 540
         width: 540
         height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
+      tessellationDetail: -1
+      bones: []
+      spriteID: 905d4ce7f4d3576f0800000000000000
+      internalID: -687575956465593079
+=======
       tessellationDetail: 0
       bones: []
       spriteID: e09fb5be64208894bbc18ab07fca7021
       internalID: -1585820808
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -421,20 +643,34 @@ TextureImporter:
       name: ataqque.gif_12
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+        x: 1211
+        y: 622
+        width: 345
+        height: 322
+=======
         x: 0
         y: 0
         width: 540
         height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
+      tessellationDetail: -1
+      bones: []
+      spriteID: 910727cf4b57deff0800000000000000
+      internalID: -5218604367581159
+=======
       tessellationDetail: 0
       bones: []
       spriteID: e4b59d3762e6acb4d9835bd85d3a6b82
       internalID: 2059388156
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -443,20 +679,34 @@ TextureImporter:
       name: ataqque.gif_13
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+        x: 1751
+        y: 622
+        width: 345
+        height: 322
+=======
         x: 540
         y: 0
         width: 540
         height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5007c15c19d164ff0800000000000000
+      internalID: -52321833753743355
+=======
       tessellationDetail: 0
       bones: []
       spriteID: fb20ba44671ca12418c5c3b1d36b688c
       internalID: -1620407619
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -465,20 +715,34 @@ TextureImporter:
       name: ataqque.gif_14
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+        x: 79
+        y: 620
+        width: 391
+        height: 248
+=======
         x: 1080
         y: 0
         width: 540
         height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b7340cbd8c8899c0800000000000000
+      internalID: -3920228935253346379
+=======
       tessellationDetail: 0
       bones: []
       spriteID: e77f502d535a7bd488a4c594744e8c9a
       internalID: 34219764
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -487,20 +751,100 @@ TextureImporter:
       name: ataqque.gif_15
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+        x: 111
+        y: 81
+        width: 375
+        height: 277
+=======
         x: 1620
         y: 0
         width: 540
         height: 540
+>>>>>>> origin/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05fac29844ef3d730800000000000000
+      internalID: 4022838462484623184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqque.gif_16
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 81
+        width: 375
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5296ef1754d1a37b0800000000000000
+      internalID: -5243846632017073883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqque.gif_17
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 79
+        width: 374
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de734dcb0af066c0800000000000000
+      internalID: -4152043927840260399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqque.gif_18
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 79
+        width: 374
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8f39fb8d123c1930800000000000000
+      internalID: 4115219261993598862
+=======
       tessellationDetail: 0
       bones: []
       spriteID: ac75677cf5dbf1641b6f7239d4bfd21b
       internalID: 1062154725
+>>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -509,7 +853,11 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
+<<<<<<< HEAD
+    spriteID: 
+=======
     spriteID: 46cb73eb5b05a504382d08e8f840eb0a
+>>>>>>> origin/main
     internalID: 0
     vertices: []
     indices: 
@@ -519,6 +867,27 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< HEAD
+      ataqque.gif_0: 7782002154874936228
+      ataqque.gif_1: 7240280993759822534
+      ataqque.gif_10: -8311990919321597369
+      ataqque.gif_11: -687575956465593079
+      ataqque.gif_12: -5218604367581159
+      ataqque.gif_13: -52321833753743355
+      ataqque.gif_14: -3920228935253346379
+      ataqque.gif_15: 4022838462484623184
+      ataqque.gif_16: -5243846632017073883
+      ataqque.gif_17: -4152043927840260399
+      ataqque.gif_18: 4115219261993598862
+      ataqque.gif_2: -6214589413792221025
+      ataqque.gif_3: -3714646142458288175
+      ataqque.gif_4: -7174135641375892263
+      ataqque.gif_5: -1846543046186812015
+      ataqque.gif_6: -1748022387352401536
+      ataqque.gif_7: 2227578692567805202
+      ataqque.gif_8: 1600619436077204133
+      ataqque.gif_9: 3417069307838167158
+=======
       ataqque.gif_0: 194575542
       ataqque.gif_1: -804450959
       ataqque.gif_10: -1191679093
@@ -535,6 +904,7 @@ TextureImporter:
       ataqque.gif_7: 1441984766
       ataqque.gif_8: -126384095
       ataqque.gif_9: -1794610014
+>>>>>>> origin/main
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

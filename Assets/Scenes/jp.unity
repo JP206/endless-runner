@@ -136,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &153696725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,6 +182,58 @@ MonoBehaviour:
   - {fileID: 8914026097132809099, guid: 18c7df4ffb3aa884497c39c017796aea, type: 3}
   - {fileID: 3593058014017941047, guid: b7f045c03c93f384d8c26d04faddbd59, type: 3}
   poolSize: 5
+--- !u!1 &946772757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 946772759}
+  - component: {fileID: 946772758}
+  m_Layer: 0
+  m_Name: Scenario pool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &946772758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946772757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 947295a086fc3a743b65a1274d758ea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mountainPrefab: {fileID: 5760971077968267003, guid: c797dc9dada2ccb46ada0bd1668662a9, type: 3}
+  rockPrefab: {fileID: 1507388822080015665, guid: 6138e4ff0f8e2074fa5104be8e454a30, type: 3}
+  mountainPoolSize: 2
+  rockPoolSize: 2
+  startPosXMountain: 67
+  startPosYMountain: -0.3
+  startPosXRock: 67
+  startPosYRock: -1.7
+--- !u!4 &946772759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946772757}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.692392, y: 3.0449073, z: -0.3772202}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1021725428
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,6 +614,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Falling spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 3593058014017941047, guid: b7f045c03c93f384d8c26d04faddbd59, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -576,3 +632,4 @@ SceneRoots:
   - {fileID: 1195758575}
   - {fileID: 153696726}
   - {fileID: 3851840542466094514}
+  - {fileID: 946772759}
