@@ -20,6 +20,7 @@ public class Jump : MonoBehaviour
         if (playerSpacialDetector.IsGrounded(0.1f, 0))
         {
             playerMovement.ApplyJump(jumpStrength);
+            animator.SetBool("isJumping", true);
         }
     }
 }
