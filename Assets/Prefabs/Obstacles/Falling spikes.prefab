@@ -317,6 +317,7 @@ GameObject:
   - component: {fileID: 67132359026948876}
   - component: {fileID: 387871877230043303}
   - component: {fileID: 2357458502889134917}
+  - component: {fileID: 6352571746937514769}
   m_Layer: 0
   m_Name: Falling spikes
   m_TagString: Untagged
@@ -334,7 +335,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.11, y: 5, z: 0}
-  m_LocalScale: {x: 8.5102, y: 5.6575, z: 1}
+  m_LocalScale: {x: 6, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1252895084663859306}
@@ -414,6 +415,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   posY: 5
+--- !u!65 &6352571746937514769
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3593058014017941047}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4027417022942780722
 GameObject:
   m_ObjectHideFlags: 0
