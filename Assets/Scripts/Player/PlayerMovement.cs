@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
         if (!playerSpacialDetector.IsGrounded(0.2f, deltaY))
         {
             yVelocity -= gravityStrength;
+
+            if (yVelocity < 0) { animator.SetBool("isFalling", true); }
         }
         
         if (!isJumping && playerSpacialDetector.IsGrounded(0.1f, deltaY))
@@ -32,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
             yVelocity = 0;
             Vector2 vector2 = new Vector2(transform.position.x, playerSpacialDetector.GroundYPosition());
             transform.position = vector2;
+            animator.SetBool("isJumping", false);
+            animator.SetBool("isFalling", false);
         }
         transform.position += new Vector3(0, deltaY, 0);
     }

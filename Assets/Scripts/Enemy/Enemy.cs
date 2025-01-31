@@ -91,7 +91,6 @@ public class Enemy : MonoBehaviour
 
     public void DestroyEnemy()
     {
-        Debug.Log("Enemigo destruido" + gameObject);
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 }
