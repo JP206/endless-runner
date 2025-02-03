@@ -154,10 +154,10 @@ TextureImporter:
       name: get-hit.gif_0
       rect:
         serializedVersion: 2
-        x: 152
-        y: 1217
-        width: 304
-        height: 302
+        x: 0
+        y: 1080
+        width: 540
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: get-hit.gif_1
       rect:
         serializedVersion: 2
-        x: 692
-        y: 1217
-        width: 308
-        height: 302
+        x: 540
+        y: 1080
+        width: 540
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,10 +198,10 @@ TextureImporter:
       name: get-hit.gif_2
       rect:
         serializedVersion: 2
-        x: 865
-        y: 1481
-        width: 26
-        height: 51
+        x: 1080
+        y: 1080
+        width: 540
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,10 +220,10 @@ TextureImporter:
       name: get-hit.gif_3
       rect:
         serializedVersion: 2
-        x: 1097
-        y: 1223
-        width: 414
-        height: 348
+        x: 1620
+        y: 1080
+        width: 540
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,10 +242,10 @@ TextureImporter:
       name: get-hit.gif_4
       rect:
         serializedVersion: 2
-        x: 1634
-        y: 1223
-        width: 460
-        height: 356
+        x: 0
+        y: 540
+        width: 540
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,10 +264,10 @@ TextureImporter:
       name: get-hit.gif_5
       rect:
         serializedVersion: 2
-        x: 1496
-        y: 1442
-        width: 16
-        height: 20
+        x: 540
+        y: 540
+        width: 540
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,10 +286,10 @@ TextureImporter:
       name: get-hit.gif_6
       rect:
         serializedVersion: 2
-        x: 1529
-        y: 1442
-        width: 22
-        height: 23
+        x: 1080
+        y: 540
+        width: 540
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,10 +308,10 @@ TextureImporter:
       name: get-hit.gif_7
       rect:
         serializedVersion: 2
-        x: 1529
-        y: 1409
-        width: 28
-        height: 12
+        x: 1620
+        y: 540
+        width: 540
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,10 +330,10 @@ TextureImporter:
       name: get-hit.gif_8
       rect:
         serializedVersion: 2
-        x: 1503
-        y: 1339
-        width: 20
-        height: 15
+        x: 0
+        y: 0
+        width: 540
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,10 +352,10 @@ TextureImporter:
       name: get-hit.gif_9
       rect:
         serializedVersion: 2
-        x: 1494
-        y: 1282
-        width: 19
-        height: 24
+        x: 540
+        y: 0
+        width: 540
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,10 +374,10 @@ TextureImporter:
       name: get-hit.gif_10
       rect:
         serializedVersion: 2
-        x: 14
-        y: 683
-        width: 414
-        height: 356
+        x: 1080
+        y: 0
+        width: 540
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,10 +396,10 @@ TextureImporter:
       name: get-hit.gif_11
       rect:
         serializedVersion: 2
-        x: 562
-        y: 662
-        width: 396
-        height: 385
+        x: 1620
+        y: 0
+        width: 540
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -414,143 +414,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: get-hit.gif_12
-      rect:
-        serializedVersion: 2
-        x: 1102
-        y: 662
-        width: 396
-        height: 385
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 43a875f0bfe772130800000000000000
-      internalID: 3541939248709470772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: get-hit.gif_13
-      rect:
-        serializedVersion: 2
-        x: 1770
-        y: 676
-        width: 237
-        height: 392
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: be444b2526812db00800000000000000
-      internalID: 851770090099852523
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: get-hit.gif_14
-      rect:
-        serializedVersion: 2
-        x: 156
-        y: 137
-        width: 334
-        height: 325
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0d8752af8e7da0d30800000000000000
-      internalID: 4398565381709854928
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: get-hit.gif_15
-      rect:
-        serializedVersion: 2
-        x: 705
-        y: 144
-        width: 292
-        height: 302
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4a3731668d36743f0800000000000000
-      internalID: -916654218069970012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: get-hit.gif_16
-      rect:
-        serializedVersion: 2
-        x: 1232
-        y: 137
-        width: 304
-        height: 302
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6033c6c10b6dfe370800000000000000
-      internalID: 8354131885675000582
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: get-hit.gif_17
-      rect:
-        serializedVersion: 2
-        x: 1772
-        y: 137
-        width: 304
-        height: 302
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 295d1549a92402950800000000000000
-      internalID: 6422206300311115154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a9d416aa7926ba64a84f4b6e28b7027b
     internalID: 0
     vertices: []
     indices: 
@@ -564,12 +432,6 @@ TextureImporter:
       get-hit.gif_1: 5039171737371462848
       get-hit.gif_10: 3047073562286524824
       get-hit.gif_11: 3904174197683837678
-      get-hit.gif_12: 3541939248709470772
-      get-hit.gif_13: 851770090099852523
-      get-hit.gif_14: 4398565381709854928
-      get-hit.gif_15: -916654218069970012
-      get-hit.gif_16: 8354131885675000582
-      get-hit.gif_17: 6422206300311115154
       get-hit.gif_2: 7509877517043444711
       get-hit.gif_3: 5611502274835347508
       get-hit.gif_4: -8390363154742408692
