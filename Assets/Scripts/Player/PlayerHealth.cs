@@ -1,5 +1,5 @@
-using UnityEngine;
-using System.Collections; // Necesario para usar corutinas
+﻿using UnityEngine;
+using System.Collections;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -7,7 +7,10 @@ public class PlayerHealth : MonoBehaviour
     private int currentLives;
 
     private Animator animator;
-    private Collider2D[] colliders; 
+    private Collider2D[] colliders;
+    private bool isDead = false; 
+    private float moveSpeed = 6f;
+    private float riseTime = 0.4f;
 
     public void InitializeReferences(Animator animator)
     {
@@ -22,6 +25,8 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage()
     {
+        if (isDead) return;
+
         currentLives--;
 
         Debug.Log($"Vidas restantes: {currentLives}");
@@ -36,14 +41,14 @@ public class PlayerHealth : MonoBehaviour
 
     private IEnumerator HandleDamageEffects()
     {
-        animator.SetBool("isHitted", true);
+        if (isDead) yield break;
 
+        animator.SetBool("isHitted", true);
         SetCollidersActive(false);
 
         yield return new WaitForSeconds(0.5f);
 
         SetCollidersActive(true);
-
         animator.SetBool("isHitted", false);
     }
 
@@ -57,7 +62,57 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
+        if (isDead) return;
+        isDead = true;
+
         Debug.Log("Jugador muerto");
+
+        animator.SetTrigger("isDead");
+        animator.SetBool("isHitted", false);
+
+        SetCollidersActive(false);
+
+        FreezeScene();
+
+        StartCoroutine(HandleDeathFall());
+    }
+
+    private void FreezeScene()
+    {
+        Time.timeScale = 0;
+        animator.updateMode = AnimatorUpdateMode.UnscaledTime;
+    }
+
+    private void DisableFloorColliders()
+    {
+        foreach (GameObject floor in GameObject.FindGameObjectsWithTag("Floor"))
+        {
+            Collider2D floorCollider = floor.GetComponent<Collider2D>();
+            if (floorCollider != null)
+            {
+                floorCollider.enabled = false;
+            }
+        }
+        Debug.Log("Colliders del suelo desactivados.");
+    }
+
+    private IEnumerator HandleDeathFall()
+    {
+        float elapsed = 0f;
+        while (elapsed < riseTime)
+        {
+            transform.Translate(Vector3.up * moveSpeed * Time.unscaledDeltaTime);
+            elapsed += Time.unscaledDeltaTime;
+            yield return null;
+        }
+
+        DisableFloorColliders();
+
+        while (true)
+        {
+            transform.Translate(Vector3.down * (moveSpeed * 1) * Time.unscaledDeltaTime);
+            yield return null;
+        }
     }
 
     public int GetLives()
@@ -67,6 +122,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void Heal(int amount)
     {
+        if (isDead) return;
         currentLives = Mathf.Min(currentLives + amount, maxLives);
     }
 }
