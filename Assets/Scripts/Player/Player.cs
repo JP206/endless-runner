@@ -2,14 +2,17 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    PlayerMovement playerMovement;
-    public void InitializeReferences(PlayerMovement playerMovement)
+    private PlayerMovement playerMovement;
+    private PlayerHealth playerHealth;
+
+    public void InitializeReferences(PlayerMovement playerMovement, PlayerHealth playerHealth)
     {
         this.playerMovement = playerMovement;
+        this.playerHealth = playerHealth;
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        //playerMovement.MovementY();
+        playerMovement.MovementY();
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -51588492346438154}
   - component: {fileID: 81646212983640945}
   - component: {fileID: 7198622830205821943}
-  - component: {fileID: 596458440336465037}
+  - component: {fileID: 1855241617409251486}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
@@ -103,16 +103,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e31e731a18877a479a11da0e6a4b980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  destroyThresholdX: -10
-  detectionRadius: 5
-  detectionAngle: 90
-  rayNumbers: 20
+  moveSpeed: 10
+  damage: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 256
-  stopChaseDistance: 1
-  straightMoveDistance: 2
+  damageCooldown: 2
 --- !u!58 &81646212983640945
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -143,12 +139,12 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.35602093, y: -0.34075773}
-  m_Radius: 0.9850148
+  m_Offset: {x: 0.13556027, y: -0.043392062}
+  m_Radius: 1.5028411
 --- !u!95 &7198622830205821943
 Animator:
   serializedVersion: 7
@@ -171,7 +167,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!50 &596458440336465037
+--- !u!50 &1855241617409251486
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -197,4 +193,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4

@@ -1,92 +1,91 @@
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
 public class Enemy : MonoBehaviour
 {
-    // Enemy Reference Variables
     public float moveSpeed = 5f;
-    public float destroyThresholdX = -10f;
-
-    // Raycast Reference Variables
-    public float detectionRadius = 5f;
-    public float detectionAngle = 90f;
-    public int rayNumbers = 20;
+    public int damage = 1;
     public LayerMask targetMask;
+    public float damageCooldown = 2f;
 
-    // Chase Reference Variables
-    public float stopChaseDistance = 4f;
-    public float straightMoveDistance = 5f;
-    private Transform playerTarget = null;
-    private Vector3 chaseDirection;
+    private Vector2 targetPosition;
+    private bool isAttacking = false;
+    private bool hasReachedTarget = false;
+    private bool canDealDamage = true;
 
-    private bool moveInStraightLine = false;
+    private Collider2D enemyCollider;
+
+    private void Start()
+    {
+        enemyCollider = GetComponent<Collider2D>();
+    }
 
     private void Update()
     {
-        if (playerTarget != null && !moveInStraightLine)
+        if (isAttacking && !hasReachedTarget)
         {
-            ChasePlayer();
+            MoveTowardsTarget();
         }
         else
         {
-            MoveEnemy();
-            FunnelDetection();
+            MoveForward();
+        }
+
+        if (!isAttacking)
+        {
+            DetectPlayer();
         }
     }
 
-    private void MoveEnemy()
+    private void DetectPlayer()
     {
-        transform.position -= new Vector3(moveSpeed * Time.deltaTime, 0, 0);
-
-        if (transform.position.x < destroyThresholdX)
+        Collider2D detectedPlayer = Physics2D.OverlapCircle(transform.position, 10f, targetMask);
+        if (detectedPlayer != null && detectedPlayer.CompareTag("Player"))
         {
-            Destroy(gameObject);
+            targetPosition = detectedPlayer.transform.position;
+            isAttacking = true;
         }
     }
 
-    private void FunnelDetection()
+    private void MoveTowardsTarget()
     {
-        float halfAngle = detectionAngle / 2f;
-        float angleStep = detectionAngle / (rayNumbers - 1);
+        transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
-        for (int i = 0; i < rayNumbers; i++)
+        if (Vector2.Distance(transform.position, targetPosition) <= 0.1f)
         {
-            float currentAngle = -halfAngle + (angleStep * i);
-            Vector2 rayDirection = Quaternion.Euler(0, 0, currentAngle) * -transform.right;
+            hasReachedTarget = true;
+        }
+    }
 
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, rayDirection, detectionRadius, targetMask);
-            Debug.DrawRay(transform.position, rayDirection * detectionRadius, Color.green);
+    private void MoveForward()
+    {
+        transform.position += Vector3.left * moveSpeed * Time.deltaTime;
+    }
 
-            if (hit.collider != null && hit.collider.CompareTag("Player"))
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && canDealDamage) 
+        {
+            PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
             {
-                playerTarget = hit.collider.transform;
-                chaseDirection = (playerTarget.position - transform.position).normalized;
-                break;
+                playerHealth.TakeDamage();
+                StartCoroutine(DamageCooldown());
             }
         }
     }
 
-    private void ChasePlayer()
+    private IEnumerator DamageCooldown()
     {
-        float distanceToPlayer = Vector2.Distance(transform.position, playerTarget.position);
+        canDealDamage = false;
+        yield return new WaitForSeconds(damageCooldown);
+        canDealDamage = true;
+    }
 
-        if (distanceToPlayer > stopChaseDistance)
-        {
-            chaseDirection = (playerTarget.position - transform.position).normalized;
-        }
-
-        if (distanceToPlayer <= straightMoveDistance)
-        {
-            moveInStraightLine = true;
-            chaseDirection = -transform.right; 
-        }
-
-        transform.position += chaseDirection * moveSpeed * Time.deltaTime;
-
-        if (distanceToPlayer > detectionRadius * 1.5f)
-        {
-            playerTarget = null;
-            moveInStraightLine = false;
-        }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, 5f);
     }
 
     public void DestroyEnemy()
