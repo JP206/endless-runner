@@ -29,8 +29,6 @@ public class PlayerHealth : MonoBehaviour
 
         currentLives--;
 
-        Debug.Log($"Vidas restantes: {currentLives}");
-
         StartCoroutine(HandleDamageEffects());
 
         if (currentLives <= 0)
@@ -65,8 +63,6 @@ public class PlayerHealth : MonoBehaviour
         if (isDead) return;
         isDead = true;
 
-        Debug.Log("Jugador muerto");
-
         animator.SetTrigger("isDead");
         animator.SetBool("isHitted", false);
 
@@ -93,7 +89,6 @@ public class PlayerHealth : MonoBehaviour
                 floorCollider.enabled = false;
             }
         }
-        Debug.Log("Colliders del suelo desactivados.");
     }
 
     private IEnumerator HandleDeathFall()

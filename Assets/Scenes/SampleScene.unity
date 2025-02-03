@@ -1134,7 +1134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8498016320377586235, guid: eb2bf8cdb7b59f9488212cbd9e57c26c, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8498016320377586235, guid: eb2bf8cdb7b59f9488212cbd9e57c26c, type: 3}
       propertyPath: m_Offset.y
@@ -1621,7 +1621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e0f7dc01ea34a4f8725963ba142bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLives: 5
+  maxLives: 3
 --- !u!1 &1825740958
 GameObject:
   m_ObjectHideFlags: 0
