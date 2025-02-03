@@ -2,22 +2,21 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // Enemy Reference Variables
     public float moveSpeed = 5f;
     public float destroyThresholdX = -10f;
 
-    // Raycast Reference Variables
     public float detectionRadius = 5f;
     public float detectionAngle = 90f;
     public int rayNumbers = 20;
     public LayerMask targetMask;
 
-    // Chase Reference Variables
     public float stopChaseDistance = 4f;
     public float straightMoveDistance = 5f;
+
+    public int damage = 1; // Cantidad de daño que inflige el enemigo
+
     private Transform playerTarget = null;
     private Vector3 chaseDirection;
-
     private bool moveInStraightLine = false;
 
     private void Update()
@@ -77,15 +76,31 @@ public class Enemy : MonoBehaviour
         if (distanceToPlayer <= straightMoveDistance)
         {
             moveInStraightLine = true;
-            chaseDirection = -transform.right; 
+            chaseDirection = -transform.right;
         }
 
         transform.position += chaseDirection * moveSpeed * Time.deltaTime;
+
+        if (distanceToPlayer <= 1f) // Si el enemigo está muy cerca, inflige daño
+        {
+            DealDamage();
+        }
 
         if (distanceToPlayer > detectionRadius * 1.5f)
         {
             playerTarget = null;
             moveInStraightLine = false;
+        }
+    }
+
+    private void DealDamage()
+    {
+        PlayerHealth playerHealth = playerTarget.GetComponent<PlayerHealth>();
+
+        if (playerHealth != null)
+        {
+            playerHealth.TakeDamage();
+            Debug.Log("¡El enemigo ha infligido daño al jugador!");
         }
     }
 
