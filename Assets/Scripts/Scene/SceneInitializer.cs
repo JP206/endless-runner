@@ -18,11 +18,13 @@ public class SceneInitializer : MonoBehaviour
         _playerMovement.InitializeReferences(_playerSpacialDetector, _animator);
         _playerHealth.InitializeReferences(_animator);
         _player.InitializeReferences(_playerMovement, _playerHealth);
+        _attack.InitializeReferences(_animator, _playerMovement);
     }
 
     public void OnJump() {  _jump.OnJump(); }
     public void OnAttack()
     {
+        _attack.PerformAttack();
         ShootProyectile();
     }
 
