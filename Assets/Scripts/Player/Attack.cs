@@ -3,16 +3,33 @@ using UnityEngine;
 public class Attack : MonoBehaviour
 {
     Animator animator;
+    PlayerMovement playerMovement;
 
-    [SerializeField] float attackRange = 5f;
-
-    public void InitializeReferences(Animator animator)
+    public void InitializeReferences(Animator animator, PlayerMovement playerMovement)
     {
         this.animator = animator;
+        this.playerMovement = playerMovement;
+    }
+    public void PerformAttack()
+    {
+
+        if (playerMovement.isJumping)
+        {
+            OnPerformAirAttack();
+        }
+        else
+        {
+            OnPerformAttack();
+        }
     }
 
-    public void OnPerformAttack()
+    private void OnPerformAttack()
     {
         animator.SetTrigger("attack");
+    }
+
+    private void OnPerformAirAttack()
+    {
+        animator.SetTrigger("airAttack");
     }
 }
