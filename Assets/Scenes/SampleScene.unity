@@ -1461,6 +1461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 4423290081467962367, guid: c56ade196ed804b4897725c15c5858ab, type: 3}
+  spawnRate: 3
 --- !u!1 &1615408169 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5224276101356549848, guid: eb2bf8cdb7b59f9488212cbd9e57c26c, type: 3}

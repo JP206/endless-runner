@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class ObstacleManager : MonoBehaviour
 {
+    [SerializeField] int spawnRate;
+
     ObstaclePool pool;
     float time = 0;
 
@@ -12,7 +14,7 @@ public class ObstacleManager : MonoBehaviour
 
     void Update()
     {
-        if (time >= 3)
+        if (time >= spawnRate)
         {
             time = 0;
             GameObject obstacle = pool.GetRandomObstacle();

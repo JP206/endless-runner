@@ -3,18 +3,21 @@ using UnityEngine;
 public class Parallax : MonoBehaviour
 {
     [SerializeField] float speed;
-    [SerializeField] bool mountain;
+    [SerializeField] ParallaxObject parallaxObject;
 
     ScenarioPool pool;
-    SpriteRenderer spriteRenderer;
+    SpriteRenderer spriteRenderer = null;
     bool spawnFlag = false;
     
     float camMaxX => Camera.main.ViewportToWorldPoint(new Vector3(1.0f, 0f, 0f)).x;
     float camMinX => Camera.main.ViewportToWorldPoint(new Vector3(0f, 0f, 0f)).x;
 
-    void Start()
+    void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer == null)
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+        }
     }
 
     void Update()
@@ -23,18 +26,10 @@ public class Parallax : MonoBehaviour
     
         if (spriteRenderer.bounds.max.x <= camMaxX)
         {
-            Vector3 spawnPoint = new Vector3(transform.position.x + spriteRenderer.bounds.extents.x * 2, transform.position.y, 0);
-            if (mountain && !spawnFlag)
+            if (!spawnFlag)
             {
                 spawnFlag = true;
-                GameObject mountainInstance = pool.GetPooledMountain();
-                mountainInstance.transform.position = spawnPoint;
-            }
-            else if (!spawnFlag)
-            {
-                spawnFlag = true;
-                GameObject mountainInstance = pool.GetPooledRock();
-                mountainInstance.transform.position = spawnPoint;
+                pool.GetPooledObject(parallaxObject);
             }
         }
 
@@ -53,4 +48,20 @@ public class Parallax : MonoBehaviour
     {
         spawnFlag = false;
     }
+
+    public void PoolSpawn()
+    {
+        transform.position = new Vector3(camMaxX + spriteRenderer.bounds.extents.x, transform.position.y, 0);
+    }
+
+    public void PoolInitialize()
+    {
+        transform.position = new Vector3(camMinX + spriteRenderer.bounds.extents.x, transform.position.y, 0);
+    }
+}
+
+public enum ParallaxObject
+{
+    Mountain,
+    Rock
 }

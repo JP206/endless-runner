@@ -75,7 +75,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void FreezeScene()
     {
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
         animator.updateMode = AnimatorUpdateMode.UnscaledTime;
     }
 

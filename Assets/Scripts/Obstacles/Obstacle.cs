@@ -7,8 +7,6 @@ public class Obstacle : MonoBehaviour
 
     void Update()
     {
-        int layerIndex = gameObject.layer;
-
         if (transform.position.x < -15)
         {
             gameObject.SetActive(false);
