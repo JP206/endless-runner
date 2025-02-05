@@ -36,7 +36,7 @@ public class ScenarioPool : MonoBehaviour
         }
 
         pooledMountains[0].SetActive(true);
-        pooledMountains[0].transform.position = new Vector3(startPosXMountain, startPosYMountain, 0);
+        pooledMountains[0].GetComponent<Parallax>().PoolInitialize();
     }
 
     void InitializeRocks()
@@ -52,32 +52,47 @@ public class ScenarioPool : MonoBehaviour
         }
 
         pooledRocks[0].SetActive(true);
-        pooledRocks[0].transform.position = new Vector3(startPosXRock, startPosYRock, 0);
+        pooledRocks[0].GetComponent<Parallax>().PoolInitialize();
     }
 
-    public GameObject GetPooledMountain()
+    GameObject GetPooledMountain()
     {
         for (int i = 0; i < pooledMountains.Count; i++)
         {
             if (!pooledMountains[i].activeInHierarchy)
             {
                 pooledMountains[i].SetActive(true);
+                pooledMountains[i].GetComponent<Parallax>().PoolSpawn();
                 return pooledMountains[i];
             }
         }
         return null;
     }
 
-    public GameObject GetPooledRock()
+    GameObject GetPooledRock()
     {
         for (int i = 0; i < pooledRocks.Count; i++)
         {
             if (!pooledRocks[i].activeInHierarchy)
             {
                 pooledRocks[i].SetActive(true);
+                pooledRocks[i].GetComponent<Parallax>().PoolSpawn();
                 return pooledRocks[i];
             }
         }
         return null;
+    }
+
+    public void GetPooledObject(ParallaxObject parallaxObject)
+    {
+        switch (parallaxObject)
+        {
+            case ParallaxObject.Mountain:
+                GetPooledMountain();
+                break;
+            case ParallaxObject.Rock:
+                GetPooledRock();
+                break;
+        }
     }
 }
