@@ -1,18 +1,21 @@
+using System.Collections;
 using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    Animator animator;
-    PlayerMovement playerMovement;
+    private Animator animator;
+    private PlayerMovement playerMovement;
+
+    public float airAttackDuration = 1f;
 
     public void InitializeReferences(Animator animator, PlayerMovement playerMovement)
     {
         this.animator = animator;
         this.playerMovement = playerMovement;
     }
+
     public void PerformAttack()
     {
-
         if (playerMovement.isJumping)
         {
             OnPerformAirAttack();
@@ -30,6 +33,15 @@ public class Attack : MonoBehaviour
 
     private void OnPerformAirAttack()
     {
-        animator.SetTrigger("airAttack");
+        StartCoroutine(AirAttackCoroutine());
+    }
+
+    private IEnumerator AirAttackCoroutine()
+    {
+        animator.SetBool("airAttack", true);
+
+        yield return new WaitForSeconds(airAttackDuration);
+
+        animator.SetBool("airAttack", false);
     }
 }
