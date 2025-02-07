@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Props
     float deltaY => yVelocity * Time.fixedDeltaTime;
-    bool isJumping => yVelocity > 0;
+    public bool isJumping => yVelocity > 0;
 
     public void InitializeReferences(PlayerSpacialDetector playerSpacialDetector, Animator animator)
     {
