@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed = 5f, attackThreshold;
     public int damage = 1;
     public LayerMask targetMask;
     public float damageCooldown = 2f;
@@ -12,12 +12,12 @@ public class Enemy : MonoBehaviour
     private bool isAttacking = false;
     private bool hasReachedTarget = false;
     private bool canDealDamage = true;
-
-    private Collider2D enemyCollider;
+    private bool attackAnimFlag = false;
+    private Animator animator;
 
     private void Start()
     {
-        enemyCollider = GetComponent<Collider2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -51,9 +51,17 @@ public class Enemy : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
-        if (Vector2.Distance(transform.position, targetPosition) <= 0.1f)
+        float distanceToPlayer = Vector2.Distance(transform.position, targetPosition);
+
+        if (distanceToPlayer <= 0.1f)
         {
             hasReachedTarget = true;
+        }
+
+        if (distanceToPlayer <= attackThreshold && !attackAnimFlag)
+        {
+            animator.SetTrigger("Attack");
+            attackAnimFlag = true;
         }
     }
 

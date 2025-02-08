@@ -6,8 +6,6 @@ public class Attack : MonoBehaviour
     private Animator animator;
     private PlayerMovement playerMovement;
 
-    public float airAttackDuration = 1f;
-
     public void InitializeReferences(Animator animator, PlayerMovement playerMovement)
     {
         this.animator = animator;
@@ -39,8 +37,8 @@ public class Attack : MonoBehaviour
     private IEnumerator AirAttackCoroutine()
     {
         animator.SetBool("airAttack", true);
-
-        yield return new WaitForSeconds(airAttackDuration);
+        
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
 
         animator.SetBool("airAttack", false);
     }
