@@ -3,8 +3,10 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour
 {
-    public float moveSpeed = 5f, attackThreshold;
-    public int damage = 1;
+    public float moveSpeed = 5f;
+    public float attackSpeed = 12f;
+    public float attackThreshold = 1f;
+    public float detectionRange = 5f;
     public LayerMask targetMask;
     public float damageCooldown = 2f;
 
@@ -12,7 +14,8 @@ public class Enemy : MonoBehaviour
     private bool isAttacking = false;
     private bool hasReachedTarget = false;
     private bool canDealDamage = true;
-    private bool attackAnimFlag = false;
+    private bool isCharging = false;
+    private bool isStopped = false;
     private Animator animator;
 
     private void Start()
@@ -22,11 +25,11 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        if (isAttacking && !hasReachedTarget)
+        if (isCharging)
         {
-            MoveTowardsTarget();
+            ChargeAttack();
         }
-        else
+        else if (!isStopped)
         {
             MoveForward();
         }
@@ -39,29 +42,31 @@ public class Enemy : MonoBehaviour
 
     private void DetectPlayer()
     {
-        Collider2D detectedPlayer = Physics2D.OverlapCircle(transform.position, 10f, targetMask);
+        Collider2D detectedPlayer = Physics2D.OverlapCircle(transform.position, detectionRange, targetMask);
         if (detectedPlayer != null && detectedPlayer.CompareTag("Player"))
         {
             targetPosition = detectedPlayer.transform.position;
+            isStopped = true;
+            animator.SetTrigger("Attack");
             isAttacking = true;
         }
     }
 
-    private void MoveTowardsTarget()
+    public void StartCharge()
     {
-        transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+        isCharging = true;
+        isStopped = false;
+    }
 
-        float distanceToPlayer = Vector2.Distance(transform.position, targetPosition);
+    private void ChargeAttack()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, targetPosition, attackSpeed * Time.deltaTime);
 
-        if (distanceToPlayer <= 0.1f)
+        float distanceToTarget = Vector2.Distance(transform.position, targetPosition);
+        if (distanceToTarget <= 0.2f)
         {
+            isCharging = false;
             hasReachedTarget = true;
-        }
-
-        if (distanceToPlayer <= attackThreshold && !attackAnimFlag)
-        {
-            animator.SetTrigger("Attack");
-            attackAnimFlag = true;
         }
     }
 
@@ -72,7 +77,7 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && canDealDamage) 
+        if (collision.CompareTag("Player") && canDealDamage)
         {
             PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
             if (playerHealth != null)
@@ -93,7 +98,7 @@ public class Enemy : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, 5f);
+        Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
 
     public void DestroyEnemy()

@@ -15,4 +15,17 @@ public class Player : MonoBehaviour
     {
         playerMovement.MovementY();
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("EnemyBack"))
+        {
+            Enemy enemy = collision.GetComponentInParent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.DestroyEnemy();
+                playerMovement.ApplyJump(5f);
+            }
+        }
+    }
 }

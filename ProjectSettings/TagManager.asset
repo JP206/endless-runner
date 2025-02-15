@@ -9,11 +9,12 @@ TagManager:
   - Obstacle
   - Enemy
   - Floor
+  - EnemyBack
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - EnemyBack
   - Water
   - UI
   - Enemy
