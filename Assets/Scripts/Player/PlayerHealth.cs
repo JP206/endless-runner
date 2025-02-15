@@ -26,7 +26,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage()
     {
         if (isDead) return;
-
+        
         currentLives--;
 
         StartCoroutine(HandleDamageEffects());

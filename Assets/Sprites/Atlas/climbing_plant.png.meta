@@ -1,0 +1,463 @@
+fileFormatVersion: 2
+guid: 54bae7ae66b668146a3a9826093474f7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9104528237547879584
+    second: climbing_plant_0
+  - first:
+      213: 4616787948368692864
+    second: climbing_plant_1
+  - first:
+      213: 1117492744642919627
+    second: climbing_plant_2
+  - first:
+      213: 3743557597956759900
+    second: climbing_plant_3
+  - first:
+      213: 7813801628515466979
+    second: climbing_plant_4
+  - first:
+      213: 20823281535072354
+    second: climbing_plant_5
+  - first:
+      213: 1083061179172077383
+    second: climbing_plant_6
+  - first:
+      213: 7742547136323908249
+    second: climbing_plant_7
+  - first:
+      213: -8327368925133326798
+    second: climbing_plant_8
+  - first:
+      213: -6098893436727982399
+    second: climbing_plant_9
+  - first:
+      213: -2234845007801074686
+    second: climbing_plant_10
+  - first:
+      213: -6730174565291654992
+    second: climbing_plant_11
+  - first:
+      213: -9042278163778324336
+    second: climbing_plant_12
+  - first:
+      213: -1986599805698631123
+    second: climbing_plant_13
+  - first:
+      213: 4095631843438696283
+    second: climbing_plant_14
+  - first:
+      213: 9140502430721330964
+    second: climbing_plant_15
+  - first:
+      213: 8875739410135384499
+    second: climbing_plant_16
+  - first:
+      213: 4672322117657526251
+    second: climbing_plant_17
+  - first:
+      213: 3226765711655712674
+    second: climbing_plant_18
+  - first:
+      213: 268828816053466543
+    second: climbing_plant_19
+  - first:
+      213: 4368098952876377287
+    second: climbing_plant_20
+  - first:
+      213: 8643916007317267777
+    second: climbing_plant_21
+  - first:
+      213: -8281757193186118453
+    second: climbing_plant_22
+  - first:
+      213: 670864463435354797
+    second: climbing_plant_23
+  - first:
+      213: 8334026668734942638
+    second: climbing_plant_24
+  - first:
+      213: 8201806907416686801
+    second: climbing_plant_25
+  - first:
+      213: -4805744709947858461
+    second: climbing_plant_26
+  - first:
+      213: -6489032978270884378
+    second: climbing_plant_27
+  - first:
+      213: 7174277056616770422
+    second: climbing_plant_28
+  - first:
+      213: 8231019910869070855
+    second: climbing_plant_29
+  - first:
+      213: 6670631173383737126
+    second: climbing_plant_30
+  - first:
+      213: 6446486539173052098
+    second: climbing_plant_31
+  - first:
+      213: -224381210182197806
+    second: climbing_plant_32
+  - first:
+      213: -8937327964518608308
+    second: climbing_plant_33
+  - first:
+      213: 5312054053413171138
+    second: climbing_plant_34
+  - first:
+      213: -5349564915607064685
+    second: climbing_plant_35
+  - first:
+      213: -5872232689136269618
+    second: climbing_plant_36
+  - first:
+      213: 5306399868945723510
+    second: climbing_plant_37
+  - first:
+      213: -6088723894067427508
+    second: climbing_plant_38
+  - first:
+      213: 8777317087417280835
+    second: climbing_plant_39
+  - first:
+      213: 1142995087979706310
+    second: climbing_plant_40
+  - first:
+      213: -8458101930427022008
+    second: climbing_plant_41
+  - first:
+      213: 294656081066936353
+    second: climbing_plant_42
+  - first:
+      213: 21435157941473184
+    second: climbing_plant_43
+  - first:
+      213: -7615879431606179425
+    second: climbing_plant_44
+  - first:
+      213: 8664414347421815707
+    second: climbing_plant_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: climbing_plant_36
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 736
+        width: 497
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec6889d4b73a18ea0800000000000000
+      internalID: -5872232689136269618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: climbing_plant_38
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 585
+        width: 444
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c478da6b0e1808ba0800000000000000
+      internalID: -6088723894067427508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: climbing_plant_40
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 453
+        width: 445
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7fb070afbbcdf00800000000000000
+      internalID: 1142995087979706310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: climbing_plant_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 295
+        width: 506
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8450ad27b19ce9a80800000000000000
+      internalID: -8458101930427022008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: climbing_plant_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 506
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12847e20524d61400800000000000000
+      internalID: 294656081066936353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: climbing_plant_44
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 5
+        width: 463
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99e8e2f106fe4690800000000000000
+      internalID: -7615879431606179425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: climbing_plant_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 876
+        width: 484
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9220091c3f79546ae4846d5dc45c8d
+      internalID: -1906910178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8fe306d62b94ad94bb7f1c95f1ca4fd3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      climbing_plant_0: -1906910178
+      climbing_plant_37: -1586954594
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
