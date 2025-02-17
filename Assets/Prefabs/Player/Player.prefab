@@ -133,6 +133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74244fc74a8dd644b9d84494581d1f6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectileSpawnPoint: {fileID: 0}
+  attackCooldown: 0.3
 --- !u!114 &2419091907067737802
 MonoBehaviour:
   m_ObjectHideFlags: 0

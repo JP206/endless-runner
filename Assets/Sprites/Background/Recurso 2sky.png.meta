@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2c521c4993b19424cbf0b62dc30fbd2a
+guid: 99795c7da2fa2b94fb375cdbfa6f5b04
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 70364811865627504
-    second: sol_0
+      213: 6074337169290517927
+    second: Recurso 2sky_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,9 +40,9 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sol_0
+      name: Recurso 2sky_0
       rect:
         serializedVersion: 2
-        x: 1269
-        y: 429
-        width: 682
-        height: 692
+        x: 0
+        y: 0
+        width: 15361
+        height: 1281
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 07b10ff6c6cf9f000800000000000000
-      internalID: 70364811865627504
+      spriteID: 7ad5385e8716c4450800000000000000
+      internalID: 6074337169290517927
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sol_0: 70364811865627504
+      Recurso 2sky_0: 6074337169290517927
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
