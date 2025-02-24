@@ -347,7 +347,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hacha-volando.gif_0: 3889538870966995471
+      hacha-volando.gif_1: 3793181586170073439
+      hacha-volando.gif_2: 2651433920246659664
+      hacha-volando.gif_3: 4515310599942561374
+      hacha-volando.gif_4: 6812174273885030030
+      hacha-volando.gif_5: 1788367830807945541
+      hacha-volando.gif_6: 3230651571676818137
+      hacha-volando.gif_7: -7924320559778185433
+      hacha-volando.gif_8: -6005322012366431810
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
