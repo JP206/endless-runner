@@ -13,10 +13,6 @@ public class ScenarioPool : MonoBehaviour
     [SerializeField] int mountainPoolSize;
     [SerializeField] int rockPoolSize;
 
-    [Header("Objects starting position")]
-    [SerializeField] float startPosXMountain; 
-    [SerializeField] float startPosYMountain, startPosXRock, startPosYRock;
-
     void Start()
     {
         InitializeMountains();

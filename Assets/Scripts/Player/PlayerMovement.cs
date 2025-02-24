@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (yVelocity < 0) { animator.SetBool("isFalling", true); }
         }
-        
+
         if (!isJumping && playerSpacialDetector.IsGrounded(0.1f, deltaY))
         {
             yVelocity = 0;
@@ -39,7 +39,6 @@ public class PlayerMovement : MonoBehaviour
         }
         transform.position += new Vector3(0, deltaY, 0);
     }
-
 
     public void ApplyJump(float jumpSpeed)
     {

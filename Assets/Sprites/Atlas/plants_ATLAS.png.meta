@@ -1,0 +1,649 @@
+fileFormatVersion: 2
+guid: ecfde9997d4da6746a882c5c7cde8b16
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8336409036288736220
+    second: plants_ATLAS_0
+  - first:
+      213: -5733959503580006626
+    second: plants_ATLAS_1
+  - first:
+      213: 1019558526737205634
+    second: plants_ATLAS_2
+  - first:
+      213: -2734382048450865262
+    second: plants_ATLAS_3
+  - first:
+      213: 7880060944567747784
+    second: plants_ATLAS_4
+  - first:
+      213: 281295321366269364
+    second: plants_ATLAS_5
+  - first:
+      213: 5025109400117609701
+    second: plants_ATLAS_6
+  - first:
+      213: 4178976948069371436
+    second: plants_ATLAS_7
+  - first:
+      213: -375572318426317604
+    second: plants_ATLAS_8
+  - first:
+      213: -1472570439229571222
+    second: plants_ATLAS_9
+  - first:
+      213: 5123233665290474966
+    second: plants_ATLAS_10
+  - first:
+      213: 2985704367653954749
+    second: plants_ATLAS_11
+  - first:
+      213: -4575694355204572105
+    second: plants_ATLAS_12
+  - first:
+      213: -4938521638243891388
+    second: plants_ATLAS_13
+  - first:
+      213: -2910816032873001445
+    second: plants_ATLAS_14
+  - first:
+      213: -7547787384317936976
+    second: plants_ATLAS_15
+  - first:
+      213: -4332725044320928949
+    second: plants_ATLAS_16
+  - first:
+      213: -6903190043520802839
+    second: plants_ATLAS_17
+  - first:
+      213: -1259416253407537536
+    second: plants_ATLAS_18
+  - first:
+      213: -8460128450078391640
+    second: plants_ATLAS_19
+  - first:
+      213: 1382435008806725450
+    second: plants_ATLAS_20
+  - first:
+      213: -3068418609440839793
+    second: plants_ATLAS_21
+  - first:
+      213: 1086936461682916879
+    second: plants_ATLAS_22
+  - first:
+      213: 1472667461301397262
+    second: plants_ATLAS_23
+  - first:
+      213: 5816221272406981733
+    second: plants_ATLAS_24
+  - first:
+      213: -1667497161922797189
+    second: plants_ATLAS_25
+  - first:
+      213: 5494006116984774856
+    second: plants_ATLAS_26
+  - first:
+      213: 5664954156523185118
+    second: plants_ATLAS_27
+  - first:
+      213: -4287687401649962830
+    second: plants_ATLAS_28
+  - first:
+      213: 2882964816384778755
+    second: plants_ATLAS_29
+  - first:
+      213: -8574904104940686278
+    second: plants_ATLAS_30
+  - first:
+      213: -6952486196221149407
+    second: plants_ATLAS_31
+  - first:
+      213: -6962637305810751396
+    second: plants_ATLAS_32
+  - first:
+      213: 6219100122978586850
+    second: plants_ATLAS_33
+  - first:
+      213: 8158546976263193698
+    second: plants_ATLAS_34
+  - first:
+      213: 7315349252213093899
+    second: plants_ATLAS_35
+  - first:
+      213: 2591949355483588549
+    second: plants_ATLAS_36
+  - first:
+      213: 6514680489879700912
+    second: plants_ATLAS_37
+  - first:
+      213: 6759123949380836206
+    second: plants_ATLAS_38
+  - first:
+      213: 8746342691219575756
+    second: plants_ATLAS_39
+  - first:
+      213: 1124446572747418366
+    second: plants_ATLAS_40
+  - first:
+      213: -2565438092355613198
+    second: plants_ATLAS_41
+  - first:
+      213: -8740708974990144298
+    second: plants_ATLAS_42
+  - first:
+      213: 378300517809291543
+    second: plants_ATLAS_43
+  - first:
+      213: 2864743884756663895
+    second: plants_ATLAS_44
+  - first:
+      213: -9191429147906161024
+    second: plants_ATLAS_45
+  - first:
+      213: -3241655976714680025
+    second: plants_ATLAS_46
+  - first:
+      213: 2632736363919443959
+    second: plants_ATLAS_47
+  - first:
+      213: -8664582979398358158
+    second: plants_ATLAS_48
+  - first:
+      213: -8994083521690367949
+    second: plants_ATLAS_49
+  - first:
+      213: 1458650194458004212
+    second: plants_ATLAS_50
+  - first:
+      213: 4583376135744352970
+    second: plants_ATLAS_51
+  - first:
+      213: 6360004332990728313
+    second: plants_ATLAS_52
+  - first:
+      213: 4307980837916466697
+    second: plants_ATLAS_53
+  - first:
+      213: 1075289280954973514
+    second: plants_ATLAS_54
+  - first:
+      213: 7898586426494495835
+    second: plants_ATLAS_55
+  - first:
+      213: 1201302232842115750
+    second: plants_ATLAS_56
+  - first:
+      213: 2104324249130325778
+    second: plants_ATLAS_57
+  - first:
+      213: -6645477232795513043
+    second: plants_ATLAS_58
+  - first:
+      213: -840089143696224276
+    second: plants_ATLAS_59
+  - first:
+      213: 6562176157375952675
+    second: plants_ATLAS_60
+  - first:
+      213: -4762481439697404008
+    second: plants_ATLAS_61
+  - first:
+      213: -4214145431430676462
+    second: plants_ATLAS_62
+  - first:
+      213: 3805812670265647136
+    second: plants_ATLAS_63
+  - first:
+      213: 7733974375857982609
+    second: plants_ATLAS_64
+  - first:
+      213: 8848750157835000952
+    second: plants_ATLAS_65
+  - first:
+      213: 3026679655900554854
+    second: plants_ATLAS_66
+  - first:
+      213: 3876230663981542208
+    second: plants_ATLAS_67
+  - first:
+      213: 524970866959256108
+    second: plants_ATLAS_68
+  - first:
+      213: 7681742455367967937
+    second: plants_ATLAS_69
+  - first:
+      213: 7641900657731814965
+    second: plants_ATLAS_70
+  - first:
+      213: -4313736552763864752
+    second: plants_ATLAS_71
+  - first:
+      213: -4105889145193143296
+    second: plants_ATLAS_72
+  - first:
+      213: -899839279462052917
+    second: plants_ATLAS_73
+  - first:
+      213: -3245013890111446963
+    second: plants_ATLAS_74
+  - first:
+      213: -2809787941838549853
+    second: plants_ATLAS_75
+  - first:
+      213: -2609188807453960396
+    second: plants_ATLAS_76
+  - first:
+      213: 6729378877423263295
+    second: plants_ATLAS_77
+  - first:
+      213: 7236265369392631209
+    second: plants_ATLAS_78
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plants_ATLAS_0
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 725
+        width: 239
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42447a156202f4c80800000000000000
+      internalID: -8336409036288736220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plants_ATLAS_2
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 729
+        width: 249
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28944e50413362e00800000000000000
+      internalID: 1019558526737205634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plants_ATLAS_3
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 729
+        width: 249
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29791e9a3068d0ad0800000000000000
+      internalID: -2734382048450865262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plants_ATLAS_30
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 472
+        width: 249
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34b8f9f522dff880800000000000000
+      internalID: -8574904104940686278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plants_ATLAS_31
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 464
+        width: 244
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f7e60f3aec38f90800000000000000
+      internalID: -6952486196221149407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plants_ATLAS_32
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 468
+        width: 254
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50744f824ebf5f90800000000000000
+      internalID: -6962637305810751396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plants_ATLAS_39
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 211
+        width: 254
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc31af96650416970800000000000000
+      internalID: 8746342691219575756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plants_ATLAS_40
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 211
+        width: 256
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efae3894336da9f00800000000000000
+      internalID: 1124446572747418366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plants_ATLAS_41
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 212
+        width: 246
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fd43e3b5abb56cd0800000000000000
+      internalID: -2565438092355613198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plants_ATLAS_42
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4
+        width: 246
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dcc4ac5f73c2b680800000000000000
+      internalID: -8740708974990144298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plants_ATLAS_1
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 65
+        width: 487
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31064d9865fc9ef40900b4021aafd8ab
+      internalID: -692140872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 428b5940dd2d1ac44b6caeb19332a82a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      plants_ATLAS_1: -692140872
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
