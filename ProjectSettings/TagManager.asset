@@ -10,6 +10,8 @@ TagManager:
   - Enemy
   - Floor
   - EnemyBack
+  - Wall
+  - Rooftop
   layers:
   - Default
   - TransparentFX
@@ -22,8 +24,8 @@ TagManager:
   - Player
   - Proyectile
   - Floor
-  - 
-  - 
+  - Wall
+  - Rooftop
   - 
   - 
   - 

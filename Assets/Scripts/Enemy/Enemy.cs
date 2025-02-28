@@ -25,19 +25,11 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        if (isCharging)
-        {
-            ChargeAttack();
-        }
-        else if (!isStopped)
-        {
-            MoveForward();
-        }
+        if (isCharging) ChargeAttack();
 
-        if (!isAttacking)
-        {
-            DetectPlayer();
-        }
+        else if (!isStopped) MoveForward();
+
+        if (!isAttacking) DetectPlayer();
     }
 
     private void DetectPlayer()

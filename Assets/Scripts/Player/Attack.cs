@@ -6,7 +6,6 @@ public class Attack : MonoBehaviour
     private Animator animator;
     private PlayerMovement playerMovement;
     private ProyectilePool proyectilePool;
-    private Player player;
 
     [SerializeField] private Transform projectileSpawnPoint;
     [SerializeField] private float attackCooldown = 0.3f;
@@ -15,12 +14,10 @@ public class Attack : MonoBehaviour
     public void InitializeReferences(
         Animator animator,
         PlayerMovement playerMovement,
-        ProyectilePool proyectilePool,
-        Player player)
+        ProyectilePool proyectilePool)
     {
         this.animator = animator;
         this.playerMovement = playerMovement;
-        this.player = player;
         this.proyectilePool = proyectilePool;
     }
 
@@ -28,14 +25,8 @@ public class Attack : MonoBehaviour
     {
         if (Time.time < nextAttackTime) return;
 
-        if (playerMovement.isJumping)
-        {
-            OnPerformAirAttack();
-        }
-        else
-        {
-            OnPerformAttack();
-        }
+        if (playerMovement.isJumping) OnPerformAirAttack();
+        else OnPerformAttack();
 
         nextAttackTime = Time.time + attackCooldown;
     }
