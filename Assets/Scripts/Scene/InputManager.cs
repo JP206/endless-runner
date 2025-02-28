@@ -12,15 +12,9 @@ public class InputManager : MonoBehaviour
     void DetectInputs()
     {
         //Jump Input
-        if (Input.GetButtonDown("Jump"))
-        {
-            _sceneInitializer.OnJump();
-        }
+        if (Input.GetButtonDown("Jump")) _sceneInitializer.OnJump();
 
         //Proyectile Input
-        if (Input.GetButtonDown("Shoot"))
-        {
-            _sceneInitializer.OnAttack();
-        }
+        if (Input.GetButtonDown("Shoot")) _sceneInitializer.OnAttack();
     }
 }
