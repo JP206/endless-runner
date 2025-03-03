@@ -2,13 +2,22 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private PlayerMovement playerMovement;
-    private PlayerHealth playerHealth;
+    PlayerMovement playerMovement;
+    PlayerHealth playerHealth;
+    AudioClip stepSound;
+    AudioSource audioSource;
 
-    public void InitializeReferences(PlayerMovement playerMovement, PlayerHealth playerHealth)
+    public void InitializeReferences(
+        PlayerMovement playerMovement, 
+        PlayerHealth playerHealth, 
+        AudioClip stepSound,
+        AudioSource audioSource
+    )
     {
         this.playerMovement = playerMovement;
         this.playerHealth = playerHealth;
+        this.stepSound = stepSound;
+        this.audioSource = audioSource;
     }
 
     private void FixedUpdate()
@@ -26,6 +35,14 @@ public class Player : MonoBehaviour
                 enemy.DestroyEnemy();
                 playerMovement.ApplyJump(5f);
             }
+        }
+    }
+
+    public void PlayStepSounds()
+    {
+        if (stepSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(stepSound);
         }
     }
 }

@@ -1,0 +1,655 @@
+fileFormatVersion: 2
+guid: 723d13ad02cae144db35f2626f418b7f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6082142445498879636
+    second: death_pterodactyl_ATLAS_0
+  - first:
+      213: 7209713114604779356
+    second: death_pterodactyl_ATLAS_1
+  - first:
+      213: 8238652107247075428
+    second: death_pterodactyl_ATLAS_2
+  - first:
+      213: -5211437129557692322
+    second: death_pterodactyl_ATLAS_3
+  - first:
+      213: -5566516597448976546
+    second: death_pterodactyl_ATLAS_4
+  - first:
+      213: -712500633807482656
+    second: death_pterodactyl_ATLAS_5
+  - first:
+      213: 8686636366733283476
+    second: death_pterodactyl_ATLAS_6
+  - first:
+      213: -6848627637018874894
+    second: death_pterodactyl_ATLAS_7
+  - first:
+      213: -7815870241251495536
+    second: death_pterodactyl_ATLAS_8
+  - first:
+      213: 2674914944638138090
+    second: death_pterodactyl_ATLAS_9
+  - first:
+      213: -3190984299693702371
+    second: death_pterodactyl_ATLAS_10
+  - first:
+      213: -7672264462754212191
+    second: death_pterodactyl_ATLAS_11
+  - first:
+      213: 7803552159644071504
+    second: death_pterodactyl_ATLAS_12
+  - first:
+      213: -8278534365418049631
+    second: death_pterodactyl_ATLAS_13
+  - first:
+      213: -935947062659536251
+    second: death_pterodactyl_ATLAS_14
+  - first:
+      213: 6516661335271358691
+    second: death_pterodactyl_ATLAS_15
+  - first:
+      213: -8222244958983596195
+    second: death_pterodactyl_ATLAS_16
+  - first:
+      213: -7863445499077009949
+    second: death_pterodactyl_ATLAS_17
+  - first:
+      213: 9132940067120721237
+    second: death_pterodactyl_ATLAS_18
+  - first:
+      213: 2021020656286312179
+    second: death_pterodactyl_ATLAS_19
+  - first:
+      213: -4469480168313080546
+    second: death_pterodactyl_ATLAS_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_0
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1648
+        width: 251
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e4941645c186450800000000000000
+      internalID: 6082142445498879636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_1
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 1657
+        width: 217
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c573e7801eb0e0460800000000000000
+      internalID: 7209713114604779356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_2
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 1653
+        width: 203
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4604c78f072955270800000000000000
+      internalID: 8238652107247075428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_3
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 1683
+        width: 227
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50be63ca814da7b0800000000000000
+      internalID: -5211437129557692322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_4
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 1686
+        width: 221
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57dcb4b5a2cfb2b0800000000000000
+      internalID: -5566516597448976546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1298
+        width: 207
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e01aa3d270bc16f0800000000000000
+      internalID: -712500633807482656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1298
+        width: 191
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 490902470c12d8870800000000000000
+      internalID: 8686636366733283476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_7
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 1277
+        width: 202
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fb21902379c4f0a0800000000000000
+      internalID: -6848627637018874894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_8
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 1291
+        width: 231
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09178a30d63788390800000000000000
+      internalID: -7815870241251495536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_9
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 1291
+        width: 238
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae63a8748f43f1520800000000000000
+      internalID: 2674914944638138090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_10
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 850
+        width: 230
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1388ec9fa857b3d0800000000000000
+      internalID: -3190984299693702371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_11
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 831
+        width: 232
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a69eaade14a68590800000000000000
+      internalID: -7672264462754212191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_12
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 833
+        width: 239
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05631dd1859cb4c60800000000000000
+      internalID: 7803552159644071504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_13
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 829
+        width: 238
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afa4603bdcbc1d80800000000000000
+      internalID: -8278534365418049631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_14
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 834
+        width: 251
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58aab99fa19d203f0800000000000000
+      internalID: -935947062659536251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_15
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 426
+        width: 235
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e04f5a25f4df6a50800000000000000
+      internalID: 6516661335271358691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_16
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 426
+        width: 236
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57598be5c7b4ed80800000000000000
+      internalID: -8222244958983596195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_17
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 426
+        width: 236
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eddedc1bfd6fd290800000000000000
+      internalID: -7863445499077009949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_18
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 426
+        width: 235
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55da9a74a98bebe70800000000000000
+      internalID: 9132940067120721237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_19
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 426
+        width: 236
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f62cad349b1c0c10800000000000000
+      internalID: 2021020656286312179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_pterodactyl_ATLAS_20
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 17
+        width: 235
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15bb0d977739f1c0800000000000000
+      internalID: -4469480168313080546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

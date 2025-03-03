@@ -6,6 +6,8 @@ public class Attack : MonoBehaviour
     private Animator animator;
     private PlayerMovement playerMovement;
     private ProyectilePool proyectilePool;
+    AudioSource audioSource;
+    AudioClip throwAxe;
 
     [SerializeField] private Transform projectileSpawnPoint;
     [SerializeField] private float attackCooldown = 0.3f;
@@ -14,11 +16,16 @@ public class Attack : MonoBehaviour
     public void InitializeReferences(
         Animator animator,
         PlayerMovement playerMovement,
-        ProyectilePool proyectilePool)
+        ProyectilePool proyectilePool,
+        AudioSource audioSource,
+        AudioClip throwAxe
+        )
     {
         this.animator = animator;
         this.playerMovement = playerMovement;
         this.proyectilePool = proyectilePool;
+        this.audioSource = audioSource;
+        this.throwAxe = throwAxe;
     }
 
     public void PerformAttack()
@@ -55,8 +62,19 @@ public class Attack : MonoBehaviour
         GameObject proyectile = proyectilePool.GetPooledObject();
         if (proyectile)
         {
+            PlayThrowSound();
             proyectile.transform.position = projectileSpawnPoint.position;
             proyectile.transform.rotation = projectileSpawnPoint.rotation;
+        }
+    }
+
+    public void PlayThrowSound()
+    {
+        Debug.Log("Audio Source: " + audioSource + " " + "Audio Clip: " + throwAxe);
+        if (audioSource != null && throwAxe != null)
+        {
+            Debug.Log("DENTRO DE IF");
+            audioSource.PlayOneShot(throwAxe);
         }
     }
 }
