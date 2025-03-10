@@ -9,6 +9,9 @@ public class Enemy : MonoBehaviour
     public float detectionRange = 5f;
     public LayerMask targetMask;
     public float damageCooldown = 2f;
+    public float fallSpeed = 2f;
+    public float blinkDuration = 1f;
+    public float blinkInterval = 0.1f;
 
     private Vector2 targetPosition;
     private bool isAttacking = false;
@@ -16,17 +19,34 @@ public class Enemy : MonoBehaviour
     private bool canDealDamage = true;
     private bool isCharging = false;
     private bool isStopped = false;
+    private bool isDead = false;
+
     private Animator animator;
+    private AudioSource audioSource;
+    private SpriteRenderer spriteRenderer;
+    private Collider2D enemyCollider;
+    private Rigidbody2D rb;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        enemyCollider = GetComponent<Collider2D>();
+
+        rb = GetComponent<Rigidbody2D>();
+        if (rb == null)
+        {
+            rb = gameObject.AddComponent<Rigidbody2D>();
+        }
+        rb.gravityScale = 0;
     }
 
     private void Update()
     {
-        if (isCharging) ChargeAttack();
+        if (isDead) return;
 
+        if (isCharging) ChargeAttack();
         else if (!isStopped) MoveForward();
 
         if (!isAttacking) DetectPlayer();
@@ -41,6 +61,7 @@ public class Enemy : MonoBehaviour
             isStopped = true;
             animator.SetTrigger("Attack");
             isAttacking = true;
+            PlayAttackSound();
         }
     }
 
@@ -53,7 +74,6 @@ public class Enemy : MonoBehaviour
     private void ChargeAttack()
     {
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, attackSpeed * Time.deltaTime);
-
         float distanceToTarget = Vector2.Distance(transform.position, targetPosition);
         if (distanceToTarget <= 0.2f)
         {
@@ -95,6 +115,42 @@ public class Enemy : MonoBehaviour
 
     public void DestroyEnemy()
     {
+        if (isDead) return;
+        isDead = true;
+
+        isCharging = false;
+        isStopped = true;
+        isAttacking = false;
+
+        if (enemyCollider != null) enemyCollider.enabled = false;
+
+        animator.SetTrigger("Death");
+
+        rb.gravityScale = 1;
+        rb.linearVelocity = new Vector2(0, -fallSpeed);
+
+        StartCoroutine(BlinkWhileDying());
+    }
+    private IEnumerator BlinkWhileDying()
+    {
+        float deathAnimTime = animator.GetCurrentAnimatorStateInfo(0).length;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < deathAnimTime)
+        {
+            spriteRenderer.enabled = !spriteRenderer.enabled;
+            yield return new WaitForSeconds(blinkInterval);
+            elapsedTime += blinkInterval;
+        }
+
         Destroy(gameObject);
+    }
+
+    public void PlayAttackSound()
+    {
+        if (audioSource != null && audioSource.clip != null)
+        {
+            audioSource.PlayOneShot(audioSource.clip);
+        }
     }
 }

@@ -8,9 +8,11 @@ public class PlayerHealth : MonoBehaviour
 
     private Animator animator;
     private Collider2D[] colliders;
-    private bool isDead = false; 
-    private float moveSpeed = 6f;
-    private float riseTime = 0.4f;
+    private bool isDead = false;
+
+    [SerializeField] private GameObject gameOverCanvas;
+    [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject gameOverImage;
 
     public void InitializeReferences(Animator animator)
     {
@@ -26,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage()
     {
         if (isDead) return;
-        
+
         currentLives--;
 
         StartCoroutine(HandleDamageEffects());
@@ -70,7 +72,7 @@ public class PlayerHealth : MonoBehaviour
 
         FreezeScene();
 
-        StartCoroutine(HandleDeathFall());
+        StartCoroutine(WaitForDeathAnimation());
     }
 
     private void FreezeScene()
@@ -79,45 +81,68 @@ public class PlayerHealth : MonoBehaviour
         animator.updateMode = AnimatorUpdateMode.UnscaledTime;
     }
 
-    private void DisableFloorColliders()
+    private IEnumerator WaitForDeathAnimation()
     {
-        foreach (GameObject floor in GameObject.FindGameObjectsWithTag("Floor"))
-        {
-            Collider2D floorCollider = floor.GetComponent<Collider2D>();
-            if (floorCollider != null)
-            {
-                floorCollider.enabled = false;
-            }
-        }
+        yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
+
+        ShowGameOverCanvas();
     }
 
-    private IEnumerator HandleDeathFall()
+    private void ShowGameOverCanvas()
     {
+        gameOverCanvas.SetActive(true);
+        gameOverImage.SetActive(true);
+
+        StartCoroutine(FadeInPanel());
+        StartCoroutine(AnimateGameOverImage());
+    }
+
+    private IEnumerator FadeInPanel()
+    {
+        CanvasGroup canvasGroup = gameOverPanel.GetComponent<CanvasGroup>();
+        if (canvasGroup == null) canvasGroup = gameOverPanel.AddComponent<CanvasGroup>();
+
+        UnityEngine.UI.Image panelImage = gameOverPanel.GetComponent<UnityEngine.UI.Image>();
+        if (panelImage == null) panelImage = gameOverPanel.AddComponent<UnityEngine.UI.Image>();
+
+        panelImage.color = new Color(0, 0, 0, 0);
+
+        float duration = 1f;
         float elapsed = 0f;
-        while (elapsed < riseTime)
+
+        while (elapsed < duration)
         {
-            transform.Translate(Vector3.up * moveSpeed * Time.unscaledDeltaTime);
             elapsed += Time.unscaledDeltaTime;
+
+            canvasGroup.alpha = Mathf.Lerp(0, 1, elapsed / duration);
+
+            panelImage.color = new Color(0, 0, 0, Mathf.Lerp(0, 0.8f, elapsed / duration));
+
             yield return null;
         }
 
-        DisableFloorColliders();
+        canvasGroup.alpha = 1;
+        panelImage.color = new Color(0, 0, 0, 0.8f);
+    }
 
-        while (true)
+    private IEnumerator AnimateGameOverImage()
+    {
+        RectTransform imageTransform = gameOverImage.GetComponent<RectTransform>();
+        Vector3 startPosition = imageTransform.anchoredPosition + new Vector2(0, -200);
+        Vector3 endPosition = imageTransform.anchoredPosition;
+
+        float duration = 1f;
+        float elapsed = 0f;
+
+        imageTransform.anchoredPosition = startPosition;
+
+        while (elapsed < duration)
         {
-            transform.Translate(Vector3.down * (moveSpeed * 1) * Time.unscaledDeltaTime);
+            elapsed += Time.unscaledDeltaTime;
+            imageTransform.anchoredPosition = Vector3.Lerp(startPosition, endPosition, elapsed / duration);
             yield return null;
         }
-    }
 
-    public int GetLives()
-    {
-        return currentLives;
-    }
-
-    public void Heal(int amount)
-    {
-        if (isDead) return;
-        currentLives = Mathf.Min(currentLives + amount, maxLives);
+        imageTransform.anchoredPosition = endPosition;
     }
 }

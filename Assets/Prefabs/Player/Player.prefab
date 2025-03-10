@@ -194,6 +194,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLives: 3
+  gameOverCanvas: {fileID: 0}
+  gameOverPanel: {fileID: 0}
+  gameOverImage: {fileID: 0}
 --- !u!114 &4586403072369000471
 MonoBehaviour:
   m_ObjectHideFlags: 0
