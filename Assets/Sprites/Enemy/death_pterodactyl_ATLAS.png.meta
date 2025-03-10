@@ -647,7 +647,28 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      death_pterodactyl_ATLAS_0: 6082142445498879636
+      death_pterodactyl_ATLAS_1: 7209713114604779356
+      death_pterodactyl_ATLAS_10: -3190984299693702371
+      death_pterodactyl_ATLAS_11: -7672264462754212191
+      death_pterodactyl_ATLAS_12: 7803552159644071504
+      death_pterodactyl_ATLAS_13: -8278534365418049631
+      death_pterodactyl_ATLAS_14: -935947062659536251
+      death_pterodactyl_ATLAS_15: 6516661335271358691
+      death_pterodactyl_ATLAS_16: -8222244958983596195
+      death_pterodactyl_ATLAS_17: -7863445499077009949
+      death_pterodactyl_ATLAS_18: 9132940067120721237
+      death_pterodactyl_ATLAS_19: 2021020656286312179
+      death_pterodactyl_ATLAS_2: 8238652107247075428
+      death_pterodactyl_ATLAS_20: -4469480168313080546
+      death_pterodactyl_ATLAS_3: -5211437129557692322
+      death_pterodactyl_ATLAS_4: -5566516597448976546
+      death_pterodactyl_ATLAS_5: -712500633807482656
+      death_pterodactyl_ATLAS_6: 8686636366733283476
+      death_pterodactyl_ATLAS_7: -6848627637018874894
+      death_pterodactyl_ATLAS_8: -7815870241251495536
+      death_pterodactyl_ATLAS_9: 2674914944638138090
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

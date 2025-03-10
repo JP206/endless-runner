@@ -70,10 +70,8 @@ public class Attack : MonoBehaviour
 
     public void PlayThrowSound()
     {
-        Debug.Log("Audio Source: " + audioSource + " " + "Audio Clip: " + throwAxe);
         if (audioSource != null && throwAxe != null)
         {
-            Debug.Log("DENTRO DE IF");
             audioSource.PlayOneShot(throwAxe);
         }
     }
