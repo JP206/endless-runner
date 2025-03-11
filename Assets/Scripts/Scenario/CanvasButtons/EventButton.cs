@@ -81,7 +81,7 @@ public class EventButton : MonoBehaviour
 
     public void PlayGame()
     {
-        LoadScene("Seba");
+        LoadScene("Game");
     }
 
     public void ExitGame()
