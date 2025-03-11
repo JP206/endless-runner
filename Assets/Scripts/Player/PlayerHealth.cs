@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -14,6 +16,11 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject gameOverImage;
 
+    [SerializeField] private Transform healthContainer; // Contenedor de corazones
+    private List<Image> hearts = new List<Image>();
+    [SerializeField] private Sprite fullHeart; // Imagen del corazón rojo
+    [SerializeField] private Sprite emptyHeart; // Imagen del corazón gris
+
     public void InitializeReferences(Animator animator)
     {
         this.animator = animator;
@@ -23,6 +30,16 @@ public class PlayerHealth : MonoBehaviour
     {
         currentLives = maxLives;
         colliders = GetComponentsInChildren<Collider2D>();
+
+        // Obtener las imágenes de los corazones desde el contenedor
+        foreach (Transform child in healthContainer)
+        {
+            Image heartImage = child.GetComponent<Image>();
+            if (heartImage != null)
+            {
+                hearts.Add(heartImage);
+            }
+        }
     }
 
     public void TakeDamage()
@@ -31,11 +48,28 @@ public class PlayerHealth : MonoBehaviour
 
         currentLives--;
 
+        UpdateHealthUI(); // Actualizar la UI de vidas
+
         StartCoroutine(HandleDamageEffects());
 
         if (currentLives <= 0)
         {
             Die();
+        }
+    }
+
+    private void UpdateHealthUI()
+    {
+        for (int i = 0; i < hearts.Count; i++)
+        {
+            if (i < currentLives)
+            {
+                hearts[i].sprite = fullHeart; // Mantiene los corazones rojos
+            }
+            else
+            {
+                hearts[i].sprite = emptyHeart; // Cambia a corazón gris
+            }
         }
     }
 
@@ -113,11 +147,8 @@ public class PlayerHealth : MonoBehaviour
         while (elapsed < duration)
         {
             elapsed += Time.unscaledDeltaTime;
-
             canvasGroup.alpha = Mathf.Lerp(0, 1, elapsed / duration);
-
             panelImage.color = new Color(0, 0, 0, Mathf.Lerp(0, 0.8f, elapsed / duration));
-
             yield return null;
         }
 
