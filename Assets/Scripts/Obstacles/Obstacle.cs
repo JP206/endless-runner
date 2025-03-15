@@ -2,18 +2,22 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    [SerializeField] float speed;
-    [SerializeField] float posY;
-    [SerializeField] float xThreshold;
+    [SerializeField] float speed = 5f; // Velocidad de movimiento
+    [SerializeField] float posY; // Altura fija del obstáculo
+    [SerializeField] float xThreshold = -10f; // Límite para desactivar el obstáculo
 
     void Update()
     {
-        if (transform.position.x < xThreshold)
+        // Mueve el obstáculo hacia la izquierda
+        transform.position += Vector3.left * speed * Time.deltaTime;
+    }
+
+    void OnBecameInvisible()
+    {
+        if (gameObject.activeInHierarchy)
         {
             gameObject.SetActive(false);
         }
-
-        transform.position -= new Vector3(speed * Time.deltaTime, 0, 0);
     }
 
     public float GetPosY()

@@ -26,6 +26,7 @@ public class Enemy : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Collider2D enemyCollider;
     private Rigidbody2D rb;
+    [SerializeField] private Collider2D backCollider;
 
     private void Start()
     {
@@ -89,16 +90,27 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && canDealDamage)
+        if (collision.CompareTag("Player"))
         {
             PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
+
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage();
-                StartCoroutine(DamageCooldown());
+                if (collision.gameObject.name == "EnemyBack")
+                {
+                    Debug.Log("¡Golpe en la cabeza! El enemigo muere.");
+                    DestroyEnemy();
+                }
+                else if (canDealDamage)
+                {
+                    Debug.Log("El enemigo dañó al jugador.");
+                    playerHealth.TakeDamage();
+                    StartCoroutine(DamageCooldown());
+                }
             }
         }
     }
+
 
     private IEnumerator DamageCooldown()
     {
