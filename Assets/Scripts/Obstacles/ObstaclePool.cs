@@ -15,43 +15,45 @@ public class ObstaclePool : MonoBehaviour
     void InitializePool()
     {
         pooledObstacles = new List<GameObject>();
-        GameObject tmp;
         for (int i = 0; i < obstaclePrefabs.Length; i++)
         {
             for (int j = 0; j < poolSize; j++)
             {
-                tmp = Instantiate(obstaclePrefabs[i]);
+                GameObject tmp = Instantiate(obstaclePrefabs[i]);
                 tmp.SetActive(false);
                 pooledObstacles.Add(tmp);
             }
         }
     }
 
-    public GameObject GetPooledObstacle()
-    {
-        for (int i = 0; i < poolSize; i++)
-        {
-            if (!pooledObstacles[i].activeInHierarchy)
-            {
-                pooledObstacles[i].SetActive(true);
-                return pooledObstacles[i];
-            }
-        }
-        return null;
-    }
-
     public GameObject GetRandomObstacle()
     {
-        int random = Random.Range(0, pooledObstacles.Count);
-        GameObject result = pooledObstacles[random];
+        List<GameObject> availableObstacles = new List<GameObject>();
 
-        while (result.activeInHierarchy)
+        // Filtramos solo los obstáculos inactivos
+        foreach (var obstacle in pooledObstacles)
         {
-            random = Random.Range(0, pooledObstacles.Count);
-            result = pooledObstacles[random];
+            if (!obstacle.activeInHierarchy)
+            {
+                availableObstacles.Add(obstacle);
+            }
         }
 
-        result.SetActive(true);
-        return result;
+        // Si hay obstáculos disponibles, elegimos uno aleatorio
+        if (availableObstacles.Count > 0)
+        {
+            int randomIndex = Random.Range(0, availableObstacles.Count);
+            GameObject selectedObstacle = availableObstacles[randomIndex];
+            selectedObstacle.SetActive(true);
+            return selectedObstacle;
+        }
+
+        return null; // Si no hay ninguno disponible, devuelve null
     }
+
+    public List<GameObject> GetAllObstacles()
+    {
+        return pooledObstacles;
+    }
+
 }

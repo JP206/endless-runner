@@ -86,7 +86,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.95398474, y: -1.865572}
+  m_Offset: {x: 1.0274997, y: -1.865572}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -96,7 +96,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 30.21317, y: 4.5615463}
+  m_Size: {x: 30.06614, y: 4.5615463}
   m_EdgeRadius: 0
 --- !u!1 &2014866336702743945
 GameObject:
@@ -108,7 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5799841109886932581}
   - component: {fileID: 2209766145211144136}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plants_ATLAS_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3239631730011020451}
   - component: {fileID: 2336694498955995556}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: climbing_plant_44 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4283010482872745236}
   - component: {fileID: 6308049019789008660}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: climbing_plant_38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,7 +456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7449686964700354482}
   - component: {fileID: 7554418036664538517}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plants_ATLAS_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -543,7 +543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8809202032045382704}
   - component: {fileID: 6648031955311542955}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: climbing_plant_38 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -717,7 +717,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8917250914122542181}
   - component: {fileID: 1082099388146328858}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plants_ATLAS_1 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -804,7 +804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 814775764088204363}
   - component: {fileID: 2563233618491506856}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plants_ATLAS_1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -891,7 +891,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6214747200483749222}
   - component: {fileID: 5229709939227951946}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plants_ATLAS_1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -978,7 +978,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7474703351140150658}
   - component: {fileID: 3715328717832049912}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plants_ATLAS_1 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1065,7 +1065,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1606988847815226119}
   - component: {fileID: 6181300418557697621}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plants_ATLAS_1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1152,7 +1152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6971284422319568907}
   - component: {fileID: 8924344490633267524}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plants_ATLAS_1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1239,7 +1239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4764162469538512938}
   - component: {fileID: 7373811906173858644}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plants_ATLAS_1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1326,7 +1326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7156607614974287923}
   - component: {fileID: 2435285376945891696}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: climbing_plant_44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1455,6 +1455,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall left
       objectReference: {fileID: 0}
+    - target: {fileID: 3923059807152918950, guid: 20018d18c6a073e48ba7afddbd450253, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923059807152918950, guid: 20018d18c6a073e48ba7afddbd450253, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 9126082887321540891, guid: 20018d18c6a073e48ba7afddbd450253, type: 3}
       propertyPath: m_Color.b
       value: 0.32941177
@@ -1511,13 +1519,67 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 759193927377846230, guid: 20018d18c6a073e48ba7afddbd450253, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8809202032045382704}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3923059807152918950, guid: 20018d18c6a073e48ba7afddbd450253, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5062071889232911587}
   m_SourcePrefab: {fileID: 100100000, guid: 20018d18c6a073e48ba7afddbd450253, type: 3}
 --- !u!4 &5540823045739364010 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 759193927377846230, guid: 20018d18c6a073e48ba7afddbd450253, type: 3}
   m_PrefabInstance: {fileID: 5074932183763435900}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8078408750796148954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923059807152918950, guid: 20018d18c6a073e48ba7afddbd450253, type: 3}
+  m_PrefabInstance: {fileID: 5074932183763435900}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &5062071889232911587
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8078408750796148954}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -7.361183, y: -0.274961}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 15.33, y: 5.12}
+    newSize: {x: 15.33, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.19788885, y: 4.570078}
+  m_EdgeRadius: 0
 --- !u!1001 &7761470858188514213
 PrefabInstance:
   m_ObjectHideFlags: 0
