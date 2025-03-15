@@ -37,4 +37,9 @@ public class DecoPool : MonoBehaviour
         foliagePool[random].SetActive(true);
         return foliagePool[random];
     }
+
+    public List<GameObject> GetAllFoliage()
+    {
+        return foliagePool;
+    }
 }

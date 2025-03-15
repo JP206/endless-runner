@@ -1068,7 +1068,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2419091907067737802, guid: eb2bf8cdb7b59f9488212cbd9e57c26c, type: 3}
       propertyPath: gravityStrength
-      value: 1.4
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 2775617668104499895, guid: eb2bf8cdb7b59f9488212cbd9e57c26c, type: 3}
       propertyPath: jumpStrength
@@ -1100,7 +1100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5506869656017467515, guid: eb2bf8cdb7b59f9488212cbd9e57c26c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.1
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5506869656017467515, guid: eb2bf8cdb7b59f9488212cbd9e57c26c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1840,7 +1840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnRate: 0
-  spawnOffset: 2
+  spawnOffset: 1
 --- !u!4 &1388506763
 Transform:
   m_ObjectHideFlags: 0
@@ -1876,7 +1876,7 @@ MonoBehaviour:
   - {fileID: 3901145874480099068, guid: 3882155e0bd97a849a88b8517f10544d, type: 3}
   - {fileID: 2949601764752513349, guid: aed749d9bd35b2b4c83aa6d6d3ab6e87, type: 3}
   - {fileID: 7161153078274822986, guid: 4ba77b4126f94df47be7131b053d4423, type: 3}
-  poolSize: 8
+  poolSize: 10
 --- !u!1 &1393816877
 GameObject:
   m_ObjectHideFlags: 0
@@ -2416,7 +2416,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_TargetDisplay: 0
 --- !u!224 &1622063950
 RectTransform:
@@ -2606,7 +2606,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1758500102
 MonoBehaviour:
   m_ObjectHideFlags: 0

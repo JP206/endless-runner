@@ -28,7 +28,6 @@ public class ObstacleManager : MonoBehaviour
             SpawnObstacle();
         }
     }
-
     void SpawnObstacle()
     {
         GameObject obstacle = pool.GetRandomObstacle();
@@ -36,10 +35,17 @@ public class ObstacleManager : MonoBehaviour
         {
             float obstacleWidth = GetObstacleWidth(obstacle);
 
-            // Calcular la nueva posición en X tomando la posición final del último obstáculo
-            float newX = lastObstaclePositionX + (lastObstacleWidth / 2) + (obstacleWidth / 2) + 2f;
+            // Definir separación mínima y máxima
+            float minSeparation = 0.1f; // Casi pegados
+            float maxSeparation = 1.5f; // No más de 1.5f de separación
 
-            // Si detectamos que la posición está ocupada, desplazamos hasta encontrar un lugar vacío
+            // Calcular una separación dentro del rango permitido
+            float separation = Random.Range(minSeparation, maxSeparation);
+
+            // Nueva posición en X: Justo después del último obstáculo + separación
+            float newX = lastObstaclePositionX + (lastObstacleWidth / 2) + (obstacleWidth / 2) + separation;
+
+            // Ajustar posición para evitar superposiciones y añadir separación si es necesario
             newX = GetValidSpawnPosition(newX, obstacleWidth);
 
             // Asignar la nueva posición al obstáculo
@@ -51,12 +57,12 @@ public class ObstacleManager : MonoBehaviour
         }
     }
 
-
     float GetValidSpawnPosition(float startX, float obstacleWidth)
     {
         float checkX = startX;
         bool positionIsFree = false;
-        int maxAttempts = 6; // Evita bucles infinitos
+        int maxAttempts = 15; // Evita bucles infinitos
+        float extraSeparation = 2f; // Si hay solapamiento fuera de cámara, aumenta la separación
 
         while (!positionIsFree && maxAttempts > 0)
         {
@@ -71,11 +77,11 @@ public class ObstacleManager : MonoBehaviour
                         float leftEdge = col.bounds.min.x;
                         float rightEdge = col.bounds.max.x;
 
-                        // Si el nuevo obstáculo colisiona con otro, desplazamos su posición
+                        // Si el nuevo obstáculo colisiona con otro, lo desplazamos más lejos
                         if ((checkX >= leftEdge && checkX <= rightEdge) || (checkX + obstacleWidth >= leftEdge && checkX + obstacleWidth <= rightEdge))
                         {
                             positionIsFree = false;
-                            checkX += 1f; // Desplazamos a la derecha
+                            checkX += extraSeparation; // Aumentamos la separación si están fuera de la cámara
                             break;
                         }
                     }
