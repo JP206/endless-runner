@@ -44,14 +44,18 @@ public class PlayerSpacialDetector : MonoBehaviour
         Vector2 rayOrigin = transform.position;
         Vector2 rayDirection = Vector2.right;
 
-        float rayDistance = actorWidth / 2f + 0.1f;
+        float rayDistance = actorWidth / 2f + 0.05f;
         RaycastHit2D hit = Physics2D.Raycast(rayOrigin, rayDirection, rayDistance, detectionLayerMask);
 
+        // Debug para ver el raycast
         Color rayColor = hit.collider != null ? Color.red : Color.green;
         Debug.DrawRay(rayOrigin, rayDirection * rayDistance, rayColor);
 
-        return hit.collider != null;
+        if (hit.collider != null) return true;
+
+        return false;
     }
+
 
     public float GroundYPosition()
     {

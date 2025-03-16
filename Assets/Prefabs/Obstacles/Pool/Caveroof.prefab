@@ -445,9 +445,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2819028370417135419}
   - component: {fileID: -1322020138876257252}
+  - component: {fileID: 2974385498385120159}
   m_Layer: 12
   m_Name: Caveroof
-  m_TagString: Floor
+  m_TagString: Rooftop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -496,6 +497,52 @@ MonoBehaviour:
   speed: 8
   posY: 1.7
   xThreshold: -30
+--- !u!61 &2974385498385120159
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3982771473106315032}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -3.5075226, y: 3.068841}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 48.016434, y: 0.9011812}
+  m_EdgeRadius: 0
 --- !u!1 &8847761058553940245
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,7 +848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2146658693564644067, guid: ff1f6c16b94ce9b44950fcff2553b67a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.0313492
+      value: 3.079718
       objectReference: {fileID: 0}
     - target: {fileID: 2146658693564644067, guid: ff1f6c16b94ce9b44950fcff2553b67a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -869,7 +916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 412354482992593256, guid: 7637cf138db7e7a418e36be04805a9a6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.0313492
+      value: 3.079718
       objectReference: {fileID: 0}
     - target: {fileID: 412354482992593256, guid: 7637cf138db7e7a418e36be04805a9a6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -932,12 +979,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 2819028370417135419}
     m_Modifications:
     - target: {fileID: 2146658693564644067, guid: ff1f6c16b94ce9b44950fcff2553b67a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0008054
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146658693564644067, guid: ff1f6c16b94ce9b44950fcff2553b67a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.5324326
       objectReference: {fileID: 0}
     - target: {fileID: 2146658693564644067, guid: ff1f6c16b94ce9b44950fcff2553b67a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.0313492
+      value: 3.079718
       objectReference: {fileID: 0}
     - target: {fileID: 2146658693564644067, guid: ff1f6c16b94ce9b44950fcff2553b67a, type: 3}
       propertyPath: m_LocalPosition.z
