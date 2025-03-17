@@ -1,113 +1,75 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections.Generic;
 
 public class ObstacleManager : MonoBehaviour
 {
-    [SerializeField] int spawnRate;
-    [SerializeField] float spawnOffset; // Distancia fuera de la c�mara donde se generan los obstaculos
+    [SerializeField] private int spawnRate;
+    [SerializeField] private float spawnOffset;
 
-    ObstaclePool pool;
-    float time = 0;
-    float lastObstaclePositionX = 0;
-    float lastObstacleWidth = 0;
+    private ObstaclePool pool;
+    private float lastObstaclePositionX = 0;
+    private float lastObstacleWidth = 0;
+    private GameObject lastSpawnedObstacle;
 
     void Start()
     {
-        pool = GetComponent<ObstaclePool>();
+        pool = Object.FindFirstObjectByType<ObstaclePool>();
+
+        if (pool == null)
+        {
+            Debug.LogError("ObstaclePool no encontrado. Asegúrate de que hay un ObstaclePool en la escena.");
+        }
         lastObstaclePositionX = transform.position.x;
     }
 
     void Update()
     {
-        time += Time.deltaTime;
-
-        // Verifico si hay obstaculos visibles antes de generar otro
-        if (time >= spawnRate && !IsAnyObstacleVisible())
+        if (lastSpawnedObstacle == null || IsObstacleOutOfView(lastSpawnedObstacle))
         {
-            time = 0;
             SpawnObstacle();
         }
     }
+
     void SpawnObstacle()
     {
+        if (pool == null) return;
         GameObject obstacle = pool.GetRandomObstacle();
-        if (obstacle)
-        {
-            float obstacleWidth = GetObstacleWidth(obstacle);
+        if (obstacle == null) return;
 
-            float minSeparation = 0.1f;
-            float maxSeparation = 1.5f;
+        float obstacleWidth = GetObstacleWidth(obstacle);
+        float minSeparation = 0.1f;
+        float maxSeparation = 0.5f;
+        float separation = Random.Range(minSeparation, maxSeparation);
 
-            // Calculo una separacion dentro del rango de seperacion
-            float separation = Random.Range(minSeparation, maxSeparation);
+        // Calcular el borde derecho del último obstáculo
+        float newX = lastObstaclePositionX + lastObstacleWidth + separation - GetLeftEdge(obstacle);
 
-            // posicion en eje X --> Justo despu�s del ultimo obstaculo + separacion
-            float newX = lastObstaclePositionX + (lastObstacleWidth / 2) + (obstacleWidth / 2) + separation;
+        // Asignar la nueva posición sin modificar la Y
+        obstacle.transform.position = new Vector3(newX, obstacle.transform.position.y, 0);
 
-            // Ajusto la posicion para evitar superposiciones y agregar separacion si es necesario
-            newX = GetValidSpawnPosition(newX, obstacleWidth);
+        // Asegurar que el obstáculo es estático
+        MakeObstacleStatic(obstacle);
 
-            // Asignar la nueva posici�n al obst�culo
-            obstacle.transform.position = new Vector3(newX, obstacle.GetComponent<Obstacle>().GetPosY(), 0);
-
-            // Guardar la nueva posici�n y ancho para el siguiente obst�culo
-            lastObstaclePositionX = newX + (obstacleWidth / 2);
-            lastObstacleWidth = obstacleWidth;
-        }
+        // Guardar la referencia del último obstáculo generado
+        lastSpawnedObstacle = obstacle;
+        lastObstaclePositionX = newX;
+        lastObstacleWidth = obstacleWidth;
     }
 
-    float GetValidSpawnPosition(float startX, float obstacleWidth)
+    bool IsObstacleOutOfView(GameObject obstacle)
     {
-        float checkX = startX;
-        bool positionIsFree = false;
-        int maxAttempts = 15; // Evita bucles infinitos
-        float extraSeparation = 2f; // Si hay solapamiento fuera de camara, aumento la separacion
-
-        while (!positionIsFree && maxAttempts > 0)
-        {
-            positionIsFree = true;
-            foreach (var existingObstacle in pool.GetAllObstacles())
-            {
-                if (existingObstacle.activeInHierarchy)
-                {
-                    Collider2D col = existingObstacle.GetComponent<Collider2D>();
-                    if (col != null)
-                    {
-                        float leftEdge = col.bounds.min.x;
-                        float rightEdge = col.bounds.max.x;
-
-                        // Si el nuevo obstaculo colisiona con otro, lo alejo
-                        if ((checkX >= leftEdge && checkX <= rightEdge) || (checkX + obstacleWidth >= leftEdge && checkX + obstacleWidth <= rightEdge))
-                        {
-                            positionIsFree = false;
-                            checkX += extraSeparation;
-                            break;
-                        }
-                    }
-                }
-            }
-            maxAttempts--;
-        }
-        return checkX;
+        float cameraLeftEdge = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, 0)).x;
+        return obstacle.transform.position.x + lastObstacleWidth < cameraLeftEdge;
     }
 
-
-    bool IsAnyObstacleVisible()
+    float GetLeftEdge(GameObject obj)
     {
-        foreach (var obstacle in pool.GetAllObstacles())
+        Collider2D col = obj.GetComponent<Collider2D>();
+        if (col != null)
         {
-            if (obstacle.activeInHierarchy && IsVisibleToCamera(obstacle))
-            {
-                return true;
-            }
+            return col.bounds.min.x;
         }
-        return false;
-    }
-
-    bool IsVisibleToCamera(GameObject obstacle)
-    {
-        Vector3 screenPoint = Camera.main.WorldToViewportPoint(obstacle.transform.position);
-        return screenPoint.x > 0 && screenPoint.x < 1;
+        return obj.transform.position.x;
     }
 
     float GetObstacleWidth(GameObject obstacle)
@@ -126,4 +88,14 @@ public class ObstacleManager : MonoBehaviour
 
         return 5f;
     }
+
+    void MakeObstacleStatic(GameObject obstacle)
+    {
+        Rigidbody2D rb = obstacle.GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.bodyType = RigidbodyType2D.Static;
+        }
+    }
 }
+ 

@@ -548,15 +548,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 70364811865627504, guid: 2c521c4993b19424cbf0b62dc30fbd2a, type: 3}
+  m_Sprite: {fileID: -7622239138705565110, guid: be8908c576220d2438778b1637e23a7e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 8.87, y: 8.87}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &303272533
@@ -568,8 +568,8 @@ Transform:
   m_GameObject: {fileID: 303272531}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.3539114, y: 4.1343007, z: 0.08379541}
-  m_LocalScale: {x: 0.6085, y: 0.612, z: 1}
+  m_LocalPosition: {x: -0.33, y: 4.89, z: 0.08379541}
+  m_LocalScale: {x: 0.37180734, y: 0.3409428, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 619145740}
@@ -1068,11 +1068,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2419091907067737802, guid: eb2bf8cdb7b59f9488212cbd9e57c26c, type: 3}
       propertyPath: gravityStrength
-      value: 1.6
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2775617668104499895, guid: eb2bf8cdb7b59f9488212cbd9e57c26c, type: 3}
       propertyPath: jumpStrength
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4009743536909384130, guid: eb2bf8cdb7b59f9488212cbd9e57c26c, type: 3}
       propertyPath: m_Size.x
@@ -1096,11 +1096,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5506869656017467515, guid: eb2bf8cdb7b59f9488212cbd9e57c26c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.26
+      value: -7.3
       objectReference: {fileID: 0}
     - target: {fileID: 5506869656017467515, guid: eb2bf8cdb7b59f9488212cbd9e57c26c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.09
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5506869656017467515, guid: eb2bf8cdb7b59f9488212cbd9e57c26c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1501,7 +1501,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.864}
   m_AnchorMax: {x: 0.18137509, y: 1}
-  m_AnchoredPosition: {x: -101.400024, y: -13.399994}
+  m_AnchoredPosition: {x: -101.40015, y: -13.400024}
   m_SizeDelta: {x: -250, y: -46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1133006340
@@ -1790,8 +1790,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 947295a086fc3a743b65a1274d758ea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mountainPrefab: {fileID: 5760971077968267003, guid: c797dc9dada2ccb46ada0bd1668662a9, type: 3}
-  rockPrefab: {fileID: 1507388822080015665, guid: 6138e4ff0f8e2074fa5104be8e454a30, type: 3}
+  mountainPrefab: {fileID: 5430593841734925776, guid: 74b7bcc712425484cab4de5bd4c39d32, type: 3}
+  rockPrefab: {fileID: 3857423293583848812, guid: c3ae78114deb34d41869521ebbefed36, type: 3}
   mountainPoolSize: 2
   rockPoolSize: 2
 --- !u!4 &1313929417
@@ -1839,8 +1839,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1249d6c1affb31d43844f2ea0412892d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 0
-  spawnOffset: 1
+  spawnRate: 1
+  spawnOffset: 5
 --- !u!4 &1388506763
 Transform:
   m_ObjectHideFlags: 0
@@ -1850,7 +1850,7 @@ Transform:
   m_GameObject: {fileID: 1388506761}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23, y: -3.73, z: 0.043408915}
+  m_LocalPosition: {x: 90, y: -0.8, z: 0.043408915}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1869,14 +1869,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefabs:
-  - {fileID: 1092050087488269637, guid: 3a1bf567d21917342812d423799ee8ba, type: 3}
-  - {fileID: 3982771473106315032, guid: 8bf7c9f87aaf5cc4cb2b5b0de650ba9f, type: 3}
-  - {fileID: 1996663955496619834, guid: 11da06f731c09d4488e7e597c9a397df, type: 3}
-  - {fileID: 848650990999233858, guid: ec2c615d2516c7e4884293b6904c26cd, type: 3}
-  - {fileID: 3901145874480099068, guid: 3882155e0bd97a849a88b8517f10544d, type: 3}
-  - {fileID: 2949601764752513349, guid: aed749d9bd35b2b4c83aa6d6d3ab6e87, type: 3}
-  - {fileID: 7161153078274822986, guid: 4ba77b4126f94df47be7131b053d4423, type: 3}
-  poolSize: 10
+  - {fileID: 3480786336410267063, guid: 1ed4b64fb5b3e3b42b361e68e45f7c1a, type: 3}
+  poolSize: 2
 --- !u!1 &1393816877
 GameObject:
   m_ObjectHideFlags: 0
@@ -2039,7 +2033,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -166, y: -65}
+  m_AnchoredPosition: {x: -1735, y: -189}
   m_SizeDelta: {x: 294.53003, y: 75.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1514823368
@@ -2606,7 +2600,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1758500102
 MonoBehaviour:
   m_ObjectHideFlags: 0
