@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class ObstacleManager : MonoBehaviour
 {
     [SerializeField] int spawnRate;
-    [SerializeField] float spawnOffset; // Distancia fuera de la cámara donde se generan los obstáculos
+    [SerializeField] float spawnOffset; // Distancia fuera de la cámara donde se generan los obstaculos
 
     ObstaclePool pool;
     float time = 0;
@@ -28,7 +28,6 @@ public class ObstacleManager : MonoBehaviour
             SpawnObstacle();
         }
     }
-
     void SpawnObstacle()
     {
         GameObject obstacle = pool.GetRandomObstacle();
@@ -36,10 +35,16 @@ public class ObstacleManager : MonoBehaviour
         {
             float obstacleWidth = GetObstacleWidth(obstacle);
 
-            // Calcular la nueva posición en X tomando la posición final del último obstáculo
-            float newX = lastObstaclePositionX + (lastObstacleWidth / 2) + (obstacleWidth / 2) + 2f;
+            float minSeparation = 0.1f;
+            float maxSeparation = 1.5f;
 
-            // Si detectamos que la posición está ocupada, desplazamos hasta encontrar un lugar vacío
+            // Calculo una separacion dentro del rango de seperacion
+            float separation = Random.Range(minSeparation, maxSeparation);
+
+            // posicion en eje X --> Justo después del ultimo obstaculo + separacion
+            float newX = lastObstaclePositionX + (lastObstacleWidth / 2) + (obstacleWidth / 2) + separation;
+
+            // Ajusto la posicion para evitar superposiciones y agregar separacion si es necesario
             newX = GetValidSpawnPosition(newX, obstacleWidth);
 
             // Asignar la nueva posición al obstáculo
@@ -51,12 +56,12 @@ public class ObstacleManager : MonoBehaviour
         }
     }
 
-
     float GetValidSpawnPosition(float startX, float obstacleWidth)
     {
         float checkX = startX;
         bool positionIsFree = false;
-        int maxAttempts = 6; // Evita bucles infinitos
+        int maxAttempts = 15; // Evita bucles infinitos
+        float extraSeparation = 2f; // Si hay solapamiento fuera de camara, aumento la separacion
 
         while (!positionIsFree && maxAttempts > 0)
         {
@@ -71,11 +76,11 @@ public class ObstacleManager : MonoBehaviour
                         float leftEdge = col.bounds.min.x;
                         float rightEdge = col.bounds.max.x;
 
-                        // Si el nuevo obstáculo colisiona con otro, desplazamos su posición
+                        // Si el nuevo obstaculo colisiona con otro, lo alejo
                         if ((checkX >= leftEdge && checkX <= rightEdge) || (checkX + obstacleWidth >= leftEdge && checkX + obstacleWidth <= rightEdge))
                         {
                             positionIsFree = false;
-                            checkX += 1f; // Desplazamos a la derecha
+                            checkX += extraSeparation;
                             break;
                         }
                     }
