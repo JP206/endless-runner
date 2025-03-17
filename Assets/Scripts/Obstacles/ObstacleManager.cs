@@ -21,7 +21,7 @@ public class ObstacleManager : MonoBehaviour
     {
         time += Time.deltaTime;
 
-        // Verifico si hay obstáculos visibles antes de generar otro
+        // Verifico si hay obstaculos visibles antes de generar otro
         if (time >= spawnRate && !IsAnyObstacleVisible())
         {
             time = 0;
