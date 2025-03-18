@@ -11,6 +11,8 @@ public class Attack : MonoBehaviour
 
     [SerializeField] private Transform projectileSpawnPoint;
     [SerializeField] private float attackCooldown = 0.3f;
+    [SerializeField] private float projectileSpeed = 10f;
+
     private float nextAttackTime = 0f;
 
     public void InitializeReferences(
@@ -65,6 +67,12 @@ public class Attack : MonoBehaviour
             PlayThrowSound();
             proyectile.transform.position = projectileSpawnPoint.position;
             proyectile.transform.rotation = projectileSpawnPoint.rotation;
+
+            Rigidbody2D rb = proyectile.GetComponent<Rigidbody2D>();
+            if (rb)
+            {
+                rb.linearVelocity = new Vector2(projectileSpeed, rb.linearVelocity.y);
+            }
         }
     }
 

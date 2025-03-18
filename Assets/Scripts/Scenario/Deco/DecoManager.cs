@@ -41,7 +41,7 @@ public class DecoManager : MonoBehaviour
 
             newX = GetValidFoliagePosition(newX, foliageWidth);
 
-            foliage.transform.position = new Vector3(newX, foliage.GetComponent<Obstacle>().GetPosY(), 0);
+            //foliage.transform.position = new Vector3(newX, foliage.GetComponent<Obstacle>().GetPosY(), 0);
 
             lastFoliagePositionX = newX + (foliageWidth / 2);
             lastFoliageWidth = foliageWidth;

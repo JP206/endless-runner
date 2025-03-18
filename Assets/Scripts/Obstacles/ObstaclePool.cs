@@ -30,7 +30,6 @@ public class ObstaclePool : MonoBehaviour
     {
         List<GameObject> availableObstacles = new List<GameObject>();
 
-        // Filtramos solo los obstáculos inactivos
         foreach (var obstacle in pooledObstacles)
         {
             if (!obstacle.activeInHierarchy)
@@ -39,7 +38,6 @@ public class ObstaclePool : MonoBehaviour
             }
         }
 
-        // Si hay obstáculos disponibles, elegimos uno aleatorio
         if (availableObstacles.Count > 0)
         {
             int randomIndex = Random.Range(0, availableObstacles.Count);
@@ -48,7 +46,7 @@ public class ObstaclePool : MonoBehaviour
             return selectedObstacle;
         }
 
-        return null; // Si no hay ninguno disponible, devuelve null
+        return null;
     }
 
     public List<GameObject> GetAllObstacles()

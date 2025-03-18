@@ -10,6 +10,7 @@ public class ObstacleManager : MonoBehaviour
     private float lastObstaclePositionX = 0;
     private float lastObstacleWidth = 0;
     private GameObject lastSpawnedObstacle;
+    float camMaxX => Camera.main.ViewportToWorldPoint(new Vector3(1.0f, 0f, 0f)).x;
 
     void Start()
     {
@@ -41,16 +42,10 @@ public class ObstacleManager : MonoBehaviour
         float maxSeparation = 0.5f;
         float separation = Random.Range(minSeparation, maxSeparation);
 
-        // Calcular el borde derecho del último obstáculo
         float newX = lastObstaclePositionX + lastObstacleWidth + separation - GetLeftEdge(obstacle);
 
-        // Asignar la nueva posición sin modificar la Y
         obstacle.transform.position = new Vector3(newX, obstacle.transform.position.y, 0);
 
-        // Asegurar que el obstáculo es estático
-        MakeObstacleStatic(obstacle);
-
-        // Guardar la referencia del último obstáculo generado
         lastSpawnedObstacle = obstacle;
         lastObstaclePositionX = newX;
         lastObstacleWidth = obstacleWidth;
@@ -58,7 +53,7 @@ public class ObstacleManager : MonoBehaviour
 
     bool IsObstacleOutOfView(GameObject obstacle)
     {
-        float cameraLeftEdge = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, 0)).x;
+        float cameraLeftEdge = camMaxX;
         return obstacle.transform.position.x + lastObstacleWidth < cameraLeftEdge;
     }
 
@@ -87,15 +82,6 @@ public class ObstacleManager : MonoBehaviour
         }
 
         return 5f;
-    }
-
-    void MakeObstacleStatic(GameObject obstacle)
-    {
-        Rigidbody2D rb = obstacle.GetComponent<Rigidbody2D>();
-        if (rb != null)
-        {
-            rb.bodyType = RigidbodyType2D.Static;
-        }
     }
 }
  
