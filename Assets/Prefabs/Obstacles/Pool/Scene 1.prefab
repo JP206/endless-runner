@@ -59,7 +59,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   posY: -0.97
-  xThreshold: -30
+  xThreshold: -10
 --- !u!1001 &391267236692465771
 PrefabInstance:
   m_ObjectHideFlags: 0

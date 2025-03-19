@@ -168,6 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileSpawnPoint: {fileID: 7281407899854611677}
   attackCooldown: 0.4
+  projectileSpeed: 10
 --- !u!114 &2419091907067737802
 MonoBehaviour:
   m_ObjectHideFlags: 0

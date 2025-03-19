@@ -59,7 +59,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7
   posY: 3.669626
-  xThreshold: -16
+  xThreshold: -10
 --- !u!1 &507423812929458772
 GameObject:
   m_ObjectHideFlags: 0

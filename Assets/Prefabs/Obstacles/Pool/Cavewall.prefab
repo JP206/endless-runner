@@ -1210,4 +1210,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   posY: 0.1
-  xThreshold: -65
+  xThreshold: -10
