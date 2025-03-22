@@ -16,8 +16,6 @@ public class ObstacleManager : MonoBehaviour
     private float referenceX = 0;
     private float nextTriggerX = 0;
 
-    float camMinX => Camera.main.ViewportToWorldPoint(new Vector3(0f, 0f, 0f)).x;
-
     void Start()
     {
         pool = Object.FindFirstObjectByType<ObstaclePool>();
@@ -45,14 +43,13 @@ public class ObstacleManager : MonoBehaviour
 
         if (referenceX >= nextTriggerX)
         {
-            referenceX = 0;
+            //referenceX = 0;
             SpawnObstacle();
         }
     }
 
     void SpawnObstacle()
     {
-        Debug.Log("INSIDE SPAWN OBSTACLE");
         if (pool == null) return;
 
         GameObject obstacle = pool.GetRandomObstacle();
@@ -109,7 +106,6 @@ public class ObstacleManager : MonoBehaviour
         if (rightmostCollider != null)
         {
             GameObject rightmostObject = rightmostCollider.gameObject;
-            float objectX = rightmostObject.transform.position.x;
         }
 
         return rightmostCollider;
@@ -136,7 +132,6 @@ public class ObstacleManager : MonoBehaviour
         if (firstCollider != null)
         {
             GameObject firstObject = firstCollider.gameObject;
-            float objectX = firstObject.transform.position.x;
         }
 
         return firstCollider;
@@ -144,15 +139,6 @@ public class ObstacleManager : MonoBehaviour
 
     public void CheckCameraBorder()
     {
-        if(firstSpawnedObstacle.transform.position.x > camMinX)
-        {
-            StartCoroutine(TimeCondition());
-        }
-    }
-
-    IEnumerator TimeCondition()
-    {
-        yield return new WaitForSeconds(2f);
         firstSpawnedObstacle.SetActive(false);
     }
 }

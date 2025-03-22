@@ -20,11 +20,11 @@ public class PrefabDeactivator : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag(playerTag))
+        if (collision.CompareTag("DeactivateObstacle"))
         {
             if (obstacleManager != null)
             {
-                obstacleManager.CheckCameraBorder();
+                parentPrefab.SetActive(false);
             }
         }
     }

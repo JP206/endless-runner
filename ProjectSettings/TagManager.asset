@@ -12,6 +12,7 @@ TagManager:
   - EnemyBack
   - Wall
   - Rooftop
+  - DeactivateObstacle
   layers:
   - Default
   - TransparentFX
