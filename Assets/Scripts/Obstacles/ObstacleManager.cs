@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 public class ObstacleManager : MonoBehaviour
 {
@@ -8,11 +9,14 @@ public class ObstacleManager : MonoBehaviour
     [SerializeField] private float triggerDistance = 5f;
     [SerializeField] private Camera cameraXPos;
 
+    private GameObject firstSpawnedObstacle;
     private GameObject lastSpawnedObstacle;
     private ObstaclePool pool;
     private float lastObstaclePositionX = 0;
-    private float referenceX = 0; // Punto de referencia que avanza con el entorno
-    private float nextTriggerX = 0; // Ahora será exactamente donde termina el último collider
+    private float referenceX = 0;
+    private float nextTriggerX = 0;
+
+    float camMinX => Camera.main.ViewportToWorldPoint(new Vector3(0f, 0f, 0f)).x;
 
     void Start()
     {
@@ -27,57 +31,53 @@ public class ObstacleManager : MonoBehaviour
         referenceX = transform.position.x;
         lastObstaclePositionX = referenceX;
 
-        // Generamos el primer obstáculo al inicio
         SpawnObstacle();
 
-        // 🚀 Ajustamos `nextTriggerX` después del primer spawn
         if (nextTriggerX < referenceX)
         {
-            nextTriggerX = referenceX + 5f; // Ajustamos con un margen de seguridad
+            nextTriggerX = referenceX + 5f;
         }
     }
 
     void Update()
     {
-        referenceX += Time.deltaTime * 5f; // Simulamos el avance del entorno
+        referenceX += Time.deltaTime * 5f;
 
-        // Si el punto de referencia ha alcanzado el trigger, generamos el siguiente prefab
         if (referenceX >= nextTriggerX)
         {
+            referenceX = 0;
             SpawnObstacle();
         }
     }
 
     void SpawnObstacle()
     {
+        Debug.Log("INSIDE SPAWN OBSTACLE");
         if (pool == null) return;
 
         GameObject obstacle = pool.GetRandomObstacle();
         if (obstacle == null) return;
 
-        // 📌 Encontrar el Collider más a la derecha del último obstáculo
         Collider2D lastRightmostCollider = lastSpawnedObstacle != null ? GetRightmostCollider(lastSpawnedObstacle) : null;
         float lastRightmostX = lastRightmostCollider != null ? lastRightmostCollider.bounds.max.x : lastObstaclePositionX;
 
-        // 📌 Encontrar el primer Collider2D del nuevo prefab
         Collider2D firstCollider = GetFirstCollider(obstacle);
         if (firstCollider == null)
         {
-            Debug.LogWarning($"⚠️ El prefab {obstacle.name} no tiene Colliders.");
             return;
         }
 
-        // ✅ Ahora tomamos el punto más a la izquierda del nuevo prefab
         float firstColliderX = firstCollider.bounds.min.x;
 
-        // 📌 Calculamos la distancia necesaria para mover el nuevo prefab
-        float distanceToMove = (lastRightmostX + 5f) - firstColliderX;
+        float distanceToMove = (lastRightmostX + 3f) - firstColliderX;
 
-        // 📌 Movemos el nuevo prefab para alinearlo correctamente con un margen de 5 unidades
         obstacle.transform.position += new Vector3(distanceToMove, 0, 0);
         obstacle.SetActive(true);
 
-        // ✅ Actualizamos el siguiente punto de activación basado en el nuevo prefab generado
+        Debug.Log("referenceX: " + referenceX);
+        Debug.Log("nextTriggerX: " + nextTriggerX);
+
+        firstSpawnedObstacle = lastSpawnedObstacle;
         lastSpawnedObstacle = obstacle;
         lastObstaclePositionX = lastRightmostX;
         nextTriggerX = lastRightmostX + triggerDistance + 5f;
@@ -140,5 +140,19 @@ public class ObstacleManager : MonoBehaviour
         }
 
         return firstCollider;
+    }
+
+    public void CheckCameraBorder()
+    {
+        if(firstSpawnedObstacle.transform.position.x > camMinX)
+        {
+            StartCoroutine(TimeCondition());
+        }
+    }
+
+    IEnumerator TimeCondition()
+    {
+        yield return new WaitForSeconds(2f);
+        firstSpawnedObstacle.SetActive(false);
     }
 }

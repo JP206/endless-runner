@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
@@ -9,14 +9,6 @@ public class Obstacle : MonoBehaviour
     void Update()
     {
         transform.position += Vector3.left * speed * Time.deltaTime;
-    }
-
-    void OnBecameInvisible()
-    {
-        if (gameObject.activeInHierarchy)
-        {
-            gameObject.SetActive(false);
-        }
     }
 
     public float GetPosY()

@@ -7,8 +7,8 @@ public class ObstaclePool : MonoBehaviour
     [SerializeField] GameObject[] obstaclePrefabs;
     [SerializeField] int poolSize;
 
-    void Start()
-    {
+    void Awake()
+    { 
         InitializePool();
     }
 
@@ -32,6 +32,8 @@ public class ObstaclePool : MonoBehaviour
 
         foreach (var obstacle in pooledObstacles)
         {
+            Debug.Log("availableObstacles: " + obstacle.name);
+            Debug.Log("availableObstacles: " + obstacle.activeInHierarchy);    
             if (!obstacle.activeInHierarchy)
             {
                 availableObstacles.Add(obstacle);
@@ -48,10 +50,4 @@ public class ObstaclePool : MonoBehaviour
 
         return null;
     }
-
-    public List<GameObject> GetAllObstacles()
-    {
-        return pooledObstacles;
-    }
-
 }
