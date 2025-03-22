@@ -27,5 +27,13 @@ public class PrefabDeactivator : MonoBehaviour
                 parentPrefab.SetActive(false);
             }
         }
+
+        if (collision.CompareTag("SpawnPrefab"))
+        {
+            if (obstacleManager != null)
+            {
+                obstacleManager.SpawnObstacle();
+            }
+        }
     }
 }

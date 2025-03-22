@@ -37,18 +37,7 @@ public class ObstacleManager : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        referenceX += Time.deltaTime * 5f;
-
-        if (referenceX >= nextTriggerX)
-        {
-            //referenceX = 0;
-            SpawnObstacle();
-        }
-    }
-
-    void SpawnObstacle()
+    public void SpawnObstacle()
     {
         if (pool == null) return;
 

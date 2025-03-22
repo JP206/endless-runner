@@ -13,6 +13,7 @@ TagManager:
   - Wall
   - Rooftop
   - DeactivateObstacle
+  - SpawnPrefab
   layers:
   - Default
   - TransparentFX
