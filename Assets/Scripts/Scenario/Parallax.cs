@@ -63,5 +63,6 @@ public class Parallax : MonoBehaviour
 public enum ParallaxObject
 {
     Mountain,
-    Rock
+    Rock,
+    FarMountain
 }

@@ -31,9 +31,7 @@ public class ObstaclePool : MonoBehaviour
         List<GameObject> availableObstacles = new List<GameObject>();
 
         foreach (var obstacle in pooledObstacles)
-        {
-            Debug.Log("availableObstacles: " + obstacle.name);
-            Debug.Log("availableObstacles: " + obstacle.activeInHierarchy);    
+        { 
             if (!obstacle.activeInHierarchy)
             {
                 availableObstacles.Add(obstacle);
