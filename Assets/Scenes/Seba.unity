@@ -553,7 +553,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 19.2, y: 9.98}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -640,7 +640,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.87, y: 8.87}
+  m_Size: {x: 4.75, y: 4.82}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1575,7 +1575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5506869656017467515, guid: eb2bf8cdb7b59f9488212cbd9e57c26c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.1
+      value: -2.53
       objectReference: {fileID: 0}
     - target: {fileID: 5506869656017467515, guid: eb2bf8cdb7b59f9488212cbd9e57c26c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1803,7 +1803,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2368,25 +2368,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mountainPrefab: {fileID: 5430593841734925776, guid: 74b7bcc712425484cab4de5bd4c39d32, type: 3}
   rockPrefab: {fileID: 3857423293583848812, guid: c3ae78114deb34d41869521ebbefed36, type: 3}
-  farMountainPrefab: {fileID: 5430593841734925776, guid: 5481d06d7e3bf0e47957f95a9a3a4725, type: 3}
-  frontPlants:
-  - {fileID: 7827471397420945739, guid: f708b52dc6bdec14f864357f16b4813c, type: 3}
-  - {fileID: 1409776263608119620, guid: 096d7719007c7dc44ba445165a1b9489, type: 3}
-  - {fileID: 612623804323685588, guid: 66f506ce2e146a84ba7eb9966f0aa112, type: 3}
-  - {fileID: 3432543162148919743, guid: 212026ae5dccb1e49ac2682d77de61ca, type: 3}
-  clouds:
-  - {fileID: 8415015698612483444, guid: c6f5921c8669dd84badab28b674eaa19, type: 3}
-  - {fileID: 9093606525220187874, guid: a6c37a8a1a2186f49a7ec399143d916d, type: 3}
-  - {fileID: 6193056233546413378, guid: c66c1a02358a47843874ebd7cdf8a599, type: 3}
+  farMountainPrefab: {fileID: 0}
+  frontPlants: []
+  clouds: []
   mountainPoolSize: 2
   rockPoolSize: 2
-  farMountainPoolSize: 2
-  plantsPoolSize: 2
-  cloudPoolSize: 2
-  plantSpawnPos: {x: 25, y: 0.3, z: 0}
-  yRangeMin: 2.2
-  yRangeMax: 3.3
-  xSpawnPos: 25
+  farMountainPoolSize: 0
+  plantsPoolSize: 0
+  cloudPoolSize: 0
+  plantSpawnPos: {x: 0, y: 0, z: 0}
+  yRangeMin: 0
+  yRangeMax: 0
+  xSpawnPos: 0
 --- !u!4 &1313929417
 Transform:
   m_ObjectHideFlags: 0
@@ -2468,7 +2461,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2687,7 +2680,7 @@ MonoBehaviour:
   spawnRate: 0
   spawnOffset: 0
   triggerDistance: 5
-  cameraXPos: {fileID: 519420031}
+  cameraXPos: {fileID: 0}
 --- !u!4 &1388506763
 Transform:
   m_ObjectHideFlags: 0
