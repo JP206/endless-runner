@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class Enemy : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Collider2D enemyCollider;
     private Rigidbody2D rb;
+    private ScoreManager scoreManager;
 
     private void Start()
     {
@@ -34,7 +36,8 @@ public class Enemy : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         enemyCollider = GetComponent<Collider2D>();
-
+        scoreManager = FindAnyObjectByType<ScoreManager>();
+        Debug.Log("Score Manager: " + scoreManager);
         rb = GetComponent<Rigidbody2D>();
         if (rb == null)
         {
@@ -93,11 +96,9 @@ public class Enemy : MonoBehaviour
         if (collision.CompareTag("Player") && canDealDamage && isVulnerable)
         {
             PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
-            Debug.Log("playerHealth: " + playerHealth);
 
             if (playerHealth != null)
             {
-                Debug.Log("El enemigo dañó al jugador.");
                 playerHealth.TakeDamage();
                 StartCoroutine(DamageCooldown());
             }
@@ -133,6 +134,7 @@ public class Enemy : MonoBehaviour
         rb.gravityScale = 1;
         rb.linearVelocity = new Vector2(0, -fallSpeed);
 
+        if (scoreManager != null) scoreManager.AddScore(20);
         StartCoroutine(BlinkWhileDying());
     }
 
@@ -154,13 +156,11 @@ public class Enemy : MonoBehaviour
     public void PlayAttackSound()
     {
         if (audioSource != null && audioSource.clip != null)
-        {
             audioSource.PlayOneShot(audioSource.clip);
-        }
     }
 
     public void SetVulnerability(bool state)
     {
-        isVulnerable = state; 
+        isVulnerable = state;
     }
 }

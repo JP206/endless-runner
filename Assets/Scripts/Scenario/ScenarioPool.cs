@@ -165,10 +165,7 @@ public class ScenarioPool : MonoBehaviour
 
         foreach (GameObject plant in pooledPlants)
         {
-            if (!plant.activeInHierarchy)
-            {
-                availablePlants.Add(plant);
-            }
+            if (!plant.activeInHierarchy) availablePlants.Add(plant);
         }
 
         if (availablePlants.Count > 0)
@@ -188,10 +185,7 @@ public class ScenarioPool : MonoBehaviour
 
         foreach (GameObject cloud in pooledClouds)
         {
-            if (!cloud.activeInHierarchy)
-            {
-                availableClouds.Add(cloud);
-            }
+            if (!cloud.activeInHierarchy) availableClouds.Add(cloud);
         }
 
         if (availableClouds.Count > 0)
@@ -237,10 +231,7 @@ public class ScenarioPool : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(6, 12));
             Vector3 cloudSpawnPos = new(xSpawnPos, Random.Range(yRangeMin, yRangeMax), 0);
             GameObject cloud = GetRandomPooledCloud();
-            if (cloud)
-            {
-                cloud.transform.position = cloudSpawnPos;
-            }
+            if (cloud) cloud.transform.position = cloudSpawnPos;
         }
     }
 }

@@ -51,10 +51,7 @@ public class PlayerHealth : MonoBehaviour
         foreach (Transform child in healthContainer)
         {
             Image heartImage = child.GetComponent<Image>();
-            if (heartImage != null)
-            {
-                hearts.Add(heartImage);
-            }
+            if (heartImage != null) hearts.Add(heartImage);
         }
     }
 
@@ -69,24 +66,15 @@ public class PlayerHealth : MonoBehaviour
 
         StartCoroutine(HandleDamageEffects());
 
-        if (currentLives <= 0)
-        {
-            Die();
-        }
+        if (currentLives <= 0) Die();
     }
 
     private void UpdateHealthUI()
     {
         for (int i = 0; i < hearts.Count; i++)
         {
-            if (i < currentLives)
-            {
-                hearts[i].sprite = fullHeart;
-            }
-            else
-            {
-                hearts[i].sprite = emptyHeart;
-            }
+            if (i < currentLives) hearts[i].sprite = fullHeart;
+            else  hearts[i].sprite = emptyHeart;
         }
     }
 
@@ -105,10 +93,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void SetCollidersActive(bool isActive)
     {
-        foreach (var collider in colliders)
-        {
-            collider.enabled = isActive;
-        }
+        foreach (var collider in colliders) collider.enabled = isActive;
     }
 
     public void Die()
@@ -120,9 +105,7 @@ public class PlayerHealth : MonoBehaviour
         animator.SetBool("isHitted", false);
 
         SetCollidersActive(false);
-
         FreezeScene();
-
         StartCoroutine(WaitForDeathAnimation());
     }
 
@@ -197,18 +180,12 @@ public class PlayerHealth : MonoBehaviour
 
     public void PlayDeathSound()
     {
-        if (audioSource != null && deathSound != null)
-        {
-            audioSource.PlayOneShot(deathSound);
-        }
+        if (audioSource != null && deathSound != null) audioSource.PlayOneShot(deathSound);
     }
 
     public void PlayHurtSound()
     {
-        if (audioSource != null && hurtSound != null)
-        {
-            audioSource.PlayOneShot(hurtSound);
-        }
+        if (audioSource != null && hurtSound != null) audioSource.PlayOneShot(hurtSound);
     }
 
     public void StopBackgroundMusic()

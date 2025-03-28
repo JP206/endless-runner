@@ -11,11 +11,9 @@ public class PlayerOutOfBounds : MonoBehaviour
 
     private void Start()
     {
-        if (mainCamera == null)
-            mainCamera = Camera.main;
+        if (mainCamera == null) mainCamera = Camera.main;
 
-        if (playerHealth == null)
-            playerHealth = GetComponent<PlayerHealth>();
+        if (playerHealth == null) playerHealth = GetComponent<PlayerHealth>();
     }
 
     private void Update()
@@ -39,9 +37,6 @@ public class PlayerOutOfBounds : MonoBehaviour
 
         yield return new WaitForSeconds(delayBeforeGameOver);
 
-        if (playerHealth != null)
-        {
-            playerHealth.Die();
-        }
+        if (playerHealth != null) playerHealth.Die();
     }
 }
