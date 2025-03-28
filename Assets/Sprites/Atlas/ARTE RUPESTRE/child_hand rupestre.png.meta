@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 198d3c6146d90a142bacd262a0a8d3d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5715911706612198956
+    second: child_hand rupestre_0
+  - first:
+      213: 7439352920199988628
+    second: child_hand rupestre_1
+  - first:
+      213: -2703220013204969477
+    second: child_hand rupestre_2
+  - first:
+      213: -2526214470540528391
+    second: child_hand rupestre_3
+  - first:
+      213: -1377630076956585111
+    second: child_hand rupestre_4
+  - first:
+      213: 8237917995313536651
+    second: child_hand rupestre_5
+  - first:
+      213: -9060556495715791002
+    second: child_hand rupestre_6
+  - first:
+      213: -825346218581601857
+    second: child_hand rupestre_7
+  - first:
+      213: -7671493075020476976
+    second: child_hand rupestre_8
+  - first:
+      213: 4512700374021351633
+    second: child_hand rupestre_9
+  - first:
+      213: 3185095775495105393
+    second: child_hand rupestre_10
+  - first:
+      213: 1886754393069625397
+    second: child_hand rupestre_11
+  - first:
+      213: 1577296346458961604
+    second: child_hand rupestre_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: child_hand rupestre_0
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 290
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d112e746900da0b0800000000000000
+      internalID: -5715911706612198956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: child_hand rupestre_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 305
+        width: 18
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4950947c014ed3760800000000000000
+      internalID: 7439352920199988628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: child_hand rupestre_2
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 303
+        width: 17
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf7e03368bb3c7ad0800000000000000
+      internalID: -2703220013204969477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: child_hand rupestre_3
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 290
+        width: 21
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4faf0d25511fcd0800000000000000
+      internalID: -2526214470540528391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: child_hand rupestre_4
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 265
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 963db177ebca1ece0800000000000000
+      internalID: -1377630076956585111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: child_hand rupestre_5
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 261
+        width: 11
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e167735c6f25270800000000000000
+      internalID: 8237917995313536651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: child_hand rupestre_6
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 255
+        width: 18
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f808d3fdf624280800000000000000
+      internalID: -9060556495715791002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: child_hand rupestre_7
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 250
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb15bb0bcf7cb84f0800000000000000
+      internalID: -825346218581601857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: child_hand rupestre_8
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 211
+        width: 86
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dd098e81b1698590800000000000000
+      internalID: -7671493075020476976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: child_hand rupestre_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 188
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d8a053b41550ae30800000000000000
+      internalID: 4512700374021351633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: child_hand rupestre_10
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 222
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17babf18bbbb33c20800000000000000
+      internalID: 3185095775495105393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: child_hand rupestre_11
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 165
+        width: 36
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530a251cf191f2a10800000000000000
+      internalID: 1886754393069625397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: child_hand rupestre_12
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 159
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c635349baea3e510800000000000000
+      internalID: 1577296346458961604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      child_hand rupestre_0: -5715911706612198956
+      child_hand rupestre_1: 7439352920199988628
+      child_hand rupestre_10: 3185095775495105393
+      child_hand rupestre_11: 1886754393069625397
+      child_hand rupestre_12: 1577296346458961604
+      child_hand rupestre_2: -2703220013204969477
+      child_hand rupestre_3: -2526214470540528391
+      child_hand rupestre_4: -1377630076956585111
+      child_hand rupestre_5: 8237917995313536651
+      child_hand rupestre_6: -9060556495715791002
+      child_hand rupestre_7: -825346218581601857
+      child_hand rupestre_8: -7671493075020476976
+      child_hand rupestre_9: 4512700374021351633
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

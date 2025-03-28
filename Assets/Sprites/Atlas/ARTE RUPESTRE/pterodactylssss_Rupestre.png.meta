@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: f6c5d4c885fda174cb6f448c45d45468
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3744101706066729698
+    second: pterodactylssss_Rupestre_0
+  - first:
+      213: -7636170677271911010
+    second: pterodactylssss_Rupestre_1
+  - first:
+      213: 2022105790916565971
+    second: pterodactylssss_Rupestre_2
+  - first:
+      213: 6351370354176481588
+    second: pterodactylssss_Rupestre_3
+  - first:
+      213: 967122227680021779
+    second: pterodactylssss_Rupestre_4
+  - first:
+      213: 4108486604428852038
+    second: pterodactylssss_Rupestre_5
+  - first:
+      213: 1069294204646046235
+    second: pterodactylssss_Rupestre_6
+  - first:
+      213: -3425297206294704711
+    second: pterodactylssss_Rupestre_7
+  - first:
+      213: 5344391563089047758
+    second: pterodactylssss_Rupestre_8
+  - first:
+      213: 5708812487726536550
+    second: pterodactylssss_Rupestre_9
+  - first:
+      213: -1387738694324153982
+    second: pterodactylssss_Rupestre_10
+  - first:
+      213: -919748798540956850
+    second: pterodactylssss_Rupestre_11
+  - first:
+      213: -3064313001724286215
+    second: pterodactylssss_Rupestre_12
+  - first:
+      213: -511265796830717850
+    second: pterodactylssss_Rupestre_13
+  - first:
+      213: -4650307109405909713
+    second: pterodactylssss_Rupestre_14
+  - first:
+      213: 3349798193008320326
+    second: pterodactylssss_Rupestre_15
+  - first:
+      213: 5335154714107034973
+    second: pterodactylssss_Rupestre_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pterodactylssss_Rupestre_0
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 347
+        width: 84
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1565fed5574a0cc0800000000000000
+      internalID: -3744101706066729698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactylssss_Rupestre_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 359
+        width: 196
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9524f82a3fd60690800000000000000
+      internalID: -7636170677271911010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactylssss_Rupestre_2
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 331
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db97d5d086ff0c10800000000000000
+      internalID: 2022105790916565971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactylssss_Rupestre_3
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 338
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 439d2a5afa9942850800000000000000
+      internalID: 6351370354176481588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactylssss_Rupestre_4
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 199
+        width: 196
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31d8043ca88eb6d00800000000000000
+      internalID: 967122227680021779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactylssss_Rupestre_5
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 302
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64bbe6d8cc6440930800000000000000
+      internalID: 4108486604428852038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactylssss_Rupestre_6
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 187
+        width: 84
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1abf4ce965e6de00800000000000000
+      internalID: 1069294204646046235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactylssss_Rupestre_7
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 171
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd8aa0c656e670d0800000000000000
+      internalID: -3425297206294704711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactylssss_Rupestre_8
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 178
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec074829fc71b2a40800000000000000
+      internalID: 5344391563089047758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactylssss_Rupestre_9
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 140
+        width: 196
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667114406b6c93f40800000000000000
+      internalID: 5708812487726536550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactylssss_Rupestre_10
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 120
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2819eb39203cdbce0800000000000000
+      internalID: -1387738694324153982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactylssss_Rupestre_11
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 142
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bbf5c37556c33f0800000000000000
+      internalID: -919748798540956850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactylssss_Rupestre_12
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 128
+        width: 84
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9faec937f8f5975d0800000000000000
+      internalID: -3064313001724286215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactylssss_Rupestre_13
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 112
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6681912777e97e8f0800000000000000
+      internalID: -511265796830717850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactylssss_Rupestre_14
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 119
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d1367825ac67fb0800000000000000
+      internalID: -4650307109405909713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactylssss_Rupestre_15
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 61
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f918365bfdc7e20800000000000000
+      internalID: 3349798193008320326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pterodactylssss_Rupestre_16
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 83
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5db91412f64a0a40800000000000000
+      internalID: 5335154714107034973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pterodactylssss_Rupestre_0: -3744101706066729698
+      pterodactylssss_Rupestre_1: -7636170677271911010
+      pterodactylssss_Rupestre_10: -1387738694324153982
+      pterodactylssss_Rupestre_11: -919748798540956850
+      pterodactylssss_Rupestre_12: -3064313001724286215
+      pterodactylssss_Rupestre_13: -511265796830717850
+      pterodactylssss_Rupestre_14: -4650307109405909713
+      pterodactylssss_Rupestre_15: 3349798193008320326
+      pterodactylssss_Rupestre_16: 5335154714107034973
+      pterodactylssss_Rupestre_2: 2022105790916565971
+      pterodactylssss_Rupestre_3: 6351370354176481588
+      pterodactylssss_Rupestre_4: 967122227680021779
+      pterodactylssss_Rupestre_5: 4108486604428852038
+      pterodactylssss_Rupestre_6: 1069294204646046235
+      pterodactylssss_Rupestre_7: -3425297206294704711
+      pterodactylssss_Rupestre_8: 5344391563089047758
+      pterodactylssss_Rupestre_9: 5708812487726536550
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

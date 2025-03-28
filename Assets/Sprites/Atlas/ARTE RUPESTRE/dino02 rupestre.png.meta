@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: a88f057f9824b0243aa05185f44984f1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4158018328052430723
+    second: dino02 rupestre_0
+  - first:
+      213: 8566827170296232102
+    second: dino02 rupestre_1
+  - first:
+      213: -7264711678472713979
+    second: dino02 rupestre_2
+  - first:
+      213: 4873600845872103093
+    second: dino02 rupestre_3
+  - first:
+      213: -4510384524552135925
+    second: dino02 rupestre_4
+  - first:
+      213: 6602968059015392688
+    second: dino02 rupestre_5
+  - first:
+      213: -4814167574460747738
+    second: dino02 rupestre_6
+  - first:
+      213: -1846975053254156639
+    second: dino02 rupestre_7
+  - first:
+      213: -3292815128786829192
+    second: dino02 rupestre_8
+  - first:
+      213: -8746207058389092321
+    second: dino02 rupestre_9
+  - first:
+      213: -1440540686195285292
+    second: dino02 rupestre_10
+  - first:
+      213: 8692960645139439359
+    second: dino02 rupestre_11
+  - first:
+      213: -2166033323315503737
+    second: dino02 rupestre_12
+  - first:
+      213: 7925450344147800853
+    second: dino02 rupestre_13
+  - first:
+      213: 4156884860447153026
+    second: dino02 rupestre_14
+  - first:
+      213: -3303041433716622000
+    second: dino02 rupestre_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dino02 rupestre_0
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 414
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d780fda5c50cb46c0800000000000000
+      internalID: -4158018328052430723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino02 rupestre_1
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 420
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8fba12ceb73e670800000000000000
+      internalID: 8566827170296232102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino02 rupestre_2
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 388
+        width: 57
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5098001f73f8e2b90800000000000000
+      internalID: -7264711678472713979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino02 rupestre_3
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 407
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5beff3bd52282a340800000000000000
+      internalID: 4873600845872103093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino02 rupestre_4
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 412
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b96a50c25e761c0800000000000000
+      internalID: -4510384524552135925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino02 rupestre_5
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 362
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bdecd4377472ab50800000000000000
+      internalID: 6602968059015392688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino02 rupestre_6
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 399
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620301bf814a03db0800000000000000
+      internalID: -4814167574460747738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino02 rupestre_7
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 250
+        width: 186
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae17c989f93e56e0800000000000000
+      internalID: -1846975053254156639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino02 rupestre_8
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 383
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87001a126129d42d0800000000000000
+      internalID: -3292815128786829192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino02 rupestre_9
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 318
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1834b0150b3f9680800000000000000
+      internalID: -8746207058389092321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino02 rupestre_10
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 334
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d225d2d0eb220ce0800000000000000
+      internalID: -1440540686195285292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino02 rupestre_11
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 115
+        width: 168
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffe9cf346a993a870800000000000000
+      internalID: 8692960645139439359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino02 rupestre_12
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 316
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78dde182b24b0f1e0800000000000000
+      internalID: -2166033323315503737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino02 rupestre_13
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 110
+        width: 107
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5135defd81bdcfd60800000000000000
+      internalID: 7925450344147800853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino02 rupestre_14
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 102
+        width: 216
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28bd627a1c830b930800000000000000
+      internalID: 4156884860447153026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino02 rupestre_15
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 193
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05d7ce8f05d3922d0800000000000000
+      internalID: -3303041433716622000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      dino02 rupestre_0: -4158018328052430723
+      dino02 rupestre_1: 8566827170296232102
+      dino02 rupestre_10: -1440540686195285292
+      dino02 rupestre_11: 8692960645139439359
+      dino02 rupestre_12: -2166033323315503737
+      dino02 rupestre_13: 7925450344147800853
+      dino02 rupestre_14: 4156884860447153026
+      dino02 rupestre_15: -3303041433716622000
+      dino02 rupestre_2: -7264711678472713979
+      dino02 rupestre_3: 4873600845872103093
+      dino02 rupestre_4: -4510384524552135925
+      dino02 rupestre_5: 6602968059015392688
+      dino02 rupestre_6: -4814167574460747738
+      dino02 rupestre_7: -1846975053254156639
+      dino02 rupestre_8: -3292815128786829192
+      dino02 rupestre_9: -8746207058389092321
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
