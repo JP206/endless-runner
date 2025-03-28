@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Audio;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,6 +10,11 @@ public class PlayerHealth : MonoBehaviour
     private int currentLives;
 
     private Animator animator;
+    private AudioClip hurtSound;
+    private AudioClip deathSound;
+    private AudioSource audioSource;
+    private AudioSource backgroundMusic;
+
     private Collider2D[] colliders;
     private bool isDead = false;
 
@@ -16,14 +22,25 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject gameOverImage;
 
-    [SerializeField] private Transform healthContainer; // Contenedor de corazones
     private List<Image> hearts = new List<Image>();
-    [SerializeField] private Sprite fullHeart; // Imagen del corazón rojo
-    [SerializeField] private Sprite emptyHeart; // Imagen del corazón gris
+    
+    [SerializeField] private Transform healthContainer;
+    [SerializeField] private Sprite fullHeart;
+    [SerializeField] private Sprite emptyHeart;
 
-    public void InitializeReferences(Animator animator)
+    public void InitializeReferences(
+        Animator animator, 
+        AudioClip hurtSound, 
+        AudioClip deathSound,
+        AudioSource audioSource,
+        AudioSource backgroundMusic
+        )
     {
         this.animator = animator;
+        this.hurtSound = hurtSound;
+        this.deathSound = deathSound;
+        this.audioSource = audioSource;
+        this.backgroundMusic = backgroundMusic;
     }
 
     private void Start()
@@ -31,7 +48,6 @@ public class PlayerHealth : MonoBehaviour
         currentLives = maxLives;
         colliders = GetComponentsInChildren<Collider2D>();
 
-        // Obtener las imágenes de los corazones desde el contenedor
         foreach (Transform child in healthContainer)
         {
             Image heartImage = child.GetComponent<Image>();
@@ -48,7 +64,8 @@ public class PlayerHealth : MonoBehaviour
 
         currentLives--;
 
-        UpdateHealthUI(); // Actualizar la UI de vidas
+        PlayHurtSound();
+        UpdateHealthUI();
 
         StartCoroutine(HandleDamageEffects());
 
@@ -64,11 +81,11 @@ public class PlayerHealth : MonoBehaviour
         {
             if (i < currentLives)
             {
-                hearts[i].sprite = fullHeart; // Mantiene los corazones rojos
+                hearts[i].sprite = fullHeart;
             }
             else
             {
-                hearts[i].sprite = emptyHeart; // Cambia a corazón gris
+                hearts[i].sprite = emptyHeart;
             }
         }
     }
@@ -94,7 +111,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    private void Die()
+    public void Die()
     {
         if (isDead) return;
         isDead = true;
@@ -126,7 +143,8 @@ public class PlayerHealth : MonoBehaviour
     {
         gameOverCanvas.SetActive(true);
         gameOverImage.SetActive(true);
-
+        PlayDeathSound();
+        StopBackgroundMusic();
         StartCoroutine(FadeInPanel());
         StartCoroutine(AnimateGameOverImage());
     }
@@ -176,4 +194,26 @@ public class PlayerHealth : MonoBehaviour
 
         imageTransform.anchoredPosition = endPosition;
     }
+
+    public void PlayDeathSound()
+    {
+        if (audioSource != null && deathSound != null)
+        {
+            audioSource.PlayOneShot(deathSound);
+        }
+    }
+
+    public void PlayHurtSound()
+    {
+        if (audioSource != null && hurtSound != null)
+        {
+            audioSource.PlayOneShot(hurtSound);
+        }
+    }
+
+    public void StopBackgroundMusic()
+    {
+        backgroundMusic.gameObject.SetActive(false);
+    }
+
 }

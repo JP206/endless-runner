@@ -20,13 +20,13 @@ public class Enemy : MonoBehaviour
     private bool isCharging = false;
     private bool isStopped = false;
     private bool isDead = false;
+    private bool isVulnerable = true;
 
     private Animator animator;
     private AudioSource audioSource;
     private SpriteRenderer spriteRenderer;
     private Collider2D enemyCollider;
     private Rigidbody2D rb;
-    [SerializeField] private Collider2D backCollider;
 
     private void Start()
     {
@@ -90,27 +90,19 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && canDealDamage && isVulnerable)
         {
             PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
+            Debug.Log("playerHealth: " + playerHealth);
 
             if (playerHealth != null)
             {
-                if (collision.gameObject.name == "EnemyBack")
-                {
-                    Debug.Log("¡Golpe en la cabeza! El enemigo muere.");
-                    DestroyEnemy();
-                }
-                else if (canDealDamage)
-                {
-                    Debug.Log("El enemigo dañó al jugador.");
-                    playerHealth.TakeDamage();
-                    StartCoroutine(DamageCooldown());
-                }
+                Debug.Log("El enemigo dañó al jugador.");
+                playerHealth.TakeDamage();
+                StartCoroutine(DamageCooldown());
             }
         }
     }
-
 
     private IEnumerator DamageCooldown()
     {
@@ -143,6 +135,7 @@ public class Enemy : MonoBehaviour
 
         StartCoroutine(BlinkWhileDying());
     }
+
     private IEnumerator BlinkWhileDying()
     {
         float deathAnimTime = animator.GetCurrentAnimatorStateInfo(0).length;
@@ -164,5 +157,10 @@ public class Enemy : MonoBehaviour
         {
             audioSource.PlayOneShot(audioSource.clip);
         }
+    }
+
+    public void SetVulnerability(bool state)
+    {
+        isVulnerable = state; 
     }
 }
