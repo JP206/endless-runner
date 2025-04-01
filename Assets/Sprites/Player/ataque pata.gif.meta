@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 38cee375149eda941bbab7d13b637f00
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 569154706959353571
+    second: ataque pata_0
+  - first:
+      213: -8249785465174637140
+    second: ataque pata_1
+  - first:
+      213: -3324142932408859591
+    second: ataque pata_2
+  - first:
+      213: 4138319632309120154
+    second: ataque pata_3
+  - first:
+      213: 7470348598317431186
+    second: ataque pata_4
+  - first:
+      213: 621715077404054140
+    second: ataque pata_5
+  - first:
+      213: 4890666492532036832
+    second: ataque pata_6
+  - first:
+      213: -935827855649492674
+    second: ataque pata_7
+  - first:
+      213: 9007163933411385949
+    second: ataque pata_8
+  - first:
+      213: -365388940173175271
+    second: ataque pata_9
+  - first:
+      213: -8906170089730948668
+    second: ataque pata_10
+  - first:
+      213: -613237402401184092
+    second: ataque pata_11
+  - first:
+      213: -5471583338874377458
+    second: ataque pata_12
+  - first:
+      213: -6835719783188192712
+    second: ataque pata_13
+  - first:
+      213: 8650697507027261381
+    second: ataque pata_14
+  - first:
+      213: 5102878006009512237
+    second: ataque pata_15
+  - first:
+      213: -4990761881672915976
+    second: ataque pata_16
+  - first:
+      213: -8427067956676648860
+    second: ataque pata_17
+  - first:
+      213: -4019074992592382172
+    second: ataque pata_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ataque pata_0
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1693
+        width: 320
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e6cd82c03b06e700800000000000000
+      internalID: 569154706959353571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque pata_1
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 1692
+        width: 290
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca5c51324dfd28d80800000000000000
+      internalID: -8249785465174637140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque pata_2
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 1694
+        width: 307
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93405237d954ed1d0800000000000000
+      internalID: -3324142932408859591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque pata_3
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1694
+        width: 309
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c6fc2a7c34e6930800000000000000
+      internalID: 4138319632309120154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque pata_4
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1156
+        width: 345
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2993c0778720ca760800000000000000
+      internalID: 7470348598317431186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque pata_5
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1156
+        width: 285
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c725c24a196c0a800800000000000000
+      internalID: 621715077404054140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque pata_6
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 1156
+        width: 296
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4174a53432fd340800000000000000
+      internalID: 4890666492532036832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque pata_7
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 1317
+        width: 465
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31b81506854303f0800000000000000
+      internalID: -935827855649492674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque pata_8
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 1160
+        width: 391
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5222bc10efdffc70800000000000000
+      internalID: 9007163933411385949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque pata_9
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 862
+        width: 417
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9161f10e1b0edeaf0800000000000000
+      internalID: -365388940173175271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque pata_10
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 622
+        width: 345
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1c0648d7de66480800000000000000
+      internalID: -8906170089730948668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque pata_11
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 898
+        width: 177
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6e4e2e4d75d77f0800000000000000
+      internalID: -613237402401184092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque pata_12
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 622
+        width: 345
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b627761f70114b0800000000000000
+      internalID: -5471583338874377458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque pata_13
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 622
+        width: 345
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83225fa0315a221a0800000000000000
+      internalID: -6835719783188192712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque pata_14
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 620
+        width: 391
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c797bd9c837d0870800000000000000
+      internalID: 8650697507027261381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque pata_15
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 81
+        width: 375
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d21c950a28011d640800000000000000
+      internalID: 5102878006009512237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque pata_16
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 81
+        width: 375
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f36354c2804dbab0800000000000000
+      internalID: -4990761881672915976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque pata_17
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 79
+        width: 374
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4602638875a0d0b80800000000000000
+      internalID: -8427067956676648860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataque pata_18
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 79
+        width: 374
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42710e496906938c0800000000000000
+      internalID: -4019074992592382172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ataque pata_0: 569154706959353571
+      ataque pata_1: -8249785465174637140
+      ataque pata_10: -8906170089730948668
+      ataque pata_11: -613237402401184092
+      ataque pata_12: -5471583338874377458
+      ataque pata_13: -6835719783188192712
+      ataque pata_14: 8650697507027261381
+      ataque pata_15: 5102878006009512237
+      ataque pata_16: -4990761881672915976
+      ataque pata_17: -8427067956676648860
+      ataque pata_18: -4019074992592382172
+      ataque pata_2: -3324142932408859591
+      ataque pata_3: 4138319632309120154
+      ataque pata_4: 7470348598317431186
+      ataque pata_5: 621715077404054140
+      ataque pata_6: 4890666492532036832
+      ataque pata_7: -935827855649492674
+      ataque pata_8: 9007163933411385949
+      ataque pata_9: -365388940173175271
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
