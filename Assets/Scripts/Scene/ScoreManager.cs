@@ -22,7 +22,18 @@ public class ScoreManager : MonoBehaviour
         {
             time = 0;
             score++;
-            scoreText.text = "Score: " + score;
+            UpdateScoreUI();
         }
+    }
+
+    public void AddScore(int points)
+    {
+        score += points;
+        UpdateScoreUI();
+    }
+
+    private void UpdateScoreUI()
+    {
+        scoreText.text = "Score: " + score;
     }
 }

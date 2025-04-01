@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -20,13 +21,14 @@ public class Enemy : MonoBehaviour
     private bool isCharging = false;
     private bool isStopped = false;
     private bool isDead = false;
+    private bool isVulnerable = true;
 
     private Animator animator;
     private AudioSource audioSource;
     private SpriteRenderer spriteRenderer;
     private Collider2D enemyCollider;
     private Rigidbody2D rb;
-    [SerializeField] private Collider2D backCollider;
+    private ScoreManager scoreManager;
 
     private void Start()
     {
@@ -34,7 +36,8 @@ public class Enemy : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         enemyCollider = GetComponent<Collider2D>();
-
+        scoreManager = FindAnyObjectByType<ScoreManager>();
+        Debug.Log("Score Manager: " + scoreManager);
         rb = GetComponent<Rigidbody2D>();
         if (rb == null)
         {
@@ -90,27 +93,17 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && canDealDamage && isVulnerable)
         {
             PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
 
             if (playerHealth != null)
             {
-                if (collision.gameObject.name == "EnemyBack")
-                {
-                    Debug.Log("¡Golpe en la cabeza! El enemigo muere.");
-                    DestroyEnemy();
-                }
-                else if (canDealDamage)
-                {
-                    Debug.Log("El enemigo dañó al jugador.");
-                    playerHealth.TakeDamage();
-                    StartCoroutine(DamageCooldown());
-                }
+                playerHealth.TakeDamage();
+                StartCoroutine(DamageCooldown());
             }
         }
     }
-
 
     private IEnumerator DamageCooldown()
     {
@@ -141,8 +134,10 @@ public class Enemy : MonoBehaviour
         rb.gravityScale = 1;
         rb.linearVelocity = new Vector2(0, -fallSpeed);
 
+        if (scoreManager != null) scoreManager.AddScore(20);
         StartCoroutine(BlinkWhileDying());
     }
+
     private IEnumerator BlinkWhileDying()
     {
         float deathAnimTime = animator.GetCurrentAnimatorStateInfo(0).length;
@@ -161,8 +156,11 @@ public class Enemy : MonoBehaviour
     public void PlayAttackSound()
     {
         if (audioSource != null && audioSource.clip != null)
-        {
             audioSource.PlayOneShot(audioSource.clip);
-        }
+    }
+
+    public void SetVulnerability(bool state)
+    {
+        isVulnerable = state;
     }
 }

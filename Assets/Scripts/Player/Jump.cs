@@ -37,9 +37,6 @@ public class Jump : MonoBehaviour
 
     public void PlayJumpSound() 
     {
-        if (audioSource != null && jumpSound != null)
-        {
-            audioSource.PlayOneShot(jumpSound);
-        }
+        if (audioSource != null && jumpSound != null) audioSource.PlayOneShot(jumpSound);
     }
 }

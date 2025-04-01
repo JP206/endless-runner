@@ -22,10 +22,7 @@ public class EventButton : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !isPaused)
-        {
-            PauseGame();
-        }
+        if (Input.GetKeyDown(KeyCode.Escape) && !isPaused) PauseGame();
     }
 
     public void LoadScene(string sceneName, bool resetTime = true)
