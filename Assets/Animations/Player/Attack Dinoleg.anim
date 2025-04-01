@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ataque pata
+  m_Name: Attack Dinoleg
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -52,6 +52,12 @@ AnimationClip:
       value: {fileID: 8650697507027261381, guid: 38cee375149eda941bbab7d13b637f00, type: 3}
     - time: 0.75
       value: {fileID: 5102878006009512237, guid: 38cee375149eda941bbab7d13b637f00, type: 3}
+    - time: 0.8
+      value: {fileID: -4990761881672915976, guid: 38cee375149eda941bbab7d13b637f00, type: 3}
+    - time: 0.85
+      value: {fileID: -8427067956676648860, guid: 38cee375149eda941bbab7d13b637f00, type: 3}
+    - time: 0.9
+      value: {fileID: -4019074992592382172, guid: 38cee375149eda941bbab7d13b637f00, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -90,12 +96,15 @@ AnimationClip:
     - {fileID: -6835719783188192712, guid: 38cee375149eda941bbab7d13b637f00, type: 3}
     - {fileID: 8650697507027261381, guid: 38cee375149eda941bbab7d13b637f00, type: 3}
     - {fileID: 5102878006009512237, guid: 38cee375149eda941bbab7d13b637f00, type: 3}
+    - {fileID: -4990761881672915976, guid: 38cee375149eda941bbab7d13b637f00, type: 3}
+    - {fileID: -8427067956676648860, guid: 38cee375149eda941bbab7d13b637f00, type: 3}
+    - {fileID: -4019074992592382172, guid: 38cee375149eda941bbab7d13b637f00, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.8
+    m_StopTime: 0.95
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
