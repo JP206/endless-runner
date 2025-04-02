@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3c0c8a17419cd8d4fa0a8b64cbe92970
+guid: d5467f861dd8e834181af73cc1a087f7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 246510827237406854
-    second: shop_menu_new_BACK_0
+      213: -4605013500878074615
+    second: Recurso 110leg button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shop_menu_new_BACK_0
+      name: Recurso 110leg button_0
       rect:
         serializedVersion: 2
-        x: 81
-        y: 10
-        width: 659
-        height: 1042
+        x: 42
+        y: 30
+        width: 1895
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 688f5c29a48cb6300800000000000000
-      internalID: 246510827237406854
+      spriteID: 90dc84e8e94b710c0800000000000000
+      internalID: -4605013500878074615
       vertices: []
       indices: 
       edges: []
