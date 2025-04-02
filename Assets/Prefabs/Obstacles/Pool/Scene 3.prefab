@@ -6425,6 +6425,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave  Dark (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4829805369559076712, guid: 3a1bf567d21917342812d423799ee8ba, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6064633552877953413, guid: 3a1bf567d21917342812d423799ee8ba, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.9
@@ -6476,6 +6480,22 @@ PrefabInstance:
     - target: {fileID: 6064633552877953413, guid: 3a1bf567d21917342812d423799ee8ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865595169961929754, guid: 3a1bf567d21917342812d423799ee8ba, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8993546
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865595169961929754, guid: 3a1bf567d21917342812d423799ee8ba, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.8790722
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865595169961929754, guid: 3a1bf567d21917342812d423799ee8ba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 36.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865595169961929754, guid: 3a1bf567d21917342812d423799ee8ba, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
