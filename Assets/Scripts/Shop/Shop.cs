@@ -132,6 +132,9 @@ public class Shop : MonoBehaviour
         {
             PlayerData.Coins -= cost;
             Debug.Log($"Compraste: {itemName}. Monedas restantes: {PlayerData.Coins}");
+            PlayerPrefs.SetInt("coins", PlayerData.Coins);
+            int itemStackCount = PlayerPrefs.GetInt(itemName);
+            PlayerPrefs.SetInt(itemName, itemStackCount + 1);
         }
     }
 

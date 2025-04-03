@@ -11,7 +11,7 @@ public class ScoreManager : MonoBehaviour
 
     void Start()
     {
-        scoreText.text = "Score: " + score;
+        scoreText.text = score.ToString();
     }
 
     void Update()
@@ -34,6 +34,18 @@ public class ScoreManager : MonoBehaviour
 
     private void UpdateScoreUI()
     {
-        scoreText.text = "Score: " + score;
+        scoreText.text = score.ToString();
+    }
+
+    public void GetCoins()
+    {
+        // se llama cuando se termina el juego
+        int coins = (int) (score / 100);
+        PlayerData.Coins += coins;
+        PlayerPrefs.SetInt("coins", PlayerData.Coins);
+        if (score > PlayerPrefs.GetInt("score"))
+        {
+            PlayerPrefs.SetInt("score", score);
+        }
     }
 }

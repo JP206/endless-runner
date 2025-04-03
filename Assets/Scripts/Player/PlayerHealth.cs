@@ -101,6 +101,8 @@ public class PlayerHealth : MonoBehaviour
         if (isDead) return;
         isDead = true;
 
+        FindAnyObjectByType<ScoreManager>().GetCoins();
+
         animator.SetTrigger("isDead");
         animator.SetBool("isHitted", false);
 
