@@ -2,6 +2,7 @@
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.Audio;
 
 public class Shop : MonoBehaviour
 {
@@ -9,36 +10,40 @@ public class Shop : MonoBehaviour
     [SerializeField] private GameObject shopCanvas;
     [SerializeField] private GameObject addsCanvas;
 
-    [Header("Botones del Shop (pagos)")]
+    [Header("Payed Shop Buttons")]
     [SerializeField] private Button extraLifeButton;
     [SerializeField] private Button dinoLegButton;
     [SerializeField] private Button invincibleButton;
 
-    [Header("Contenedores del Shop")]
+    [Header("Shop Containers")]
     [SerializeField] private Image extraLifeContainer;
     [SerializeField] private Image dinoLegContainer;
     [SerializeField] private Image invincibleContainer;
 
-    [Header("Contenedores del AddsCanvas")]
+    [Header("AddsCanvas Container")]
     [SerializeField] private Image extraLifeAddContainer;
     [SerializeField] private Image tripleAttackAddContainer;
     [SerializeField] private Image doublePointsAddContainer;
     [SerializeField] private Image goBackAddImage;
     [SerializeField] private Image homeImage;
 
-    [Header("Otros botones animables")]
+    [Header("Other Buttons")]
     [SerializeField] private Image goBackImage;
     [SerializeField] private Image addsTabImage;
 
-    [Header("Sprites deshabilitados")]
+    [Header("Disabled Sprites")]
     [SerializeField] private Sprite extraLifeDisabledSprite;
     [SerializeField] private Sprite dinoLegDisabledSprite;
     [SerializeField] private Sprite invincibleDisabledSprite;
 
-    [Header("Sprites normales")]
+    [Header("Normal Sprites")]
     [SerializeField] private Sprite extraLifeNormalSprite;
     [SerializeField] private Sprite dinoLegNormalSprite;
     [SerializeField] private Sprite invincibleNormalSprite;
+
+    [Header("Sounds Click")]
+    [SerializeField] private AudioSource clickSound;
+
 
     private GameObject currentCanvas;
 
@@ -60,7 +65,6 @@ public class Shop : MonoBehaviour
         {
             AnimateButtonPress(addsTabImage.transform);
         }
-
         UpdateUI();
     }
 
@@ -76,6 +80,7 @@ public class Shop : MonoBehaviour
 
     public void LoadMainMenu()
     {
+        ClickButtonSound();
         SceneManager.LoadScene("MainMenu");
     }
 
@@ -171,6 +176,7 @@ public class Shop : MonoBehaviour
 
     private IEnumerator ButtonPressAnimation(Transform target)
     {
+        ClickButtonSound();
         Vector3 originalScale = target.localScale;
         Vector3 pressedScale = originalScale * 0.95f;
 
@@ -193,5 +199,11 @@ public class Shop : MonoBehaviour
         }
 
         target.localScale = originalScale;
+    }
+
+    public void ClickButtonSound()
+    {
+        if (clickSound != null && clickSound.clip != null)
+            clickSound.PlayOneShot(clickSound.clip);
     }
 }
