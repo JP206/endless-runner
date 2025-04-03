@@ -134,7 +134,7 @@ public class Enemy : MonoBehaviour
         rb.gravityScale = 1;
         rb.linearVelocity = new Vector2(0, -fallSpeed);
 
-        if (scoreManager != null) scoreManager.AddScore(20);
+        if (scoreManager != null) scoreManager.AddScore(5);
         StartCoroutine(BlinkWhileDying());
     }
 

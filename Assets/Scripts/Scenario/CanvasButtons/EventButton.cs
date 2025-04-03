@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections;
 
 public class EventButton : MonoBehaviour
 {
@@ -8,6 +9,16 @@ public class EventButton : MonoBehaviour
     public GameObject pauseImage;
     public Image fadeOverlay;
     public MonoBehaviour inputController;
+
+    [Header("Sounds Click")]
+    [SerializeField] private AudioSource clickSound;
+    [SerializeField] private AudioSource pauseSound;
+
+    [Header("Buttons")]
+    [SerializeField] private Transform retryButtonTransform;
+    [SerializeField] private Transform mainMenuButtonTransform;
+    [SerializeField] private Transform resumeButtonTransform;
+    [SerializeField] private Transform exitButtonTransform;
 
     private bool isPaused = false;
 
@@ -22,7 +33,11 @@ public class EventButton : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !isPaused) PauseGame();
+        if (Input.GetKeyDown(KeyCode.Escape) && !isPaused)
+        {
+            GetPauseSound();
+            PauseGame();
+        }
     }
 
     public void LoadScene(string sceneName, bool resetTime = true)
@@ -35,11 +50,15 @@ public class EventButton : MonoBehaviour
 
     public void ReloadScene()
     {
+        StartCoroutine(AnimateButtonPress(retryButtonTransform));
+        GetClickSound();
         LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void LoadMainMenu()
     {
+        StartCoroutine(AnimateButtonPress(mainMenuButtonTransform));
+        GetClickSound();
         LoadScene("MainMenu");
     }
 
@@ -50,6 +69,8 @@ public class EventButton : MonoBehaviour
 
     public void ResumeGame()
     {
+        StartCoroutine(AnimateButtonPress(resumeButtonTransform));
+        GetClickSound();
         ToggleGameState(false);
     }
 
@@ -78,11 +99,53 @@ public class EventButton : MonoBehaviour
 
     public void PlayGame()
     {
-        LoadScene("Game");
+        GetClickSound();
+        LoadScene("Seba");
     }
 
     public void ExitGame()
     {
+        StartCoroutine(AnimateButtonPress(exitButtonTransform));
+        GetClickSound();
         Application.Quit();
+    }
+
+    private void GetClickSound()
+    {
+        if (clickSound != null && clickSound.clip != null)
+            clickSound.PlayOneShot(clickSound.clip);
+    }
+
+    private void GetPauseSound()
+    {
+        if (pauseSound != null && pauseSound.clip != null)
+            pauseSound.PlayOneShot(pauseSound.clip);
+    }
+
+    private IEnumerator AnimateButtonPress(Transform target)
+    {
+        if (target == null) yield break;
+
+        Vector3 originalScale = target.localScale;
+        Vector3 pressedScale = originalScale * 0.95f;
+        float duration = 0.05f;
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            target.localScale = Vector3.Lerp(originalScale, pressedScale, elapsed / duration);
+            yield return null;
+        }
+
+        elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            target.localScale = Vector3.Lerp(pressedScale, originalScale, elapsed / duration);
+            yield return null;
+        }
+
+        target.localScale = originalScale;
     }
 }
