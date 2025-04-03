@@ -44,7 +44,6 @@ public class Shop : MonoBehaviour
     [Header("Sounds Click")]
     [SerializeField] private AudioSource clickSound;
 
-
     private GameObject currentCanvas;
 
     void Start()
@@ -55,6 +54,7 @@ public class Shop : MonoBehaviour
 
     public void OpenTab(GameObject canvasToOpen)
     {
+        ClickButtonSound();
         shopCanvas.SetActive(false);
         addsCanvas.SetActive(false);
 
