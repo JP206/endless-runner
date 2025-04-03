@@ -3,14 +3,18 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     [SerializeField] GameObject enemy;
-    [SerializeField] float spawnRate;
+    float spawnRate, time = 0;
 
-    float time = 0;
+    void Start()
+    {
+        spawnRate = Random.Range(5, 15);
+    }
 
     void Update()
     {
         if (time >= spawnRate)
         {
+            spawnRate = Random.Range(10, 20);
             time = 0;
             Instantiate(enemy, transform.position, Quaternion.identity);
         }
