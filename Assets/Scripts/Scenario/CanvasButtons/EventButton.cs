@@ -10,15 +10,17 @@ public class EventButton : MonoBehaviour
     public Image fadeOverlay;
     public MonoBehaviour inputController;
 
+    [SerializeField] PlayerHealth playerHealth;
+
     [Header("Sounds Click")]
     [SerializeField] private AudioSource clickSound;
     [SerializeField] private AudioSource pauseSound;
 
     [Header("Buttons")]
-    [SerializeField] private Transform retryButtonTransform;
-    [SerializeField] private Transform mainMenuButtonTransform;
-    [SerializeField] private Transform resumeButtonTransform;
-    [SerializeField] private Transform exitButtonTransform;
+    [SerializeField] private Image retryButtonImage;
+    [SerializeField] private Image mainMenuButtonImage;
+    [SerializeField] private Image resumeButtonImage;
+    [SerializeField] private Image exitButtonImage;
 
     private bool isPaused = false;
 
@@ -35,9 +37,14 @@ public class EventButton : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !isPaused)
         {
-            GetPauseSound();
             PauseGame();
         }
+    }
+
+    public void SaveMeButton()
+    {
+        GetClickSound();
+        Debug.Log("Revive player");
     }
 
     public void LoadScene(string sceneName, bool resetTime = true)
@@ -50,27 +57,28 @@ public class EventButton : MonoBehaviour
 
     public void ReloadScene()
     {
-        StartCoroutine(AnimateButtonPress(retryButtonTransform));
         GetClickSound();
+        StartCoroutine(AnimateButtonPress(retryButtonImage));
         LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void LoadMainMenu()
     {
-        StartCoroutine(AnimateButtonPress(mainMenuButtonTransform));
         GetClickSound();
+        StartCoroutine(AnimateButtonPress(mainMenuButtonImage));
         LoadScene("MainMenu");
     }
 
     public void PauseGame()
     {
+        GetPauseSound();
         ToggleGameState(true);
     }
 
     public void ResumeGame()
     {
-        StartCoroutine(AnimateButtonPress(resumeButtonTransform));
         GetClickSound();
+        StartCoroutine(AnimateButtonPress(resumeButtonImage));
         ToggleGameState(false);
     }
 
@@ -105,8 +113,8 @@ public class EventButton : MonoBehaviour
 
     public void ExitGame()
     {
-        StartCoroutine(AnimateButtonPress(exitButtonTransform));
         GetClickSound();
+        StartCoroutine(AnimateButtonPress(exitButtonImage));
         Application.Quit();
     }
 
@@ -122,11 +130,12 @@ public class EventButton : MonoBehaviour
             pauseSound.PlayOneShot(pauseSound.clip);
     }
 
-    private IEnumerator AnimateButtonPress(Transform target)
+    private IEnumerator AnimateButtonPress(Image buttonImage)
     {
-        if (target == null) yield break;
+        if (buttonImage == null) yield break;
 
-        Vector3 originalScale = target.localScale;
+        RectTransform rect = buttonImage.rectTransform;
+        Vector3 originalScale = rect.localScale;
         Vector3 pressedScale = originalScale * 0.95f;
         float duration = 0.05f;
         float elapsed = 0f;
@@ -134,7 +143,7 @@ public class EventButton : MonoBehaviour
         while (elapsed < duration)
         {
             elapsed += Time.unscaledDeltaTime;
-            target.localScale = Vector3.Lerp(originalScale, pressedScale, elapsed / duration);
+            rect.localScale = Vector3.Lerp(originalScale, pressedScale, elapsed / duration);
             yield return null;
         }
 
@@ -142,10 +151,10 @@ public class EventButton : MonoBehaviour
         while (elapsed < duration)
         {
             elapsed += Time.unscaledDeltaTime;
-            target.localScale = Vector3.Lerp(pressedScale, originalScale, elapsed / duration);
+            rect.localScale = Vector3.Lerp(pressedScale, originalScale, elapsed / duration);
             yield return null;
         }
 
-        target.localScale = originalScale;
+        rect.localScale = originalScale;
     }
 }
