@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections;
 
 public class Shop : MonoBehaviour
 {
@@ -8,18 +9,33 @@ public class Shop : MonoBehaviour
     [SerializeField] private GameObject shopCanvas;
     [SerializeField] private GameObject addsCanvas;
 
+    [Header("Botones del Shop (pagos)")]
     [SerializeField] private Button extraLifeButton;
     [SerializeField] private Button dinoLegButton;
     [SerializeField] private Button invincibleButton;
 
+    [Header("Contenedores del Shop")]
     [SerializeField] private Image extraLifeContainer;
     [SerializeField] private Image dinoLegContainer;
     [SerializeField] private Image invincibleContainer;
 
+    [Header("Contenedores del AddsCanvas")]
+    [SerializeField] private Image extraLifeAddContainer;
+    [SerializeField] private Image tripleAttackAddContainer;
+    [SerializeField] private Image doublePointsAddContainer;
+    [SerializeField] private Image goBackAddImage;
+    [SerializeField] private Image homeImage;
+
+    [Header("Otros botones animables")]
+    [SerializeField] private Image goBackImage;
+    [SerializeField] private Image addsTabImage;
+
+    [Header("Sprites deshabilitados")]
     [SerializeField] private Sprite extraLifeDisabledSprite;
     [SerializeField] private Sprite dinoLegDisabledSprite;
     [SerializeField] private Sprite invincibleDisabledSprite;
 
+    [Header("Sprites normales")]
     [SerializeField] private Sprite extraLifeNormalSprite;
     [SerializeField] private Sprite dinoLegNormalSprite;
     [SerializeField] private Sprite invincibleNormalSprite;
@@ -40,6 +56,11 @@ public class Shop : MonoBehaviour
         canvasToOpen.SetActive(true);
         currentCanvas = canvasToOpen;
 
+        if (canvasToOpen == addsCanvas && addsTabImage != null)
+        {
+            AnimateButtonPress(addsTabImage.transform);
+        }
+
         UpdateUI();
     }
 
@@ -49,6 +70,7 @@ public class Shop : MonoBehaviour
         shopCanvas.SetActive(true);
         currentCanvas = shopCanvas;
 
+        AnimateButtonPress(goBackImage.transform);
         UpdateUI();
     }
 
@@ -64,12 +86,15 @@ public class Shop : MonoBehaviour
             switch (selectedTabName)
             {
                 case "ExtraLife":
+                    AnimateButtonPress(extraLifeContainer.transform);
                     TryPurchase(500, "ExtraLife");
                     break;
                 case "DinoLeg":
+                    AnimateButtonPress(dinoLegContainer.transform);
                     TryPurchase(1000, "DinoLeg");
                     break;
                 case "Invincible":
+                    AnimateButtonPress(invincibleContainer.transform);
                     TryPurchase(2000, "Invincible");
                     break;
                 default:
@@ -78,6 +103,18 @@ public class Shop : MonoBehaviour
         }
         else if (currentCanvas == addsCanvas)
         {
+            Transform target = selectedTabName switch
+            {
+                "ExtraLife" => extraLifeAddContainer.transform,
+                "TripleAttack" => tripleAttackAddContainer.transform,
+                "DoublePoints" => doublePointsAddContainer.transform,
+                "GoBack" => goBackAddImage.transform,
+                "Home" => homeImage.transform,
+                _ => null
+            };
+
+            if (target != null) AnimateButtonPress(target);
+
             Debug.Log($"Mostrando anuncio para obtener: {selectedTabName}");
             PokiCall(selectedTabName);
         }
@@ -121,9 +158,40 @@ public class Shop : MonoBehaviour
             }
             else
             {
-                Debug.Log("No se complet el anuncio, no hay recompensa.");
+                Debug.Log("No se completó el anuncio, no hay recompensa.");
             }
         };
         PokiUnitySDK.Instance.rewardedBreak();
+    }
+
+    private void AnimateButtonPress(Transform target)
+    {
+        StartCoroutine(ButtonPressAnimation(target));
+    }
+
+    private IEnumerator ButtonPressAnimation(Transform target)
+    {
+        Vector3 originalScale = target.localScale;
+        Vector3 pressedScale = originalScale * 0.95f;
+
+        float duration = 0.05f;
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            target.localScale = Vector3.Lerp(originalScale, pressedScale, elapsed / duration);
+            yield return null;
+        }
+
+        elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            target.localScale = Vector3.Lerp(pressedScale, originalScale, elapsed / duration);
+            yield return null;
+        }
+
+        target.localScale = originalScale;
     }
 }

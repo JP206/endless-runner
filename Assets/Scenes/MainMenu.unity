@@ -2306,7 +2306,7 @@ GameObject:
   - component: {fileID: 1398835222}
   - component: {fileID: 1398835221}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CoinCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2552,14 +2552,13 @@ GameObject:
   - component: {fileID: 1496785652}
   - component: {fileID: 1496785651}
   - component: {fileID: 1496785650}
-  - component: {fileID: 1496785654}
   m_Layer: 5
   m_Name: ShopCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1496785650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2644,23 +2643,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1496785654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1496785649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95feccd2428de434b8153524325b8d26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animationDuration: 0.5
-  bounceAmplitude: 30
-  rectTransform: {fileID: 0}
-  hiddenPosition: {x: 0, y: 0}
-  visiblePosition: {x: 0, y: 0}
 --- !u!1 &1501141642
 GameObject:
   m_ObjectHideFlags: 0
@@ -3055,15 +3037,22 @@ MonoBehaviour:
   extraLifeButton: {fileID: 1910060373}
   dinoLegButton: {fileID: 1399403634}
   invincibleButton: {fileID: 31131078}
-  extraLifeContainer: {fileID: 0}
-  dinoLegContainer: {fileID: 0}
-  invincibleContainer: {fileID: 0}
-  extraLifeDisabledSprite: {fileID: 0}
-  dinoLegDisabledSprite: {fileID: 0}
-  invincibleDisabledSprite: {fileID: 0}
-  extraLifeNormalSprite: {fileID: 0}
-  dinoLegNormalSprite: {fileID: 0}
-  invincibleNormalSprite: {fileID: 0}
+  extraLifeContainer: {fileID: 1881332566}
+  dinoLegContainer: {fileID: 1620020498}
+  invincibleContainer: {fileID: 1895435645}
+  extraLifeAddContainer: {fileID: 343806848}
+  tripleAttackAddContainer: {fileID: 282274773}
+  doublePointsAddContainer: {fileID: 2085921189}
+  goBackAddImage: {fileID: 1844916587}
+  homeImage: {fileID: 895175458}
+  goBackImage: {fileID: 1982204864}
+  addsTabImage: {fileID: 1356069999}
+  extraLifeDisabledSprite: {fileID: -240454218391438856, guid: 73f4ea4e1df7c4140b23c6ac7316c15c, type: 3}
+  dinoLegDisabledSprite: {fileID: -8735710103640154260, guid: 5302bcd24bc2df2459b685566c387cc5, type: 3}
+  invincibleDisabledSprite: {fileID: -4373907337067446771, guid: 1acda2711482a7a47b55c9165bca377e, type: 3}
+  extraLifeNormalSprite: {fileID: 489015870379250796, guid: ad99717b3102fc64998dd5af81dfaa0d, type: 3}
+  dinoLegNormalSprite: {fileID: -4605013500878074615, guid: d5467f861dd8e834181af73cc1a087f7, type: 3}
+  invincibleNormalSprite: {fileID: 4792233647710518427, guid: 78f041878f00a1346b994006518987bc, type: 3}
 --- !u!1 &1881332564
 GameObject:
   m_ObjectHideFlags: 0
