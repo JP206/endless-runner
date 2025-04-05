@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 9ecb43705d3360648a23a7e52a230be2
+guid: 6488294ed350b8949afb96cc49b31137
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1709720519564391547
-    second: redPause_0
-  - first:
-      213: 187942495750879049
-    second: redPause_1
-  - first:
-      213: 2306017451031470643
-    second: redPause_2
-  - first:
-      213: 711814163943543882
-    second: redPause_3
-  - first:
-      213: 1817668917049624144
-    second: redPause_4
+      213: -8816946856191748017
+    second: ui-separad (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -151,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: redPause_0
+      name: ui-separad (1)_0
       rect:
         serializedVersion: 2
-        x: 69
-        y: 26
-        width: 63
-        height: 161
+        x: 220
+        y: 195
+        width: 659
+        height: 671
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,96 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58b0b26fe3ad548e0800000000000000
-      internalID: -1709720519564391547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: redPause_1
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 24
-        width: 81
-        height: 162
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9477e6144b4bb9200800000000000000
-      internalID: 187942495750879049
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: redPause_2
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 26
-        width: 69
-        height: 159
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 332259667ae900020800000000000000
-      internalID: 2306017451031470643
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: redPause_3
-      rect:
-        serializedVersion: 2
-        x: 291
-        y: 25
-        width: 62
-        height: 163
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a4452f3f53fd0e900800000000000000
-      internalID: 711814163943543882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: redPause_4
-      rect:
-        serializedVersion: 2
-        x: 362
-        y: 25
-        width: 55
-        height: 161
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0560308ef38a93910800000000000000
-      internalID: 1817668917049624144
+      spriteID: f4891396c89e3a580800000000000000
+      internalID: -8816946856191748017
       vertices: []
       indices: 
       edges: []
@@ -264,7 +164,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -273,12 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      redPause_0: -1709720519564391547
-      redPause_1: 187942495750879049
-      redPause_2: 2306017451031470643
-      redPause_3: 711814163943543882
-      redPause_4: 1817668917049624144
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

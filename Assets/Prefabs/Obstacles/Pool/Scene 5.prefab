@@ -96,6 +96,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2751485759622647998}
+  - component: {fileID: 372021972249760899}
   m_Layer: 0
   m_Name: Scene 5
   m_TagString: Untagged
@@ -137,6 +138,21 @@ Transform:
   - {fileID: 3968425615223699126}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &372021972249760899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568248763578539522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0984e54e1f2fcaa4091d210719f5c448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  posY: 0
+  xThreshold: -10
 --- !u!1 &5577740249963810692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,6 +1136,22 @@ PrefabInstance:
     - target: {fileID: 5929215443566637073, guid: 3bad25277a0eda44f8a12e565e66cb6e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.087999105
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028517595980328952, guid: 3bad25277a0eda44f8a12e565e66cb6e, type: 3}
+      propertyPath: m_Size.y
+      value: 1.9931316
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028517595980328952, guid: 3bad25277a0eda44f8a12e565e66cb6e, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.23651025
+      objectReference: {fileID: 0}
+    - target: {fileID: 7346090237321991193, guid: 3bad25277a0eda44f8a12e565e66cb6e, type: 3}
+      propertyPath: m_Size.y
+      value: 2.0269651
+      objectReference: {fileID: 0}
+    - target: {fileID: 7346090237321991193, guid: 3bad25277a0eda44f8a12e565e66cb6e, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.2523847
       objectReference: {fileID: 0}
     - target: {fileID: 7582248979802639378, guid: 3bad25277a0eda44f8a12e565e66cb6e, type: 3}
       propertyPath: m_Name
@@ -2294,11 +2326,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 339184220614224674, guid: 1418e3facdee10d4f826c700da991ffe, type: 3}
       propertyPath: m_Size.y
-      value: 2.2406535
+      value: 2.112158
       objectReference: {fileID: 0}
     - target: {fileID: 339184220614224674, guid: 1418e3facdee10d4f826c700da991ffe, type: 3}
       propertyPath: m_Offset.y
-      value: -0.17307633
+      value: -0.23732415
       objectReference: {fileID: 0}
     - target: {fileID: 7957725376945156991, guid: 1418e3facdee10d4f826c700da991ffe, type: 3}
       propertyPath: m_LocalScale.x
