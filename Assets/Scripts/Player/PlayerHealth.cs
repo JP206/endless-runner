@@ -17,24 +17,26 @@ public class PlayerHealth : MonoBehaviour
 
     private Collider2D[] colliders;
     private bool isDead = false;
+    private bool hasUsedSaveMe = false;
 
     [SerializeField] private GameObject gameOverCanvas;
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject gameOverImage;
+    [SerializeField] private GameObject saveMeCanvas; 
 
     private List<Image> hearts = new List<Image>();
-    
+
     [SerializeField] private Transform healthContainer;
     [SerializeField] private Sprite fullHeart;
     [SerializeField] private Sprite emptyHeart;
 
     public void InitializeReferences(
-        Animator animator, 
-        AudioClip hurtSound, 
+        Animator animator,
+        AudioClip hurtSound,
         AudioClip deathSound,
         AudioSource audioSource,
         AudioSource backgroundMusic
-        )
+    )
     {
         this.animator = animator;
         this.hurtSound = hurtSound;
@@ -74,7 +76,7 @@ public class PlayerHealth : MonoBehaviour
         for (int i = 0; i < hearts.Count; i++)
         {
             if (i < currentLives) hearts[i].sprite = fullHeart;
-            else  hearts[i].sprite = emptyHeart;
+            else hearts[i].sprite = emptyHeart;
         }
     }
 
@@ -93,7 +95,8 @@ public class PlayerHealth : MonoBehaviour
 
     private void SetCollidersActive(bool isActive)
     {
-        foreach (var collider in colliders) collider.enabled = isActive;
+        foreach (var collider in colliders)
+            collider.enabled = isActive;
     }
 
     public void Die()
@@ -121,7 +124,25 @@ public class PlayerHealth : MonoBehaviour
     {
         yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
 
-        ShowGameOverCanvas();
+        if (!hasUsedSaveMe && saveMeCanvas != null)
+        {
+            hasUsedSaveMe = true;
+            ShowSaveMeCanvas();
+        }
+        else
+        {
+            ShowGameOverCanvas();
+        }
+    }
+
+    private void ShowSaveMeCanvas()
+    {
+        gameOverCanvas.SetActive(true);
+        saveMeCanvas.SetActive(true);
+        PlayDeathSound();
+        StopBackgroundMusic();
+        StartCoroutine(FadeInPanel());
+        StartCoroutine(AnimateGameOverImage());
     }
 
     private void ShowGameOverCanvas()
@@ -139,8 +160,8 @@ public class PlayerHealth : MonoBehaviour
         CanvasGroup canvasGroup = gameOverPanel.GetComponent<CanvasGroup>();
         if (canvasGroup == null) canvasGroup = gameOverPanel.AddComponent<CanvasGroup>();
 
-        UnityEngine.UI.Image panelImage = gameOverPanel.GetComponent<UnityEngine.UI.Image>();
-        if (panelImage == null) panelImage = gameOverPanel.AddComponent<UnityEngine.UI.Image>();
+        Image panelImage = gameOverPanel.GetComponent<Image>();
+        if (panelImage == null) panelImage = gameOverPanel.AddComponent<Image>();
 
         panelImage.color = new Color(0, 0, 0, 0);
 
@@ -182,12 +203,14 @@ public class PlayerHealth : MonoBehaviour
 
     public void PlayDeathSound()
     {
-        if (audioSource != null && deathSound != null) audioSource.PlayOneShot(deathSound);
+        if (audioSource != null && deathSound != null)
+            audioSource.PlayOneShot(deathSound);
     }
 
     public void PlayHurtSound()
     {
-        if (audioSource != null && hurtSound != null) audioSource.PlayOneShot(hurtSound);
+        if (audioSource != null && hurtSound != null)
+            audioSource.PlayOneShot(hurtSound);
     }
 
     public void StopBackgroundMusic()
