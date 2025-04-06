@@ -134,7 +134,10 @@ public class Shop : MonoBehaviour
             Debug.Log($"Compraste: {itemName}. Monedas restantes: {PlayerData.Coins}");
             PlayerPrefs.SetInt("coins", PlayerData.Coins);
             int itemStackCount = PlayerPrefs.GetInt(itemName);
-            PlayerPrefs.SetInt(itemName, itemStackCount + 1);
+            if (itemStackCount < 10)
+            {
+                PlayerPrefs.SetInt(itemName, itemStackCount + 1);
+            }
         }
     }
 
