@@ -39,4 +39,9 @@ public class PlayerOutOfBounds : MonoBehaviour
 
         if (playerHealth != null) playerHealth.Die();
     }
+
+    public void ResetGameOverTriggered()
+    {
+        isGameOverTriggered = false;
+    }
 }

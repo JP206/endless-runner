@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 2419091907067737802}
   - component: {fileID: 6771915344163411402}
   - component: {fileID: 4586403072369000471}
+  - component: {fileID: 3568717883824704787}
   - component: {fileID: 6237730188447300723}
   - component: {fileID: 4009743536909384130}
   - component: {fileID: 1837784822553534749}
@@ -117,7 +118,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -1430364339, guid: b6eb1ffcad3778b4dbcf244e73ba62f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -153,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f93e48790eea3e49bb81a2e1ef0456f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpStrength: 25
+  jumpStrength: 15
 --- !u!114 &904316533786505911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d62d6598e4d4cf449dd5686881bfe95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravityStrength: 1.8
+  gravityStrength: 0.5
   wallDetectionDistance: 0.1
 --- !u!114 &6771915344163411402
 MonoBehaviour:
@@ -220,6 +221,21 @@ MonoBehaviour:
     m_Bits: 7360
   actorWidth: 3
   actorHeight: 1.5
+--- !u!114 &3568717883824704787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5224276101356549848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edaa7da2f601be4595ea17c688b8747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
+  playerHealth: {fileID: 6771915344163411402}
+  delayBeforeGameOver: 0.05
 --- !u!95 &6237730188447300723
 Animator:
   serializedVersion: 7
@@ -276,8 +292,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.029570453, y: -0.09651591}
-  m_Size: {x: 3.8320167, y: 2.731271}
+  m_Offset: {x: 0.029570451, y: -0.11271013}
+  m_Size: {x: 3.8320177, y: 2.763686}
   m_Direction: 1
 --- !u!50 &1837784822553534749
 Rigidbody2D:
@@ -287,14 +303,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5224276101356549848}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -305,7 +321,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &217764395612187107
 AudioSource:
   m_ObjectHideFlags: 0

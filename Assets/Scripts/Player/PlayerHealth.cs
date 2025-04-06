@@ -114,6 +114,12 @@ public class PlayerHealth : MonoBehaviour
         StartCoroutine(WaitForDeathAnimation());
     }
 
+    public void Revive()
+    {
+        isDead = false;
+        SetCollidersActive(true);
+    }
+
     private void FreezeScene()
     {
         Time.timeScale = 0;
