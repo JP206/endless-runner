@@ -60,6 +60,7 @@ public class EventButton : MonoBehaviour
         GetClickSound();
         StartCoroutine(AnimateButtonPress(retryButtonImage));
         LoadScene(SceneManager.GetActiveScene().name);
+
     }
 
     public void LoadMainMenu()

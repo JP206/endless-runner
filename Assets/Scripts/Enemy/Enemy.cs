@@ -30,6 +30,8 @@ public class Enemy : MonoBehaviour
     private Rigidbody2D rb;
     private ScoreManager scoreManager;
 
+    [SerializeField] AudioSource deathSource;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -37,7 +39,7 @@ public class Enemy : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         enemyCollider = GetComponent<Collider2D>();
         scoreManager = FindAnyObjectByType<ScoreManager>();
-        Debug.Log("Score Manager: " + scoreManager);
+
         rb = GetComponent<Rigidbody2D>();
         if (rb == null)
         {
@@ -135,7 +137,8 @@ public class Enemy : MonoBehaviour
         rb.linearVelocity = new Vector2(0, -fallSpeed);
 
         if (scoreManager != null) scoreManager.AddScore(5);
-        StartCoroutine(BlinkWhileDying());
+        PlayDeathSound();
+        //StartCoroutine(BlinkWhileDying());
     }
 
     private IEnumerator BlinkWhileDying()
@@ -157,6 +160,12 @@ public class Enemy : MonoBehaviour
     {
         if (audioSource != null && audioSource.clip != null)
             audioSource.PlayOneShot(audioSource.clip);
+    }
+
+    public void PlayDeathSound()
+    {
+        if (deathSource != null && deathSource.clip != null)
+            deathSource.PlayOneShot(deathSource.clip);
     }
 
     public void SetVulnerability(bool state)
