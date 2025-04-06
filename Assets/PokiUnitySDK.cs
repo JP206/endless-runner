@@ -285,9 +285,10 @@ public class PokiUnitySDK : MonoBehaviour {
 		isShowingAd = false;
 		#if UNITY_EDITOR
 		Debug.Log("PokiUnitySDK: rewardedBreak completed, received reward:"+withReward);
-		#else
 		rewardedBreakCallBack((withReward == "true"));
-		#endif
+#else
+		rewardedBreakCallBack((withReward == "true"));
+#endif
 	}
 
 	public void shareableURLResolved(string url){

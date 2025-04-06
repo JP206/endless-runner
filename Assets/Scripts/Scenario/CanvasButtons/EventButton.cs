@@ -44,7 +44,23 @@ public class EventButton : MonoBehaviour
     public void SaveMeButton()
     {
         GetClickSound();
-        Debug.Log("Revive player");
+        if (!PokiUnitySDK.Instance.isAdBlocked())
+        {
+            PokiUnitySDK.Instance.rewardedBreakCallBack = RevivePlayer;
+            PokiUnitySDK.Instance.rewardedBreak();
+        }
+    }
+
+    public void RevivePlayer(bool withReward)
+    {
+        if (withReward)
+        {
+            FindFirstObjectByType<RevivePlayer>().revivePlayer();
+        }
+        else
+        {
+            
+        }
     }
 
     public void LoadScene(string sceneName, bool resetTime = true)
