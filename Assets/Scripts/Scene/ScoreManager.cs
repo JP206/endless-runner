@@ -40,9 +40,8 @@ public class ScoreManager : MonoBehaviour
     public void GetCoins()
     {
         // se llama cuando se termina el juego
-        int coins = (int) (score / 100);
-        PlayerData.Coins += coins;
-        PlayerPrefs.SetInt("coins", PlayerData.Coins);
+        int coins = (int)(score / 100);
+        PlayerData.AddCoins(coins);
         if (score > PlayerPrefs.GetInt("score"))
         {
             PlayerPrefs.SetInt("score", score);

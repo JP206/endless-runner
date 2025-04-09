@@ -19,16 +19,22 @@ public class PlayerHealth : MonoBehaviour
     private bool isDead = false;
     private bool hasUsedSaveMe = false;
 
+    [Header("Canvases")]
     [SerializeField] private GameObject gameOverCanvas;
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject gameOverImage;
-    [SerializeField] private GameObject saveMeCanvas; 
+    [SerializeField] private GameObject saveMeCanvas;
 
+    [Header("UI")]
     private List<Image> hearts = new List<Image>();
-
     [SerializeField] private Transform healthContainer;
     [SerializeField] private Sprite fullHeart;
     [SerializeField] private Sprite emptyHeart;
+
+    [Header("Invincibility Settings")]
+    [SerializeField] private float invincibilityDuration = 3f;
+
+    private SpriteRenderer playerSprite;
 
     public void InitializeReferences(
         Animator animator,
@@ -49,6 +55,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentLives = maxLives;
         colliders = GetComponentsInChildren<Collider2D>();
+        playerSprite = GetComponentInChildren<SpriteRenderer>();
 
         foreach (Transform child in healthContainer)
         {
@@ -61,22 +68,29 @@ public class PlayerHealth : MonoBehaviour
     {
         if (isDead) return;
 
-        currentLives--;
+        if (currentLives - 1 <= 0 && PlayerData.GetItemCount("Invincible") > 0)
+        {
+            if (PlayerData.UseItem("Invincible"))
+            {
+                StartCoroutine(ApplyTemporaryInvincibility());
+                return;
+            }
+        }
 
+        currentLives--;
         PlayHurtSound();
         UpdateHealthUI();
-
         StartCoroutine(HandleDamageEffects());
 
-        if (currentLives <= 0) Die();
+        if (currentLives <= 0)
+            Die();
     }
 
     private void UpdateHealthUI()
     {
         for (int i = 0; i < hearts.Count; i++)
         {
-            if (i < currentLives) hearts[i].sprite = fullHeart;
-            else hearts[i].sprite = emptyHeart;
+            hearts[i].sprite = (i < currentLives) ? fullHeart : emptyHeart;
         }
     }
 
@@ -85,22 +99,26 @@ public class PlayerHealth : MonoBehaviour
         if (isDead) yield break;
 
         animator.SetBool("isHitted", true);
-        SetCollidersActive(false);
 
         yield return new WaitForSeconds(0.5f);
 
-        SetCollidersActive(true);
         animator.SetBool("isHitted", false);
-    }
-
-    private void SetCollidersActive(bool isActive)
-    {
-        foreach (var collider in colliders)
-            collider.enabled = isActive;
     }
 
     public void Die()
     {
+        if (PlayerData.GetItemCount("Invincible") > 0)
+        {
+            Debug.Log("PlayerData.GetItemCount: " + PlayerData.GetItemCount("Invincible"));
+
+            if (PlayerData.UseItem("Invincible"))
+            {
+                Debug.Log("🛡 Invencibilidad activada desde Die(). Se consumió 'Invincible'.");
+                StartCoroutine(ApplyTemporaryInvincibility());
+                return;
+            }
+        }
+
         if (isDead) return;
         isDead = true;
 
@@ -109,15 +127,42 @@ public class PlayerHealth : MonoBehaviour
         animator.SetTrigger("isDead");
         animator.SetBool("isHitted", false);
 
-        SetCollidersActive(false);
         FreezeScene();
         StartCoroutine(WaitForDeathAnimation());
+    }
+
+    private IEnumerator ApplyTemporaryInvincibility()
+    {
+        Debug.Log("✅ Invencibilidad TEMPORAL activada");
+        currentLives = 1;
+        UpdateHealthUI();
+
+        // Guardar y quitar el tag
+        string originalTag = gameObject.tag;
+        gameObject.tag = "Untagged";
+
+        float elapsed = 0f;
+        float blinkInterval = 0.1f;
+
+        while (elapsed < invincibilityDuration)
+        {
+            if (playerSprite != null)
+                playerSprite.enabled = !playerSprite.enabled;
+
+            yield return new WaitForSecondsRealtime(blinkInterval);
+            elapsed += blinkInterval;
+        }
+
+        if (playerSprite != null)
+            playerSprite.enabled = true;
+
+        gameObject.tag = originalTag;
+        isDead = false;
     }
 
     public void Revive()
     {
         isDead = false;
-        SetCollidersActive(true);
     }
 
     private void FreezeScene()

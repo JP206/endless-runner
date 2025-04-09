@@ -22,7 +22,6 @@ public class ObstacleManager : MonoBehaviour
 
         if (pool == null)
         {
-            Debug.LogError("ObstaclePool no encontrado. Asegúrate de que hay un ObstaclePool en la escena.");
             return;
         }
 
@@ -59,9 +58,6 @@ public class ObstacleManager : MonoBehaviour
 
         obstacle.transform.position += new Vector3(distanceToMove, 0, 0);
         obstacle.SetActive(true);
-
-        Debug.Log("referenceX: " + referenceX);
-        Debug.Log("nextTriggerX: " + nextTriggerX);
 
         firstSpawnedObstacle = lastSpawnedObstacle;
         lastSpawnedObstacle = obstacle;

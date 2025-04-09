@@ -48,6 +48,7 @@ public class Shop : MonoBehaviour
 
     void Start()
     {
+        PlayerData.LoadData();
         currentCanvas = shopCanvas;
         UpdateUI();
     }
@@ -128,16 +129,14 @@ public class Shop : MonoBehaviour
 
     private void TryPurchase(int cost, string itemName)
     {
-        if (PlayerData.Coins >= cost)
+        if (PlayerData.SpendCoins(cost))
         {
-            PlayerData.Coins -= cost;
-            Debug.Log($"Compraste: {itemName}. Monedas restantes: {PlayerData.Coins}");
-            PlayerPrefs.SetInt("coins", PlayerData.Coins);
-            int itemStackCount = PlayerPrefs.GetInt(itemName);
-            if (itemStackCount < 10)
-            {
-                PlayerPrefs.SetInt(itemName, itemStackCount + 1);
-            }
+            PlayerData.AddItem(itemName);
+            Debug.Log($"Compraste: {itemName}. Monedas restantes: {PlayerData.Coins}. Total: {PlayerData.GetItemCount(itemName)}");
+        }
+        else
+        {
+            Debug.Log("No tenés suficientes monedas.");
         }
     }
 
@@ -165,7 +164,8 @@ public class Shop : MonoBehaviour
         {
             if (withReward)
             {
-                Debug.Log($"Recibiste {selectedTabName} viendo un anuncio!");
+                PlayerData.AddItem(selectedTabName);
+                Debug.Log($"Recibiste {selectedTabName} viendo un anuncio. Total: {PlayerData.GetItemCount(selectedTabName)}");
             }
             else
             {
