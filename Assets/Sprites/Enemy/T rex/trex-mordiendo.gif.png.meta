@@ -179,7 +179,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 2400
-        width: 800
+        width: 798
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -199,9 +199,9 @@ TextureImporter:
       name: trex-mordiendo.gif_1
       rect:
         serializedVersion: 2
-        x: 800
+        x: 798
         y: 2400
-        width: 800
+        width: 798
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -221,9 +221,9 @@ TextureImporter:
       name: trex-mordiendo.gif_2
       rect:
         serializedVersion: 2
-        x: 1600
+        x: 1596
         y: 2400
-        width: 800
+        width: 798
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -243,9 +243,9 @@ TextureImporter:
       name: trex-mordiendo.gif_3
       rect:
         serializedVersion: 2
-        x: 2400
+        x: 2394
         y: 2400
-        width: 800
+        width: 798
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -265,9 +265,9 @@ TextureImporter:
       name: trex-mordiendo.gif_4
       rect:
         serializedVersion: 2
-        x: 3200
+        x: 3192
         y: 2400
-        width: 800
+        width: 798
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -289,7 +289,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 1600
-        width: 800
+        width: 798
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -309,9 +309,9 @@ TextureImporter:
       name: trex-mordiendo.gif_6
       rect:
         serializedVersion: 2
-        x: 800
+        x: 798
         y: 1600
-        width: 800
+        width: 798
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -331,9 +331,9 @@ TextureImporter:
       name: trex-mordiendo.gif_7
       rect:
         serializedVersion: 2
-        x: 1600
+        x: 1596
         y: 1600
-        width: 800
+        width: 798
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -353,9 +353,9 @@ TextureImporter:
       name: trex-mordiendo.gif_8
       rect:
         serializedVersion: 2
-        x: 2400
+        x: 2394
         y: 1600
-        width: 800
+        width: 798
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -375,9 +375,9 @@ TextureImporter:
       name: trex-mordiendo.gif_9
       rect:
         serializedVersion: 2
-        x: 3200
+        x: 3192
         y: 1600
-        width: 800
+        width: 798
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -399,7 +399,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 800
-        width: 800
+        width: 798
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -419,9 +419,9 @@ TextureImporter:
       name: trex-mordiendo.gif_11
       rect:
         serializedVersion: 2
-        x: 800
+        x: 798
         y: 800
-        width: 800
+        width: 798
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -441,9 +441,9 @@ TextureImporter:
       name: trex-mordiendo.gif_12
       rect:
         serializedVersion: 2
-        x: 1600
+        x: 1596
         y: 800
-        width: 800
+        width: 798
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -463,9 +463,9 @@ TextureImporter:
       name: trex-mordiendo.gif_13
       rect:
         serializedVersion: 2
-        x: 2400
+        x: 2394
         y: 800
-        width: 800
+        width: 798
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -485,9 +485,9 @@ TextureImporter:
       name: trex-mordiendo.gif_14
       rect:
         serializedVersion: 2
-        x: 3200
+        x: 3192
         y: 800
-        width: 800
+        width: 798
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -509,7 +509,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 800
+        width: 798
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -529,9 +529,9 @@ TextureImporter:
       name: trex-mordiendo.gif_16
       rect:
         serializedVersion: 2
-        x: 800
+        x: 798
         y: 0
-        width: 800
+        width: 798
         height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
