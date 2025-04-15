@@ -102,3 +102,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   posY: -3.8
+  xThreshold: 0
