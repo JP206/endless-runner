@@ -97,7 +97,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4706983095406424541}
   - component: {fileID: 5688971574869544413}
-  - component: {fileID: 7905694649036400822}
   m_Layer: 0
   m_Name: climbing_plant_36
   m_TagString: Untagged
@@ -175,21 +174,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7905694649036400822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410328797300555207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0984e54e1f2fcaa4091d210719f5c448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  posY: 0
-  xThreshold: -10
 --- !u!1 &545748222039854779
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,6 +183,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2338887545738859768}
+  - component: {fileID: 2354694638109877477}
+  - component: {fileID: 6987735182362481526}
   m_Layer: 0
   m_Name: Vines
   m_TagString: Untagged
@@ -233,6 +219,36 @@ Transform:
   - {fileID: 6244981719905003067}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2354694638109877477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545748222039854779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0984e54e1f2fcaa4091d210719f5c448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  posY: 0
+  xThreshold: -10
+--- !u!114 &6987735182362481526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545748222039854779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0984e54e1f2fcaa4091d210719f5c448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  posY: 0
+  xThreshold: -10
 --- !u!1 &1553713131509113273
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +259,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6244981719905003067}
   - component: {fileID: 1870485424155397691}
-  - component: {fileID: 5818784306297928457}
   m_Layer: 0
   m_Name: climbing_plant_40
   m_TagString: Untagged
@@ -321,21 +336,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5818784306297928457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1553713131509113273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0984e54e1f2fcaa4091d210719f5c448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  posY: 0
-  xThreshold: -10
 --- !u!1 &1605227415645207638
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,7 +868,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8794113226391934939}
   - component: {fileID: 2213458811225875547}
-  - component: {fileID: 6168116026290800279}
   m_Layer: 0
   m_Name: climbing_plant_38
   m_TagString: Untagged
@@ -946,21 +945,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6168116026290800279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6080675567292714110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0984e54e1f2fcaa4091d210719f5c448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  posY: 0
-  xThreshold: -10
 --- !u!1 &7012831720302706937
 GameObject:
   m_ObjectHideFlags: 0
