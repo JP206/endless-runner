@@ -1157,7 +1157,7 @@ Transform:
   m_GameObject: {fileID: 1893383938172206949}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -122.2, z: 0}
+  m_LocalPosition: {x: 0, y: -78.7, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1627,9 +1627,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5565621345467482079}
   - component: {fileID: 7050504068305851050}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Dino Leg
-  m_TagString: Untagged
+  m_TagString: Dino Leg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5878,9 +5878,9 @@ GameObject:
   m_Component:
   - component: {fileID: 169394039823996558}
   - component: {fileID: 3477829224108795855}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
