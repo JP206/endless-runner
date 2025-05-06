@@ -7,7 +7,7 @@ public class EnemyManager : MonoBehaviour
 
     void Start()
     {
-        spawnRate = Random.Range(5, 15);
+        spawnRate = Random.Range(2, 5);
     }
 
     void Update()

@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 33294897613609686}
   - component: {fileID: 3236020052729524406}
-  - component: {fileID: 6197740553658945654}
   - component: {fileID: 6513603295673703744}
   m_Layer: 7
   m_Name: Picos 02
@@ -89,21 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6197740553658945654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8677116704506609875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0984e54e1f2fcaa4091d210719f5c448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  posY: 0
-  xThreshold: -10
 --- !u!60 &6513603295673703744
 PolygonCollider2D:
   m_ObjectHideFlags: 0
