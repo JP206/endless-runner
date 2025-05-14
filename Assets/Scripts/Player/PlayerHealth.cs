@@ -107,18 +107,6 @@ public class PlayerHealth : MonoBehaviour
 
     public void Die()
     {
-        if (PlayerData.GetItemCount("Invincible") > 0)
-        {
-            Debug.Log("PlayerData.GetItemCount: " + PlayerData.GetItemCount("Invincible"));
-
-            if (PlayerData.UseItem("Invincible"))
-            {
-                Debug.Log("🛡 Invencibilidad activada desde Die(). Se consumió 'Invincible'.");
-                StartCoroutine(ApplyTemporaryInvincibility());
-                return;
-            }
-        }
-
         if (isDead) return;
         isDead = true;
 
@@ -133,7 +121,6 @@ public class PlayerHealth : MonoBehaviour
 
     private IEnumerator ApplyTemporaryInvincibility()
     {
-        Debug.Log("✅ Invencibilidad TEMPORAL activada");
         currentLives = 1;
         UpdateHealthUI();
 
