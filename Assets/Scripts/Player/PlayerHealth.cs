@@ -1,39 +1,35 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.Audio;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private int maxLives = 3;
-    private int currentLives;
+    [Header("Vida")]
+    [SerializeField] private Image healthFillImage;
+    [SerializeField] private float maxHealth = 100f;
+    [SerializeField] private float damageAmount = 25f;
+    [SerializeField] private float recoverAmount = 20f;
+    private float currentHealth;
 
-    private Animator animator;
-    private AudioClip hurtSound;
-    private AudioClip deathSound;
-    private AudioSource audioSource;
-    private AudioSource backgroundMusic;
-
-    private Collider2D[] colliders;
+    [Header("Invincibility Settings")]
+    [SerializeField] private float invincibilityDuration = 3f;
     private bool isDead = false;
-    private bool hasUsedSaveMe = false;
 
     [Header("Canvases")]
     [SerializeField] private GameObject gameOverCanvas;
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject gameOverImage;
     [SerializeField] private GameObject saveMeCanvas;
+    private bool hasUsedSaveMe = false;
 
-    [Header("UI")]
-    private List<Image> hearts = new List<Image>();
-    [SerializeField] private Transform healthContainer;
-    [SerializeField] private Sprite fullHeart;
-    [SerializeField] private Sprite emptyHeart;
+    [Header("Audio")]
+    private AudioSource audioSource;
+    private AudioSource backgroundMusic;
+    private AudioClip hurtSound;
+    private AudioClip deathSound;
 
-    [Header("Invincibility Settings")]
-    [SerializeField] private float invincibilityDuration = 3f;
-
+    private Animator animator;
     private SpriteRenderer playerSprite;
 
     public void InitializeReferences(
@@ -53,55 +49,51 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start()
     {
-        currentLives = maxLives;
-        colliders = GetComponentsInChildren<Collider2D>();
-        playerSprite = GetComponentInChildren<SpriteRenderer>();
+        currentHealth = maxHealth;
+        if (healthFillImage != null)
+            healthFillImage.fillAmount = 1f;
 
-        foreach (Transform child in healthContainer)
+        playerSprite = GetComponentInChildren<SpriteRenderer>();
+    }
+
+    private void Update()
+    {
+        if (!isDead && currentHealth > 0f)
         {
-            Image heartImage = child.GetComponent<Image>();
-            if (heartImage != null) hearts.Add(heartImage);
+            currentHealth -= 5f * Time.deltaTime;
+            currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
+
+            if (healthFillImage != null)
+                healthFillImage.fillAmount = currentHealth / maxHealth;
+
+            if (currentHealth <= 0 && !isDead)
+                Die();
         }
     }
+
 
     public void TakeDamage()
     {
         if (isDead) return;
 
-        if (currentLives - 1 <= 0 && PlayerData.GetItemCount("Invincible") > 0)
-        {
-            if (PlayerData.UseItem("Invincible"))
-            {
-                StartCoroutine(ApplyTemporaryInvincibility());
-                return;
-            }
-        }
-
-        currentLives--;
         PlayHurtSound();
-        UpdateHealthUI();
         StartCoroutine(HandleDamageEffects());
 
-        if (currentLives <= 0)
+        currentHealth -= damageAmount;
+        currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
+
+        if (healthFillImage != null)
+            healthFillImage.fillAmount = currentHealth / maxHealth;
+
+        if (currentHealth <= 0)
             Die();
     }
 
-    private void UpdateHealthUI()
-    {
-        for (int i = 0; i < hearts.Count; i++)
-        {
-            hearts[i].sprite = (i < currentLives) ? fullHeart : emptyHeart;
-        }
-    }
 
     private IEnumerator HandleDamageEffects()
     {
-        if (isDead) yield break;
-
         animator.SetBool("isHitted", true);
-
         yield return new WaitForSeconds(0.5f);
-
         animator.SetBool("isHitted", false);
     }
 
@@ -110,8 +102,6 @@ public class PlayerHealth : MonoBehaviour
         if (isDead) return;
         isDead = true;
 
-        FindAnyObjectByType<ScoreManager>().GetCoins();
-
         animator.SetTrigger("isDead");
         animator.SetBool("isHitted", false);
 
@@ -119,37 +109,10 @@ public class PlayerHealth : MonoBehaviour
         StartCoroutine(WaitForDeathAnimation());
     }
 
-    private IEnumerator ApplyTemporaryInvincibility()
-    {
-        currentLives = 1;
-        UpdateHealthUI();
-
-        // Guardar y quitar el tag
-        string originalTag = gameObject.tag;
-        gameObject.tag = "Untagged";
-
-        float elapsed = 0f;
-        float blinkInterval = 0.1f;
-
-        while (elapsed < invincibilityDuration)
-        {
-            if (playerSprite != null)
-                playerSprite.enabled = !playerSprite.enabled;
-
-            yield return new WaitForSecondsRealtime(blinkInterval);
-            elapsed += blinkInterval;
-        }
-
-        if (playerSprite != null)
-            playerSprite.enabled = true;
-
-        gameObject.tag = originalTag;
-        isDead = false;
-    }
-
     public void Revive()
     {
         isDead = false;
+        hasUsedSaveMe = true;
     }
 
     private void FreezeScene()
@@ -164,7 +127,6 @@ public class PlayerHealth : MonoBehaviour
 
         if (!hasUsedSaveMe && saveMeCanvas != null)
         {
-            hasUsedSaveMe = true;
             ShowSaveMeCanvas();
         }
         else
@@ -239,6 +201,20 @@ public class PlayerHealth : MonoBehaviour
         imageTransform.anchoredPosition = endPosition;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Dino Leg"))
+        {
+            currentHealth += recoverAmount;
+            currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
+
+            if (healthFillImage != null)
+                healthFillImage.fillAmount = currentHealth / maxHealth;
+
+            Destroy(collision.gameObject);
+        }
+    }
+
     public void PlayDeathSound()
     {
         if (audioSource != null && deathSound != null)
@@ -253,6 +229,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void StopBackgroundMusic()
     {
-        backgroundMusic.gameObject.SetActive(false);
+        if (backgroundMusic != null)
+            backgroundMusic.gameObject.SetActive(false);
     }
 }
