@@ -103,10 +103,10 @@ TextureImporter:
       name: rockypeak03_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 55
-        width: 245
-        height: 105
+        x: 0
+        y: 0
+        width: 386
+        height: 226
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
