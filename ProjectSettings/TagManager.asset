@@ -16,6 +16,8 @@ TagManager:
   - SpawnPrefab
   - Coin
   - Dino Leg
+  - Snake
+  - SnakeBack
   layers:
   - Default
   - TransparentFX
@@ -32,8 +34,8 @@ TagManager:
   - Rooftop
   - Coin
   - Dino Leg
-  - 
-  - 
+  - Snake
+  - SnakeBack
   - 
   - 
   - 

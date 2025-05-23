@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6299682066577080080}
   - component: {fileID: 499271636671829092}
-  - component: {fileID: 3830300408443533238}
-  m_Layer: 6
+  - component: {fileID: 8907038041818879957}
+  m_Layer: 16
   m_Name: SnakeBack
-  m_TagString: Untagged
+  m_TagString: SnakeBack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,14 +63,14 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.07383422, y: 0.3331694}
   m_Size: {x: 0.8865088, y: 0.47644967}
   m_Direction: 1
---- !u!114 &3830300408443533238
+--- !u!114 &8907038041818879957
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -79,7 +79,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4464350321804004068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e142f07a8126ca14f9744b9bf77ef9e3, type: 3}
+  m_Script: {fileID: 11500000, guid: 0182929fabee69942827db0bbf7dc12e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5228693154939131406
@@ -92,9 +92,10 @@ GameObject:
   m_Component:
   - component: {fileID: 740251986866623244}
   - component: {fileID: 2187197697649247867}
-  m_Layer: 6
+  - component: {fileID: 2887417448770060172}
+  m_Layer: 15
   m_Name: SnakeDmg
-  m_TagString: Untagged
+  m_TagString: Snake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,7 +109,7 @@ Transform:
   m_GameObject: {fileID: 5228693154939131406}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.93, y: 0.34, z: 0}
+  m_LocalPosition: {x: -1.64, y: 0.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -121,7 +122,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5228693154939131406}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -151,6 +152,18 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0000000039178514, y: 0.031779297}
   m_Size: {x: 1.0341743, y: 0.75847846}
   m_Direction: 1
+--- !u!114 &2887417448770060172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5228693154939131406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8658b006cae374face00f8a926a884, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8865727490694733344
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,11 +177,11 @@ GameObject:
   - component: {fileID: 4257596850159735018}
   - component: {fileID: 3466892968941612206}
   - component: {fileID: 6877011919741940441}
-  - component: {fileID: 7271043998166077723}
   - component: {fileID: 2847175833096507979}
-  m_Layer: 6
+  - component: {fileID: 1259615899260401886}
+  m_Layer: 15
   m_Name: Snake
-  m_TagString: Enemy
+  m_TagString: Snake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -183,7 +196,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.79, y: -2.02, z: 0}
-  m_LocalScale: {x: 1.144875, y: 1.184, z: 1.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6299682066577080080}
@@ -279,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0984e54e1f2fcaa4091d210719f5c448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 6
   posY: 0
   xThreshold: -10
 --- !u!70 &6877011919741940441
@@ -312,40 +325,13 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.021929003, y: -0.76054025}
   m_Size: {x: 2.061098, y: 1.8997718}
   m_Direction: 1
---- !u!114 &7271043998166077723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8865727490694733344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e31e731a18877a479a11da0e6a4b980, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 0
-  attackSpeed: 12
-  attackThreshold: 1
-  detectionRange: 6
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 256
-  damageCooldown: 2
-  fallSpeed: 2
-  blinkDuration: 1
-  blinkInterval: 0.1
-  deathSource: {fileID: 0}
-  isStaticEnemy: 1
-  staticAttackCollider: {fileID: 2187197697649247867}
-  staticAttackCooldown: 2
 --- !u!50 &2847175833096507979
 Rigidbody2D:
   serializedVersion: 5
@@ -373,3 +359,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1259615899260401886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8865727490694733344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38b89cba68d70f14e9e48eaeb85bcc9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionRange: 3
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  detectionOffset: {x: 0, y: 0}

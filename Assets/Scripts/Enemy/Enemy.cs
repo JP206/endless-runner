@@ -138,22 +138,6 @@ public class Enemy : MonoBehaviour
 
         if (scoreManager != null) scoreManager.AddScore(5);
         PlayDeathSound();
-        //StartCoroutine(BlinkWhileDying());
-    }
-
-    private IEnumerator BlinkWhileDying()
-    {
-        float deathAnimTime = animator.GetCurrentAnimatorStateInfo(0).length;
-        float elapsedTime = 0f;
-
-        while (elapsedTime < deathAnimTime)
-        {
-            spriteRenderer.enabled = !spriteRenderer.enabled;
-            yield return new WaitForSeconds(blinkInterval);
-            elapsedTime += blinkInterval;
-        }
-
-        Destroy(gameObject);
     }
 
     public void PlayAttackSound()

@@ -14,6 +14,7 @@ public class PlayerHealth : MonoBehaviour
 
     [Header("Invincibility Settings")]
     [SerializeField] private float invincibilityDuration = 3f;
+    private bool isInvulnerable = false;
     private bool isDead = false;
 
     [Header("Canvases")]
@@ -71,13 +72,13 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-
     public void TakeDamage()
     {
-        if (isDead) return;
+        if (isDead || isInvulnerable) return;
 
         PlayHurtSound();
         StartCoroutine(HandleDamageEffects());
+        StartCoroutine(HandleInvulnerability());
 
         currentHealth -= damageAmount;
         currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
@@ -89,13 +90,50 @@ public class PlayerHealth : MonoBehaviour
             Die();
     }
 
-
     private IEnumerator HandleDamageEffects()
     {
         animator.SetBool("isHitted", true);
         yield return new WaitForSeconds(0.5f);
         animator.SetBool("isHitted", false);
     }
+
+    private IEnumerator HandleInvulnerability()
+    {
+        isInvulnerable = true;
+        SetCollisionWithEnemies(false);
+        StartCoroutine(FlashWhileInvulnerable());
+
+        yield return new WaitForSeconds(invincibilityDuration);
+
+        isInvulnerable = false;
+        SetCollisionWithEnemies(true);
+    }
+
+    private IEnumerator FlashWhileInvulnerable()
+    {
+        float flashInterval = 0.15f;
+
+        while (isInvulnerable)
+        {
+            if (playerSprite != null) playerSprite.enabled = false;
+            yield return new WaitForSeconds(flashInterval);
+
+            if (playerSprite != null) playerSprite.enabled = true;
+            yield return new WaitForSeconds(flashInterval);
+        }
+
+        if (playerSprite != null) playerSprite.enabled = true;
+    }
+
+    private void SetCollisionWithEnemies(bool shouldCollide)
+    {
+        GroundedEnemy[] enemies = Object.FindObjectsByType<GroundedEnemy>(FindObjectsSortMode.None);
+        foreach (GroundedEnemy enemy in enemies)
+        {
+            enemy.IgnoreCollisionWithPlayer(!shouldCollide);
+        }
+    }
+
 
     public void Die()
     {
