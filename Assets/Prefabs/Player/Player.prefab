@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 6771915344163411402}
   - component: {fileID: 4586403072369000471}
   - component: {fileID: 3568717883824704787}
+  - component: {fileID: 6012109160685197076}
   - component: {fileID: 6237730188447300723}
   - component: {fileID: 4009743536909384130}
   - component: {fileID: 1837784822553534749}
@@ -237,6 +238,18 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   playerHealth: {fileID: 6771915344163411402}
   delayBeforeGameOver: 0.05
+--- !u!114 &6012109160685197076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5224276101356549848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eeefba1d3289044ca65521712ec4d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &6237730188447300723
 Animator:
   serializedVersion: 7

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 15728c0cf3afe7b43a7bc0e2764d9c4a
+guid: d36fd3871429aad4e93e2b0e4686faf4
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -85,7 +85,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -123,7 +123,33 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -144,6 +170,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -151,10 +190,10 @@ TextureImporter:
       name: serpiente-muerte.gif_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1620
-        width: 540
-        height: 540
+        x: 106
+        y: 1719
+        width: 313
+        height: 343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +212,10 @@ TextureImporter:
       name: serpiente-muerte.gif_1
       rect:
         serializedVersion: 2
-        x: 540
-        y: 1620
-        width: 540
-        height: 540
+        x: 620
+        y: 1719
+        width: 416
+        height: 412
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,10 +234,10 @@ TextureImporter:
       name: serpiente-muerte.gif_2
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 1620
-        width: 540
-        height: 540
+        x: 1186
+        y: 1719
+        width: 362
+        height: 405
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,10 +256,10 @@ TextureImporter:
       name: serpiente-muerte.gif_3
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 1620
-        width: 540
-        height: 540
+        x: 1725
+        y: 1719
+        width: 325
+        height: 369
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +278,10 @@ TextureImporter:
       name: serpiente-muerte.gif_4
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 1620
-        width: 540
-        height: 540
+        x: 2312
+        y: 1714
+        width: 278
+        height: 374
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,10 +300,10 @@ TextureImporter:
       name: serpiente-muerte.gif_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1080
-        width: 540
-        height: 540
+        x: 152
+        y: 1183
+        width: 301
+        height: 387
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,10 +322,10 @@ TextureImporter:
       name: serpiente-muerte.gif_6
       rect:
         serializedVersion: 2
-        x: 540
-        y: 1080
-        width: 540
-        height: 540
+        x: 692
+        y: 1174
+        width: 278
+        height: 374
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,10 +344,10 @@ TextureImporter:
       name: serpiente-muerte.gif_7
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 1080
-        width: 540
-        height: 540
+        x: 1205
+        y: 1184
+        width: 270
+        height: 291
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -327,10 +366,10 @@ TextureImporter:
       name: serpiente-muerte.gif_8
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 1080
-        width: 540
-        height: 540
+        x: 1744
+        y: 1173
+        width: 282
+        height: 296
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,10 +388,10 @@ TextureImporter:
       name: serpiente-muerte.gif_9
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 1080
-        width: 540
-        height: 540
+        x: 2266
+        y: 1179
+        width: 313
+        height: 343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -371,10 +410,10 @@ TextureImporter:
       name: serpiente-muerte.gif_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 540
-        width: 540
-        height: 540
+        x: 80
+        y: 639
+        width: 416
+        height: 412
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -393,10 +432,10 @@ TextureImporter:
       name: serpiente-muerte.gif_11
       rect:
         serializedVersion: 2
-        x: 540
-        y: 540
-        width: 540
-        height: 540
+        x: 646
+        y: 639
+        width: 362
+        height: 405
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,10 +454,10 @@ TextureImporter:
       name: serpiente-muerte.gif_12
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 540
-        width: 540
-        height: 540
+        x: 1185
+        y: 639
+        width: 325
+        height: 369
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,10 +476,10 @@ TextureImporter:
       name: serpiente-muerte.gif_13
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 540
-        width: 540
-        height: 540
+        x: 1772
+        y: 634
+        width: 278
+        height: 374
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -459,10 +498,10 @@ TextureImporter:
       name: serpiente-muerte.gif_14
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 540
-        width: 540
-        height: 540
+        x: 2312
+        y: 643
+        width: 301
+        height: 387
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -481,10 +520,10 @@ TextureImporter:
       name: serpiente-muerte.gif_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 540
-        height: 540
+        x: 152
+        y: 94
+        width: 278
+        height: 374
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -503,10 +542,10 @@ TextureImporter:
       name: serpiente-muerte.gif_16
       rect:
         serializedVersion: 2
-        x: 540
-        y: 0
-        width: 540
-        height: 540
+        x: 665
+        y: 104
+        width: 270
+        height: 291
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -525,7 +564,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -534,24 +573,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      serpiente-muerte.gif_0: -6428508065981754214
-      serpiente-muerte.gif_1: -62154953566023815
-      serpiente-muerte.gif_10: 1924070097665481113
-      serpiente-muerte.gif_11: 2200878818916047078
-      serpiente-muerte.gif_12: -5360616186551655805
-      serpiente-muerte.gif_13: 1085883800176274626
-      serpiente-muerte.gif_14: 5755875108212409887
-      serpiente-muerte.gif_15: -8380627433660697855
-      serpiente-muerte.gif_16: 5723863101165893396
-      serpiente-muerte.gif_2: -4706987786312018650
-      serpiente-muerte.gif_3: 7771679486525639854
-      serpiente-muerte.gif_4: 6381603130415709367
-      serpiente-muerte.gif_5: -4206732301765910507
-      serpiente-muerte.gif_6: -3557212875534930350
-      serpiente-muerte.gif_7: -8163215380969686100
-      serpiente-muerte.gif_8: 5490984807916011795
-      serpiente-muerte.gif_9: -4477364874730334130
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
