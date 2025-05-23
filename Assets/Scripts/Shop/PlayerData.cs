@@ -11,26 +11,8 @@ public static class PlayerData
         if (loaded) return;
         loaded = true;
 
-        bool testing = true;
-
-        if (testing)
-        {
-            Coins = 5000;
-            SaveCoins();
-
-            SetItem("Invincible", 1);
-            SetItem("ExtraLife", 1);
-            SetItem("DinoLeg", 1);
-            SetItem("TripleAttack", 1);
-            SetItem("DoublePoints", 1);
-
-            Debug.Log("🧪 MODO TEST ACTIVADO: Coins = 5000, todos los ítems = 1");
-        }
-        else
-        {
-            Coins = PlayerPrefs.GetInt("coins", 0);
-            Debug.Log("🪙 COINS cargadas: " + Coins);
-        }
+        Coins = PlayerPrefs.GetInt("coins", 0);
+        Debug.Log("🪙 COINS cargadas: " + Coins);
     }
 
     public static void SaveCoins()

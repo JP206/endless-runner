@@ -3,27 +3,14 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    [SerializeField] float scoreRate;
     [SerializeField] TextMeshProUGUI scoreText;
 
     int score = 0;
-    float time = 0;
 
     void Start()
     {
-        scoreText.text = score.ToString();
-    }
-
-    void Update()
-    {
-        time += Time.deltaTime;
-
-        if (time >= scoreRate)
-        {
-            time = 0;
-            score++;
-            UpdateScoreUI();
-        }
+        score = 0;
+        UpdateScoreUI();
     }
 
     public void AddScore(int points)
@@ -39,8 +26,7 @@ public class ScoreManager : MonoBehaviour
 
     public void GetCoins()
     {
-        // se llama cuando se termina el juego
-        int coins = (int)(score / 100);
+            int coins = (int)(score / 100);
         PlayerData.AddCoins(coins);
         if (score > PlayerPrefs.GetInt("score"))
         {
