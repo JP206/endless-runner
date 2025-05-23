@@ -573,7 +573,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      serpiente-muerte.gif_0: -6428508065981754214
+      serpiente-muerte.gif_1: -62154953566023815
+      serpiente-muerte.gif_10: 1924070097665481113
+      serpiente-muerte.gif_11: 2200878818916047078
+      serpiente-muerte.gif_12: -5360616186551655805
+      serpiente-muerte.gif_13: 1085883800176274626
+      serpiente-muerte.gif_14: 5755875108212409887
+      serpiente-muerte.gif_15: -8380627433660697855
+      serpiente-muerte.gif_16: 5723863101165893396
+      serpiente-muerte.gif_2: -4706987786312018650
+      serpiente-muerte.gif_3: 7771679486525639854
+      serpiente-muerte.gif_4: 6381603130415709367
+      serpiente-muerte.gif_5: -4206732301765910507
+      serpiente-muerte.gif_6: -3557212875534930350
+      serpiente-muerte.gif_7: -8163215380969686100
+      serpiente-muerte.gif_8: 5490984807916011795
+      serpiente-muerte.gif_9: -4477364874730334130
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
