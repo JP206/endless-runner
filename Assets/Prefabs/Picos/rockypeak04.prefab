@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2127167923008166242}
   - component: {fileID: -7036583900303239774}
   - component: {fileID: -5492529460928879901}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: rockypeak04
-  m_TagString: Obstacle
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

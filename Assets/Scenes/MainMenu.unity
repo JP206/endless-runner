@@ -1769,7 +1769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fec22bb54a054b046ab034a2ac655b01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shopCanvas: {fileID: 0}
+  shopCanvas: {fileID: 876099201}
   addsCanvas: {fileID: 0}
   extraLifeButton: {fileID: 0}
   dinoLegButton: {fileID: 0}
