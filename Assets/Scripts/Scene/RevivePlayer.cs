@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 public class RevivePlayer : MonoBehaviour
@@ -37,8 +37,9 @@ public class RevivePlayer : MonoBehaviour
         saveMeCanvas.transform.parent.transform.parent.gameObject.SetActive(false);
 
         player.GetComponent<Animator>().SetTrigger("revive");
-
         player.GetComponent<PlayerHealth>().Revive();
+
+        player.GetComponent<PlayerHealth>().SetExternalInvulnerability(true);
 
         FindFirstObjectByType<PlayerOutOfBounds>()?.ResetGameOverTriggered();
 
@@ -49,11 +50,16 @@ public class RevivePlayer : MonoBehaviour
     {
         yield return new WaitForSeconds(4);
         revivePlatform.SetActive(false);
+
+        player.GetComponent<PlayerHealth>().SetExternalInvulnerability(false);
     }
 
     IEnumerator PlatformTimeInput()
     {
         yield return new WaitForSeconds(0.5f);
         revivePlatform.SetActive(false);
+
+        player.GetComponent<PlayerHealth>().SetExternalInvulnerability(false);
     }
+
 }

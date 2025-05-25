@@ -148,8 +148,11 @@ public class PlayerHealth : MonoBehaviour
         FreezeScene();
         StartCoroutine(WaitForDeathAnimation());
     }
-
-
+    public void SetExternalInvulnerability(bool value)
+    {
+        isInvulnerable = value;
+        SetCollisionWithEnemies(!value);
+    }
 
     public void Revive()
     {
