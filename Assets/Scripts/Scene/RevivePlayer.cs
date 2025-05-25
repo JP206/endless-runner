@@ -3,9 +3,10 @@ using UnityEngine;
 
 public class RevivePlayer : MonoBehaviour
 {
-    [SerializeField] GameObject revivePlatform, saveMeCanvas;
-    
-    GameObject player; 
+    [SerializeField] GameObject revivePlatform;
+    [SerializeField] GameObject saveMeCanvas;
+
+    GameObject player;
     Vector3 playerPos = new(-4.06f, 4.5f, 0);
     bool hasDied = false;
 
@@ -28,13 +29,19 @@ public class RevivePlayer : MonoBehaviour
     {
         Time.timeScale = 1;
         hasDied = true;
+
         revivePlatform.SetActive(true);
         player.transform.position = playerPos;
+
         saveMeCanvas.SetActive(false);
         saveMeCanvas.transform.parent.transform.parent.gameObject.SetActive(false);
+
         player.GetComponent<Animator>().SetTrigger("revive");
+
         player.GetComponent<PlayerHealth>().Revive();
-        FindFirstObjectByType<PlayerOutOfBounds>().ResetGameOverTriggered();
+
+        FindFirstObjectByType<PlayerOutOfBounds>()?.ResetGameOverTriggered();
+
         StartCoroutine(PlatformTime());
     }
 
