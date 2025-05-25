@@ -142,9 +142,9 @@ public class PlayerHealth : MonoBehaviour
         animator.SetTrigger("isDead");
         animator.SetBool("isHitted", false);
 
+        FindFirstObjectByType<ScoreManager>()?.GetCoins();
         FreezeScene();
         StartCoroutine(WaitForDeathAnimation());
-        FindFirstObjectByType<ScoreManager>()?.GetCoins();
 
     }
 

@@ -36,24 +36,12 @@ public class ObstacleManager : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        if (Camera.main != null && Camera.main.transform.position.x > nextTriggerX)
-        {
-            SpawnObstacle();
-        }
-    }
-
-
     public void SpawnObstacle()
     {
         if (pool == null) return;
 
         GameObject obstacle = pool.GetRandomObstacle();
         if (obstacle == null) return;
-
-        Debug.Log("🟢 Obstacle spawneado: " + obstacle.name);
-
 
         Collider2D lastRightmostCollider = lastSpawnedObstacle != null ? GetRightmostCollider(lastSpawnedObstacle) : null;
         float lastRightmostX = lastRightmostCollider != null ? lastRightmostCollider.bounds.max.x : lastObstaclePositionX;

@@ -43,12 +43,7 @@ public class ObstaclePool : MonoBehaviour
             int randomIndex = Random.Range(0, availableObstacles.Count);
             GameObject selectedObstacle = availableObstacles[randomIndex];
             selectedObstacle.SetActive(true);
-            Debug.Log("Spawneando obstáculo: " + selectedObstacle.name);
             return selectedObstacle;
-        }
-        else
-        {
-            Debug.LogWarning("❌ No hay prefabs disponibles para spawn.");
         }
 
         return null;

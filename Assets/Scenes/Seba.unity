@@ -3921,6 +3921,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 217764395612187107, guid: eb2bf8cdb7b59f9488212cbd9e57c26c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3568717883824704787, guid: eb2bf8cdb7b59f9488212cbd9e57c26c, type: 3}
       propertyPath: mainCamera
       value: 
@@ -6654,10 +6658,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclePrefabs:
   - {fileID: 3480786336410267063, guid: 1ed4b64fb5b3e3b42b361e68e45f7c1a, type: 3}
+  - {fileID: 1568248763578539522, guid: d910b61b2ff509d45b0f42537ee436df, type: 3}
+  - {fileID: 5777538747808140970, guid: 7a0536e92c2ab0a41880a7446c50405d, type: 3}
   - {fileID: 5919483334666299414, guid: 8acfc5ee567a32143b970c9ae37fbc8c, type: 3}
   - {fileID: 1893383938172206949, guid: 236154d8d7886e64db39b6094688ee1a, type: 3}
-  - {fileID: 5777538747808140970, guid: 7a0536e92c2ab0a41880a7446c50405d, type: 3}
-  - {fileID: 1568248763578539522, guid: d910b61b2ff509d45b0f42537ee436df, type: 3}
   poolSize: 1
 --- !u!1 &1393816877
 GameObject:
@@ -8637,7 +8641,7 @@ Transform:
   m_GameObject: {fileID: 1668905810}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.58, y: 6, z: 0}
+  m_LocalPosition: {x: 13.29, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
