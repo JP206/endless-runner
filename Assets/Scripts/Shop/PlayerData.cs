@@ -12,7 +12,6 @@ public static class PlayerData
         loaded = true;
 
         Coins = PlayerPrefs.GetInt("coins", 0);
-        Debug.Log("🪙 COINS cargadas: " + Coins);
     }
 
     public static void SaveCoins()
@@ -57,10 +56,8 @@ public static class PlayerData
         if (current > 0)
         {
             PlayerPrefs.SetInt(itemName, current - 1);
-            Debug.Log($"🧯 Usaste {itemName}, quedan: {current - 1}");
             return true;
         }
-        Debug.Log($"❌ No tenés {itemName} para usar.");
         return false;
     }
 
@@ -74,11 +71,11 @@ public static class PlayerData
         PlayerPrefs.SetInt(itemName, amount);
     }
 
+    // 🔁 Reset total de progreso
     public static void ResetAll()
     {
         PlayerPrefs.DeleteAll();
         Coins = 0;
         loaded = false;
-        Debug.Log("🔄 Todos los datos fueron reseteados.");
     }
 }

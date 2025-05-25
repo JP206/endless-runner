@@ -134,11 +134,12 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-
     public void Die()
     {
         if (isDead) return;
         isDead = true;
+
+        FindFirstObjectByType<ScoreManager>()?.GetCoins();
 
         animator.SetTrigger("isDead");
         animator.SetBool("isHitted", false);
@@ -146,6 +147,7 @@ public class PlayerHealth : MonoBehaviour
         FreezeScene();
         StartCoroutine(WaitForDeathAnimation());
     }
+
 
     public void Revive()
     {

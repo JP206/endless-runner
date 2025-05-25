@@ -4,10 +4,11 @@ using UnityEngine.UI;
 
 public class CoinDisplay : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI coinText;
+    [SerializeField] private TextMeshProUGUI highScoreText;
 
-    private void Update()
+    private void Start()
     {
-        coinText.text = "Coins: " + PlayerData.Coins;
+        int highScore = PlayerPrefs.GetInt("HighScore", 0);
+        highScoreText.text = " " + highScore;
     }
 }
