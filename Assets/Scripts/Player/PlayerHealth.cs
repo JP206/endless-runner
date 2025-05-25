@@ -139,13 +139,13 @@ public class PlayerHealth : MonoBehaviour
         if (isDead) return;
         isDead = true;
 
-        FindFirstObjectByType<ScoreManager>()?.GetCoins();
-
         animator.SetTrigger("isDead");
         animator.SetBool("isHitted", false);
 
         FreezeScene();
         StartCoroutine(WaitForDeathAnimation());
+        FindFirstObjectByType<ScoreManager>()?.GetCoins();
+
     }
 
 
