@@ -204,11 +204,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1852209909}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: OpenTab
-        m_Mode: 2
+        m_MethodName: OpenShop
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 876099201}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -298,7 +298,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62390793}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 093015066d4de2c4ea632ee906c79119, type: 3}
@@ -1089,7 +1089,7 @@ Canvas:
   m_GameObject: {fileID: 876099201}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1156,10 +1156,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 876099205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1259975528
 MonoBehaviour:
@@ -1770,27 +1770,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopCanvas: {fileID: 876099201}
-  addsCanvas: {fileID: 0}
-  extraLifeButton: {fileID: 0}
-  dinoLegButton: {fileID: 0}
-  invincibleButton: {fileID: 0}
-  extraLifeContainer: {fileID: 0}
-  dinoLegContainer: {fileID: 0}
-  invincibleContainer: {fileID: 0}
-  extraLifeAddContainer: {fileID: 0}
-  tripleAttackAddContainer: {fileID: 0}
-  doublePointsAddContainer: {fileID: 0}
-  goBackAddImage: {fileID: 0}
-  homeImage: {fileID: 0}
-  goBackImage: {fileID: 0}
-  addsTabImage: {fileID: 0}
-  extraLifeDisabledSprite: {fileID: -240454218391438856, guid: 73f4ea4e1df7c4140b23c6ac7316c15c, type: 3}
-  dinoLegDisabledSprite: {fileID: -8735710103640154260, guid: 5302bcd24bc2df2459b685566c387cc5, type: 3}
-  invincibleDisabledSprite: {fileID: -4373907337067446771, guid: 1acda2711482a7a47b55c9165bca377e, type: 3}
-  extraLifeNormalSprite: {fileID: 489015870379250796, guid: ad99717b3102fc64998dd5af81dfaa0d, type: 3}
-  dinoLegNormalSprite: {fileID: -4605013500878074615, guid: d5467f861dd8e834181af73cc1a087f7, type: 3}
-  invincibleNormalSprite: {fileID: 4792233647710518427, guid: 78f041878f00a1346b994006518987bc, type: 3}
-  clickSound: {fileID: 1852209910}
 --- !u!82 &1852209910
 AudioSource:
   m_ObjectHideFlags: 0

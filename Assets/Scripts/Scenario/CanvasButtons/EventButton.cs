@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
@@ -44,23 +44,19 @@ public class EventButton : MonoBehaviour
     public void SaveMeButton()
     {
         GetClickSound();
-        if (!PokiUnitySDK.Instance.isAdBlocked())
-        {
-            PokiUnitySDK.Instance.rewardedBreakCallBack = RevivePlayer;
-            PokiUnitySDK.Instance.rewardedBreak();
-        }
-    }
 
-    public void RevivePlayer(bool withReward)
-    {
-        if (withReward)
+        PokiScript.Instance?.CallRewardedBreak((bool withReward) =>
         {
-            FindFirstObjectByType<RevivePlayer>().revivePlayer();
-        }
-        else
-        {
-            
-        }
+            if (withReward)
+            {
+                FindFirstObjectByType<RevivePlayer>()?.revivePlayer();
+                PokiScript.Instance?.CallGameplayStart();
+            }
+            else
+            {
+                Debug.Log("❌ Anuncio no completado. No se revive.");
+            }
+        });
     }
 
     public void LoadScene(string sceneName, bool resetTime = true)
@@ -90,14 +86,20 @@ public class EventButton : MonoBehaviour
     {
         GetPauseSound();
         ToggleGameState(true);
+
+        PokiScript.Instance?.CallGameplayStop();
     }
+
 
     public void ResumeGame()
     {
         GetClickSound();
         StartCoroutine(AnimateButtonPress(resumeButtonImage));
         ToggleGameState(false);
+
+        PokiScript.Instance?.CallGameplayStart();
     }
+
 
     public void GameOver()
     {
@@ -125,6 +127,7 @@ public class EventButton : MonoBehaviour
     public void PlayGame()
     {
         GetClickSound();
+        PokiScript.Instance?.CallGameplayStart();
         LoadScene("Seba");
     }
 

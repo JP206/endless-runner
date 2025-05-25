@@ -139,14 +139,16 @@ public class PlayerHealth : MonoBehaviour
         if (isDead) return;
         isDead = true;
 
+        PokiScript.Instance?.CallGameplayStop();
+
         animator.SetTrigger("isDead");
         animator.SetBool("isHitted", false);
 
         FindFirstObjectByType<ScoreManager>()?.GetCoins();
         FreezeScene();
         StartCoroutine(WaitForDeathAnimation());
-
     }
+
 
 
     public void Revive()
@@ -179,11 +181,16 @@ public class PlayerHealth : MonoBehaviour
     {
         gameOverCanvas.SetActive(true);
         saveMeCanvas.SetActive(true);
+
         PlayDeathSound();
         StopBackgroundMusic();
+
+        PokiScript.Instance?.CallGameplayStop();
+
         StartCoroutine(FadeInPanel());
         StartCoroutine(AnimateGameOverImage());
     }
+
 
     private void ShowGameOverCanvas()
     {
