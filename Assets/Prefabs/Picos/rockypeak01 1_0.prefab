@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5560498470273100673}
   - component: {fileID: 462227436414291618}
   - component: {fileID: -8649369481670233960}
+  - component: {fileID: -595128402540256695}
   m_Layer: 7
   m_Name: rockypeak01 1_0
   m_TagString: Obstacle
@@ -118,7 +119,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -188,3 +189,15 @@ PolygonCollider2D:
       - {x: -0.68, y: -0.41}
       - {x: -0.7, y: -0.42999998}
   m_UseDelaunayMesh: 0
+--- !u!114 &-595128402540256695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785703783772912354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8658b006cae374face00f8a926a884, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

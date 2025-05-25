@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class PrefabDeactivator : MonoBehaviour
 {
-    [SerializeField] private string playerTag = "Player";
     private ObstacleManager obstacleManager;
     private GameObject parentPrefab;
 
