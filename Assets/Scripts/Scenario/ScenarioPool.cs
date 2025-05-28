@@ -31,7 +31,7 @@ public class ScenarioPool : MonoBehaviour
         InitializeMountains();
         InitializeRocks();
         InitializeFarMountains();
-        InitializePlants();
+       // InitializePlants()//;
         InitializeClouds();
 
         StartCoroutine(SpawnFrontPlants());
@@ -100,7 +100,7 @@ public class ScenarioPool : MonoBehaviour
             }
         }
         
-        pooledPlants[0].SetActive(true);
+        pooledPlants[1].SetActive(true);
     }
 
     void InitializeClouds()
