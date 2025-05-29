@@ -59,7 +59,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        if (!isDead && !isInvulnerable && currentHealth > 0f)
+        if (!isDead && !isInvulnerable && currentHealth > 0f && Time.timeScale > 0)
         {
             currentHealth -= 5f * Time.deltaTime;
             currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
@@ -194,6 +194,11 @@ public class PlayerHealth : MonoBehaviour
     {
         isDead = false;
         hasUsedSaveMe = true;
+
+        currentHealth = maxHealth;
+
+        if (healthFillImage != null)
+            healthFillImage.fillAmount = 1f;
     }
 
     private void FreezeScene()
