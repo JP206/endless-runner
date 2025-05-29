@@ -61,7 +61,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (!isDead && !isInvulnerable && currentHealth > 0f && Time.timeScale > 0)
         {
-            currentHealth -= 5f * Time.deltaTime;
+            currentHealth -= 1f * Time.deltaTime;
             currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
 
             if (healthFillImage != null)
