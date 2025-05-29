@@ -149,8 +149,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0000000039178514, y: 0.031779297}
-  m_Size: {x: 1.0341743, y: 0.75847846}
+  m_Offset: {x: -0.3454147, y: -0.04471548}
+  m_Size: {x: 1.2108303, y: 0.8800007}
   m_Direction: 1
 --- !u!114 &2887417448770060172
 MonoBehaviour:
@@ -164,6 +164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc8658b006cae374face00f8a926a884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageCooldown: 1.5
+  canDamage: 1
 --- !u!1 &8865727490694733344
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,9 +177,10 @@ GameObject:
   - component: {fileID: 4588953171749319060}
   - component: {fileID: 2133888247674630851}
   - component: {fileID: 4257596850159735018}
-  - component: {fileID: 6877011919741940441}
   - component: {fileID: 2847175833096507979}
   - component: {fileID: 1259615899260401886}
+  - component: {fileID: 7955100364284742085}
+  - component: {fileID: 1859738567130556835}
   m_Layer: 15
   m_Name: Snake
   m_TagString: Snake
@@ -195,7 +198,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.79, y: -2.02, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6299682066577080080}
@@ -279,43 +282,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!70 &6877011919741940441
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8865727490694733344}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.021929003, y: -0.76054025}
-  m_Size: {x: 2.061098, y: 1.8997718}
-  m_Direction: 1
 --- !u!50 &2847175833096507979
 Rigidbody2D:
   serializedVersion: 5
@@ -355,8 +321,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38b89cba68d70f14e9e48eaeb85bcc9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRange: 3
+  detectionRange: 3.6
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
   detectionOffset: {x: 0, y: 0}
+--- !u!114 &7955100364284742085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8865727490694733344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0984e54e1f2fcaa4091d210719f5c448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  posY: 0
+  xThreshold: -10
+--- !u!70 &1859738567130556835
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8865727490694733344}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.298481, y: -0.86133206}
+  m_Size: {x: 1.221261, y: 1.5623848}
+  m_Direction: 0

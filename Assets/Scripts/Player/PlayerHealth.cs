@@ -13,7 +13,7 @@ public class PlayerHealth : MonoBehaviour
     private float currentHealth;
 
     [Header("Invincibility Settings")]
-    [SerializeField] private float invincibilityDuration = 3f;
+    [SerializeField] private float invincibilityDuration = 2f;
     private bool isInvulnerable = false;
     private bool isDead = false;
 
@@ -59,42 +59,63 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        if (!isDead && currentHealth > 0f)
+        if (!isDead && !isInvulnerable && currentHealth > 0f)
         {
-            currentHealth -= 4f * Time.deltaTime;
+            currentHealth -= 5f * Time.deltaTime;
             currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
 
             if (healthFillImage != null)
                 healthFillImage.fillAmount = currentHealth / maxHealth;
 
             if (currentHealth <= 0 && !isDead)
-                Die();
+            {
+                HandleZeroHealth();
+            }
+
         }
     }
+    private void HandleZeroHealth()
+    {
+        currentHealth = 0;
+        if (healthFillImage != null)
+            healthFillImage.fillAmount = 0;
+
+        if (!isDead)
+        {
+            Die();
+        }
+    }
+
 
     public void TakeDamage()
     {
         if (isDead || isInvulnerable) return;
 
-        PlayHurtSound();
-        StartCoroutine(HandleDamageEffects());
-        StartCoroutine(HandleInvulnerability());
+        float newHealth = currentHealth - damageAmount;
 
-        currentHealth -= damageAmount;
-        currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
+        currentHealth = Mathf.Clamp(newHealth, 0f, maxHealth);
 
         if (healthFillImage != null)
             healthFillImage.fillAmount = currentHealth / maxHealth;
 
         if (currentHealth <= 0)
+        {
+            PlayHurtSound();
             Die();
+            return;
+        }
+
+        PlayHurtSound();
+        StartCoroutine(HandleDamageEffects());
+        StartCoroutine(HandleInvulnerability());
     }
+
 
     private IEnumerator HandleDamageEffects()
     {
         animator.SetBool("isHitted", true);
         yield return new WaitForSeconds(0.5f);
-        animator.SetBool("isHitted", false);
+        if (!isDead) animator.SetBool("isHitted", false);
     }
 
     private IEnumerator HandleInvulnerability()
@@ -111,7 +132,7 @@ public class PlayerHealth : MonoBehaviour
 
     private IEnumerator FlashWhileInvulnerable()
     {
-        float flashInterval = 0.15f;
+        float flashInterval = 0.10f;
 
         while (isInvulnerable)
         {
@@ -144,14 +165,29 @@ public class PlayerHealth : MonoBehaviour
         animator.SetTrigger("isDead");
         animator.SetBool("isHitted", false);
 
+        DisablePlayerColliders();
+
         FindFirstObjectByType<ScoreManager>()?.GetCoins();
+        StartCoroutine(DeathSequence());
+    }
+
+
+    private IEnumerator DeathSequence()
+    {
         FreezeScene();
+        yield return StartCoroutine(DeathMotion());
         StartCoroutine(WaitForDeathAnimation());
     }
+
+
     public void SetExternalInvulnerability(bool value)
     {
         isInvulnerable = value;
         SetCollisionWithEnemies(!value);
+    }
+    public bool IsDead()
+    {
+        return isDead;
     }
 
     public void Revive()
@@ -166,9 +202,22 @@ public class PlayerHealth : MonoBehaviour
         animator.updateMode = AnimatorUpdateMode.UnscaledTime;
     }
 
+    private void DisablePlayerColliders()
+    {
+        foreach (var col in GetComponentsInChildren<Collider2D>())
+            col.enabled = false;
+    }
+
+
     private IEnumerator WaitForDeathAnimation()
     {
-        yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
+        yield return new WaitUntil(() =>
+            animator.GetCurrentAnimatorStateInfo(0).IsName("Death")
+        );
+
+        yield return new WaitUntil(() =>
+            animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f
+        );
 
         if (!hasUsedSaveMe && saveMeCanvas != null)
         {
@@ -179,6 +228,7 @@ public class PlayerHealth : MonoBehaviour
             ShowGameOverCanvas();
         }
     }
+
 
     private void ShowSaveMeCanvas()
     {
@@ -229,6 +279,39 @@ public class PlayerHealth : MonoBehaviour
         canvasGroup.alpha = 1;
         panelImage.color = new Color(0, 0, 0, 0.8f);
     }
+
+    private IEnumerator DeathMotion()
+    {
+        float duration = 1f;
+        float peakHeight = 2f;
+
+        Vector3 start = transform.position;
+        Vector3 peak = start + Vector3.up * peakHeight;
+        Vector3 end = start + Vector3.down * 3f;
+
+        float elapsed = 0f;
+
+        // Subir
+        while (elapsed < duration / 2f)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            transform.position = Vector3.Lerp(start, peak, elapsed / (duration / 2f));
+            yield return null;
+        }
+
+        elapsed = 0f;
+
+        // Bajar
+        while (elapsed < duration / 2f)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            transform.position = Vector3.Lerp(peak, end, elapsed / (duration / 2f));
+            yield return null;
+        }
+
+        transform.position = end;
+    }
+
 
     private IEnumerator AnimateGameOverImage()
     {

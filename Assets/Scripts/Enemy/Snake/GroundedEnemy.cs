@@ -86,22 +86,5 @@ public class GroundedEnemy : MonoBehaviour
                 Physics2D.IgnoreCollision(enemyCol, playerCol, ignore);
             }
         }
-
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (isDead) return;
-
-        if (collision.CompareTag("Player"))
-        {
-            PlayerHealth player = collision.GetComponent<PlayerHealth>();
-            if (player != null)
-            {
-                player.TakeDamage();
-            }
-        }
-    }
-
-
 }

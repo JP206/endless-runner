@@ -1,15 +1,18 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class TRex : MonoBehaviour
 {
     [SerializeField] float speed;
 
     Animator animator;
+    private AudioSource audioSource;
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         StartCoroutine(StartAnim());
     }
 
@@ -28,5 +31,10 @@ public class TRex : MonoBehaviour
             yield return null;
         }
     }
-   
+
+    public void PlayRoarSound()
+    {
+        if (audioSource != null && audioSource.clip != null)
+            audioSource.PlayOneShot(audioSource.clip);
+    }
 }
