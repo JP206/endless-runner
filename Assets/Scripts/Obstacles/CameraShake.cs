@@ -10,10 +10,14 @@ public class CameraShake : MonoBehaviour
         Instance = this;
     }
 
-    public IEnumerator Shake(float duration, float magnitude)
+    public void Shake(float duration, float magnitude)
+    {
+        StartCoroutine(ShakeCoroutine(duration, magnitude));
+    }
+
+    private IEnumerator ShakeCoroutine(float duration, float magnitude)
     {
         Vector3 originalPos = transform.localPosition;
-
         float elapsed = 0.0f;
 
         while (elapsed < duration)
@@ -24,7 +28,6 @@ public class CameraShake : MonoBehaviour
             transform.localPosition = new Vector3(originalPos.x + x, originalPos.y + y, originalPos.z);
 
             elapsed += Time.deltaTime;
-
             yield return null;
         }
 
@@ -33,6 +36,6 @@ public class CameraShake : MonoBehaviour
 
     public void TriggerShake()
     {
-        StartCoroutine(Shake(1.0f, 0.3f));
+        Shake(1.0f, 0.3f);
     }
 }
