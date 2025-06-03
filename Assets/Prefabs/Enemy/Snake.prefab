@@ -179,7 +179,6 @@ GameObject:
   - component: {fileID: 4257596850159735018}
   - component: {fileID: 2847175833096507979}
   - component: {fileID: 1259615899260401886}
-  - component: {fileID: 7955100364284742085}
   - component: {fileID: 1859738567130556835}
   m_Layer: 15
   m_Name: Snake
@@ -326,21 +325,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   detectionOffset: {x: 0, y: 0}
---- !u!114 &7955100364284742085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8865727490694733344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0984e54e1f2fcaa4091d210719f5c448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  posY: 0
-  xThreshold: -10
 --- !u!70 &1859738567130556835
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -375,6 +359,6 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.298481, y: -0.86133206}
-  m_Size: {x: 1.221261, y: 1.5623848}
+  m_Offset: {x: 0.298481, y: -0.9232062}
+  m_Size: {x: 1.221261, y: 1.6861331}
   m_Direction: 0
