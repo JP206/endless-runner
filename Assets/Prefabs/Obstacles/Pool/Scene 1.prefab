@@ -3809,6 +3809,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc8658b006cae374face00f8a926a884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageCooldown: 1.5
+  canDamage: 1
 --- !u!1001 &348796804640488411
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6942,6 +6944,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc8658b006cae374face00f8a926a884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageCooldown: 1.5
+  canDamage: 1
 --- !u!1001 &3205079679457960743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10652,6 +10656,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc8658b006cae374face00f8a926a884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageCooldown: 1.5
+  canDamage: 1
 --- !u!1001 &8094402726931749039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11923,6 +11929,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc8658b006cae374face00f8a926a884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageCooldown: 1.5
+  canDamage: 1
 --- !u!1001 &8935091732729017509
 PrefabInstance:
   m_ObjectHideFlags: 0
