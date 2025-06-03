@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5632642007433370453}
   - component: {fileID: 3067185748617059545}
   - component: {fileID: 2449852100024308353}
+  - component: {fileID: 8072140398850031505}
   m_Layer: 6
   m_Name: rockypeak02_0
   m_TagString: Enemy
@@ -344,3 +345,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc8658b006cae374face00f8a926a884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageCooldown: 1.5
+  canDamage: 1
+--- !u!114 &8072140398850031505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4868722704335468431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0dc1771532bdd74b92cb6fde1c36670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.2
+  intensity: 0.05

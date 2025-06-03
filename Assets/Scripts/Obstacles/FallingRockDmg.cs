@@ -34,7 +34,7 @@ public class FallingRockDmg : MonoBehaviour
     {
         hasFallen = true;
         rb.bodyType = RigidbodyType2D.Dynamic;
-        rb.gravityScale = 4f;
+        rb.gravityScale = 3f;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
