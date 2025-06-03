@@ -916,7 +916,7 @@ MonoBehaviour:
   backgroundMusic: {fileID: 1187407130}
   stepSounds: {fileID: 8300000, guid: 040250a713c24f542933612625763927, type: 3}
   jumpSound: {fileID: 8300000, guid: 14830b8dd19e1ff42a79e136788812bc, type: 3}
-  throwSound: {fileID: 8300000, guid: 8c25a39810c4c66459842e693e747fc2, type: 3}
+  throwSound: {fileID: 8300000, guid: b2130f555522ee5469b7c27974ae9862, type: 3}
   hurtSound: {fileID: 8300000, guid: 0a64003bb8e88b74d9a100b0f2d5c022, type: 3}
   deathSound: {fileID: 8300000, guid: c71ac092b567692469b608c2afa1e351, type: 3}
 --- !u!4 &245896149
