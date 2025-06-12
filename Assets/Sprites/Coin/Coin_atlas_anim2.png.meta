@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: dc466a53ad1b5bf4995ad9603f003969
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7961841469424567504
+    second: Coin_atlas_anim2_0
+  - first:
+      213: 7899730840962265516
+    second: Coin_atlas_anim2_1
+  - first:
+      213: 7812016311610748705
+    second: Coin_atlas_anim2_2
+  - first:
+      213: 1901836925676960949
+    second: Coin_atlas_anim2_3
+  - first:
+      213: 1145441882810954227
+    second: Coin_atlas_anim2_4
+  - first:
+      213: -1688226530855640703
+    second: Coin_atlas_anim2_5
+  - first:
+      213: -7739953274269966166
+    second: Coin_atlas_anim2_6
+  - first:
+      213: -1279127908168953713
+    second: Coin_atlas_anim2_7
+  - first:
+      213: -5782216484564955147
+    second: Coin_atlas_anim2_8
+  - first:
+      213: -4367726196079260117
+    second: Coin_atlas_anim2_9
+  - first:
+      213: -2839177101862047873
+    second: Coin_atlas_anim2_10
+  - first:
+      213: -8667580410785161710
+    second: Coin_atlas_anim2_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Coin_atlas_anim2_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1020
+        width: 482
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4860ff1a42e7e60800000000000000
+      internalID: 7961841469424567504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin_atlas_anim2_1
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1020
+        width: 477
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1f0c4685b71ad60800000000000000
+      internalID: 7899730840962265516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin_atlas_anim2_2
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 1021
+        width: 445
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12fad11127bd96c60800000000000000
+      internalID: 7812016311610748705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin_atlas_anim2_3
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 1022
+        width: 313
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bc32b78b9ea46a10800000000000000
+      internalID: 1901836925676960949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin_atlas_anim2_4
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 511
+        width: 278
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f13dc7d25d65ef00800000000000000
+      internalID: 1145441882810954227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin_atlas_anim2_5
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 508
+        width: 459
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 181a5ff2ae63298e0800000000000000
+      internalID: -1688226530855640703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin_atlas_anim2_6
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 508
+        width: 459
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0640d4189269490800000000000000
+      internalID: -7739953274269966166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin_atlas_anim2_7
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 510
+        width: 280
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f801d43d1ff9f3ee0800000000000000
+      internalID: -1279127908168953713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin_atlas_anim2_8
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 0
+        width: 315
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff09172eb071cfa0800000000000000
+      internalID: -5782216484564955147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin_atlas_anim2_9
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 0
+        width: 445
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e07867a28b263c0800000000000000
+      internalID: -4367726196079260117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin_atlas_anim2_10
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 0
+        width: 477
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7fe61de7773998d0800000000000000
+      internalID: -2839177101862047873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin_atlas_anim2_11
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 0
+        width: 482
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e14090a8196b780800000000000000
+      internalID: -8667580410785161710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Coin_atlas_anim2_0: 7961841469424567504
+      Coin_atlas_anim2_1: 7899730840962265516
+      Coin_atlas_anim2_10: -2839177101862047873
+      Coin_atlas_anim2_11: -8667580410785161710
+      Coin_atlas_anim2_2: 7812016311610748705
+      Coin_atlas_anim2_3: 1901836925676960949
+      Coin_atlas_anim2_4: 1145441882810954227
+      Coin_atlas_anim2_5: -1688226530855640703
+      Coin_atlas_anim2_6: -7739953274269966166
+      Coin_atlas_anim2_7: -1279127908168953713
+      Coin_atlas_anim2_8: -5782216484564955147
+      Coin_atlas_anim2_9: -4367726196079260117
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
