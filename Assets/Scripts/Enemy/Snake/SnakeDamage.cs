@@ -1,7 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
-using UnityEngine.Audio;
 
 public class SnakeDamage : MonoBehaviour
 {
@@ -43,5 +41,14 @@ public class SnakeDamage : MonoBehaviour
     {
         canDamage = true;
         isDead = false;
+    }
+
+    public void ResetState()
+    {
+        StopAllCoroutines();
+        hasDealtDamage = false;
+        isDead = false;
+        canDamage = true;
+        gameObject.SetActive(true);
     }
 }

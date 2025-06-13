@@ -32,10 +32,11 @@ public class Player : MonoBehaviour
             Enemy enemy = collision.GetComponentInParent<Enemy>();
             if (enemy != null)
             {
-                enemy.DestroyEnemy();
+                collision.gameObject.SetActive(false);
                 playerMovement.ApplyJump(5f);
             }
         }
+
     }
 
     public void PlayStepSounds()

@@ -61,8 +61,15 @@ public class GroundedEnemy : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
         }
 
-        Destroy(gameObject, 1f);
+        // En lugar de destruir, desactivás luego de 1 segundo
+        Invoke(nameof(DeactivateSelf), 1f);
     }
+
+    private void DeactivateSelf()
+    {
+        gameObject.SetActive(false);
+    }
+
 
     private void OnDrawGizmosSelected()
     {

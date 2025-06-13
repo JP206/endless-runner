@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1016272557500525510}
   - component: {fileID: 5954341180422403812}
   - component: {fileID: 256341080794117278}
+  - component: {fileID: 5832091908209129983}
   m_Layer: 14
   m_Name: Dino Leg
   m_TagString: Dino Leg
@@ -125,3 +126,15 @@ CapsuleCollider2D:
   m_Offset: {x: -0.64, y: 0.08}
   m_Size: {x: 3.29, y: 6.76}
   m_Direction: 0
+--- !u!114 &5832091908209129983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4860562645656392096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293748a70a186814589aeb8729e36acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

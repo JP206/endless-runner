@@ -17,11 +17,11 @@ public class PickerHandler : MonoBehaviour
             PlayerData.AddCoins(1);
             scoreManager?.AddScore(1);
             PlayCoinSound(collision.transform.position);
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false); 
         }
         else if (collision.CompareTag("Dino Leg"))
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
         }
     }
 

@@ -349,7 +349,7 @@ public class PlayerHealth : MonoBehaviour
             if (healthFillImage != null)
                 healthFillImage.fillAmount = currentHealth / maxHealth;
 
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
         }
     }
 
