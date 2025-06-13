@@ -2,7 +2,6 @@
 
 public class FallingRockDmg : MonoBehaviour
 {
-    [Header("💥 Daño")]
     [SerializeField] float damageAmount = 40f;
 
     private Rigidbody2D rb;
@@ -14,6 +13,7 @@ public class FallingRockDmg : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.bodyType = RigidbodyType2D.Kinematic;
+        rb.gravityScale = 0f;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -52,7 +52,28 @@ public class FallingRockDmg : MonoBehaviour
         if (collision.collider.CompareTag("Floor") && !hasTouchedGround)
         {
             hasTouchedGround = true;
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
+    }
+
+    public void ResetState()
+    {
+        hasFallen = false;
+        hasHitPlayer = false;
+        hasTouchedGround = false;
+
+        if (rb == null)
+            rb = GetComponent<Rigidbody2D>();
+
+        rb.bodyType = RigidbodyType2D.Kinematic;
+        rb.gravityScale = 0f;
+        rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+
+        Transform triggerZone = transform.Find("TriggerZone");
+        if (triggerZone != null)
+            triggerZone.gameObject.SetActive(true);
+
+        gameObject.SetActive(true);
     }
 }
