@@ -61,7 +61,6 @@ public class GroundedEnemy : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
         }
 
-        // En lugar de destruir, desactivás luego de 1 segundo
         Invoke(nameof(DeactivateSelf), 1f);
     }
 
@@ -94,4 +93,18 @@ public class GroundedEnemy : MonoBehaviour
             }
         }
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (isDead) return;
+
+        if (other.CompareTag("Player"))
+        {
+            PlayerHealth player = other.GetComponent<PlayerHealth>();
+            if (player != null && !player.IsDead())
+            {
+                player.TakeDamage();
+            }
+        }
+    }
+
 }
