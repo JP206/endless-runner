@@ -49,7 +49,7 @@ public class FallingRockDmg : MonoBehaviour
             }
         }
 
-        if (collision.collider.CompareTag("Floor") && !hasTouchedGround)
+        if ((collision.collider.CompareTag("Floor") || collision.collider.CompareTag("Player")) && !hasTouchedGround)
         {
             hasTouchedGround = true;
             gameObject.SetActive(false);
