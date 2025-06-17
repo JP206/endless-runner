@@ -3,6 +3,7 @@ using UnityEngine;
 public class PickerHandler : MonoBehaviour
 {
     [SerializeField] private AudioClip coinClip;
+    [SerializeField] private AudioClip dinoLegSound;
     private ScoreManager scoreManager;
 
     private void Start()
@@ -19,8 +20,10 @@ public class PickerHandler : MonoBehaviour
             PlayCoinSound(collision.transform.position);
             collision.gameObject.SetActive(false); 
         }
+
         else if (collision.CompareTag("Dino Leg"))
         {
+            PlayDinoLegSound(collision.transform.position);
             collision.gameObject.SetActive(false);
         }
     }
@@ -30,6 +33,14 @@ public class PickerHandler : MonoBehaviour
         if (coinClip != null)
         {
             AudioSource.PlayClipAtPoint(coinClip, position);
+        }
+    }
+
+    private void PlayDinoLegSound(Vector3 position)
+    {
+        if (dinoLegSound != null)
+        {
+            AudioSource.PlayClipAtPoint(dinoLegSound, position);
         }
     }
 }
