@@ -5170,7 +5170,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1187407130
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6016,6 +6016,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dino Leg (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4860562645656392096, guid: f823d1b7c65971543ae105359849a0e5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6514,7 +6518,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1395825525
 Animator:
   serializedVersion: 7

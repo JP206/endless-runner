@@ -8,14 +8,18 @@ public class GroundedEnemy : MonoBehaviour
     public Vector2 detectionOffset = Vector2.zero;
 
     private Animator animator;
+    private Rigidbody2D rb;
+    private SnakeSounds snakeSounds;
+
     private bool playerWasInRangeLastFrame = false;
     private bool isDead = false;
-    private Rigidbody2D rb;
+    private bool hasPlayedRattle = false;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        snakeSounds = GetComponent<SnakeSounds>();
     }
 
     private void Update()
@@ -35,6 +39,12 @@ public class GroundedEnemy : MonoBehaviour
         if (isPlayerInRange && !playerWasInRangeLastFrame)
         {
             animator.SetTrigger("Attack");
+
+            if (!hasPlayedRattle && snakeSounds != null)
+            {
+                snakeSounds.PlayRattleSound();
+                hasPlayedRattle = true;
+            }
         }
 
         playerWasInRangeLastFrame = isPlayerInRange;
@@ -69,7 +79,6 @@ public class GroundedEnemy : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
@@ -93,6 +102,7 @@ public class GroundedEnemy : MonoBehaviour
             }
         }
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (isDead) return;
@@ -106,5 +116,4 @@ public class GroundedEnemy : MonoBehaviour
             }
         }
     }
-
 }
