@@ -251,6 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinClip: {fileID: 8300000, guid: 332a0d3ef5494214bab0b140ece57f32, type: 3}
+  dinoLegSound: {fileID: 0}
 --- !u!95 &6237730188447300723
 Animator:
   serializedVersion: 7
