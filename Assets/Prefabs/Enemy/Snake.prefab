@@ -376,6 +376,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30b33f29270e6ec4088fd67500ac1879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 899672553596338846}
+  deathClip: {fileID: 8300000, guid: b359ac2e0153ce94e973daad66e2d083, type: 3}
+  rattleClip: {fileID: 8300000, guid: 256a0afa8f9b7ea4caf601e03ce8fc1f, type: 3}
+  damageClip: {fileID: 8300000, guid: ccbe6697fe09709479290cd30916547e, type: 3}
 --- !u!82 &899672553596338846
 AudioSource:
   m_ObjectHideFlags: 0
@@ -386,8 +390,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 256a0afa8f9b7ea4caf601e03ce8fc1f, type: 3}
-  m_Resource: {fileID: 8300000, guid: 256a0afa8f9b7ea4caf601e03ce8fc1f, type: 3}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

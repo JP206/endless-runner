@@ -32,9 +32,9 @@ public class GroundedEnemy : MonoBehaviour
     private void DetectPlayerEntry()
     {
         Vector2 center = (Vector2)transform.position + detectionOffset;
-        Collider2D player = Physics2D.OverlapCircle(center, detectionRange, playerLayer);
+        Collider2D hit = Physics2D.OverlapCircle(center, detectionRange);
 
-        bool isPlayerInRange = (player != null);
+        bool isPlayerInRange = (hit != null && hit.CompareTag("Player"));
 
         if (isPlayerInRange && !playerWasInRangeLastFrame)
         {
