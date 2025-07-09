@@ -128,7 +128,7 @@ public class EventButton : MonoBehaviour
     {
         GetClickSound();
         PokiScript.Instance?.CallGameplayStart();
-        LoadScene("Seba");
+        LoadScene("Game");
     }
 
     public void ExitGame()
@@ -177,6 +177,4 @@ public class EventButton : MonoBehaviour
 
         rect.localScale = originalScale;
     }
-
-
 }
