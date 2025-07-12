@@ -15,6 +15,7 @@ public class EventButton : MonoBehaviour
     [Header("Sounds Click")]
     [SerializeField] private AudioSource clickSound;
     [SerializeField] private AudioSource pauseSound;
+    [SerializeField] private AudioSource backgroundMusic;
 
     [Header("Buttons")]
     [SerializeField] private Image retryButtonImage;
@@ -51,6 +52,7 @@ public class EventButton : MonoBehaviour
             {
                 FindFirstObjectByType<RevivePlayer>()?.revivePlayer();
                 PokiScript.Instance?.CallGameplayStart();
+                ResumeBackgroundMusic();
             }
             else
             {
@@ -148,6 +150,12 @@ public class EventButton : MonoBehaviour
     {
         if (pauseSound != null && pauseSound.clip != null)
             pauseSound.PlayOneShot(pauseSound.clip);
+    }
+    public void ResumeBackgroundMusic()
+    {
+        if (backgroundMusic != null && backgroundMusic.clip != null)
+            backgroundMusic.gameObject.SetActive(true);
+            backgroundMusic.PlayOneShot(backgroundMusic.clip);
     }
 
     private IEnumerator AnimateButtonPress(Image buttonImage)
