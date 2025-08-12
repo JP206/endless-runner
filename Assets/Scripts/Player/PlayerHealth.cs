@@ -160,7 +160,7 @@ public class PlayerHealth : MonoBehaviour
         if (isDead) return;
         isDead = true;
 
-        PokiScript.Instance?.CallGameplayStop();
+        //PokiScript.Instance?.CallGameplayStop();
 
         animator.SetTrigger("isDead");
         animator.SetBool("isHitted", false);
@@ -243,7 +243,7 @@ public class PlayerHealth : MonoBehaviour
         PlayDeathSound();
         StopBackgroundMusic();
 
-        PokiScript.Instance?.CallGameplayStop();
+        //PokiScript.Instance?.CallGameplayStop();
 
         StartCoroutine(FadeInPanel());
         StartCoroutine(AnimateGameOverImage());

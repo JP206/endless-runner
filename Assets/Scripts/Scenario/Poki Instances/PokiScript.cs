@@ -30,19 +30,16 @@ public class PokiScript : MonoBehaviour
 
     public void CallGameplayStart()
     {
-        Debug.Log("▶️ Poki: gameplayStart()");
         PokiUnitySDK.Instance.gameplayStart();
     }
 
     public void CallGameplayStop()
     {
-        Debug.Log("⏸ Poki: gameplayStop()");
         PokiUnitySDK.Instance.gameplayStop();
     }
 
     public void CallRewardedBreak(System.Action<bool> callback)
     {
-        Debug.Log("🎬 Poki: rewardedBreak() triggered");
 
         PokiUnitySDK.Instance.rewardedBreakCallBack = new PokiUnitySDK.RewardedBreakDelegate((bool withReward) =>
         {

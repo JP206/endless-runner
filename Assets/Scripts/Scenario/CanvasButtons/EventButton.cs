@@ -45,20 +45,23 @@ public class EventButton : MonoBehaviour
     public void SaveMeButton()
     {
         GetClickSound();
+        
+        FindFirstObjectByType<RevivePlayer>()?.revivePlayer();
+        ResumeBackgroundMusic();
 
-        PokiScript.Instance?.CallRewardedBreak((bool withReward) =>
-        {
-            if (withReward)
-            {
-                FindFirstObjectByType<RevivePlayer>()?.revivePlayer();
-                PokiScript.Instance?.CallGameplayStart();
-                ResumeBackgroundMusic();
-            }
-            else
-            {
-                Debug.Log("❌ Anuncio no completado. No se revive.");
-            }
-        });
+        //PokiScript.Instance?.CallRewardedBreak((bool withReward) =>
+        //{
+        //    if (withReward)
+        //    {
+        //        FindFirstObjectByType<RevivePlayer>()?.revivePlayer();
+        //        PokiScript.Instance?.CallGameplayStart();
+        //        ResumeBackgroundMusic();
+        //    }
+        //    else
+        //    {
+        //        Debug.Log("❌ Anuncio no completado. No se revive.");
+        //    }
+        //});
     }
 
     public void LoadScene(string sceneName, bool resetTime = true)
@@ -89,7 +92,7 @@ public class EventButton : MonoBehaviour
         GetPauseSound();
         ToggleGameState(true);
 
-        PokiScript.Instance?.CallGameplayStop();
+        //PokiScript.Instance?.CallGameplayStop();
     }
 
 
@@ -99,7 +102,7 @@ public class EventButton : MonoBehaviour
         StartCoroutine(AnimateButtonPress(resumeButtonImage));
         ToggleGameState(false);
 
-        PokiScript.Instance?.CallGameplayStart();
+        //PokiScript.Instance?.CallGameplayStart();
     }
 
 
@@ -129,7 +132,7 @@ public class EventButton : MonoBehaviour
     public void PlayGame()
     {
         GetClickSound();
-        PokiScript.Instance?.CallGameplayStart();
+        //PokiScript.Instance?.CallGameplayStart();
         LoadScene("Game");
     }
 
