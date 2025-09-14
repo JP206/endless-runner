@@ -31,7 +31,7 @@ public class ObstaclePool : MonoBehaviour
         List<GameObject> availableObstacles = new List<GameObject>();
 
         foreach (var obstacle in pooledObstacles)
-        { 
+        {
             if (!obstacle.activeInHierarchy)
             {
                 availableObstacles.Add(obstacle);
@@ -42,10 +42,22 @@ public class ObstaclePool : MonoBehaviour
         {
             int randomIndex = Random.Range(0, availableObstacles.Count);
             GameObject selectedObstacle = availableObstacles[randomIndex];
+
             selectedObstacle.SetActive(true);
+
+            foreach (var component in selectedObstacle.GetComponentsInChildren<MonoBehaviour>(true))
+            {
+                var method = component.GetType().GetMethod("ResetState");
+                if (method != null)
+                {
+                    method.Invoke(component, null);
+                }
+            }
+
             return selectedObstacle;
         }
 
         return null;
     }
+
 }

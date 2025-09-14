@@ -61,8 +61,14 @@ public class GroundedEnemy : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
         }
 
-        Destroy(gameObject, 1f);
+        Invoke(nameof(DeactivateSelf), 1f);
     }
+
+    private void DeactivateSelf()
+    {
+        gameObject.SetActive(false);
+    }
+
 
     private void OnDrawGizmosSelected()
     {
@@ -86,22 +92,19 @@ public class GroundedEnemy : MonoBehaviour
                 Physics2D.IgnoreCollision(enemyCol, playerCol, ignore);
             }
         }
-
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (isDead) return;
 
-        if (collision.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            PlayerHealth player = collision.GetComponent<PlayerHealth>();
-            if (player != null)
+            PlayerHealth player = other.GetComponent<PlayerHealth>();
+            if (player != null && !player.IsDead())
             {
                 player.TakeDamage();
             }
         }
     }
-
 
 }

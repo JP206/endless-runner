@@ -47,7 +47,6 @@ public static class PlayerData
         int current = PlayerPrefs.GetInt(itemName, 0);
         int newAmount = Mathf.Min(current + amount, 10);
         PlayerPrefs.SetInt(itemName, newAmount);
-        Debug.Log($"➕ {itemName} ahora tiene: {newAmount}");
     }
 
     public static bool UseItem(string itemName)
@@ -71,7 +70,6 @@ public static class PlayerData
         PlayerPrefs.SetInt(itemName, amount);
     }
 
-    // 🔁 Reset total de progreso
     public static void ResetAll()
     {
         PlayerPrefs.DeleteAll();

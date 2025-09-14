@@ -156,4 +156,36 @@ public class Enemy : MonoBehaviour
     {
         isVulnerable = state;
     }
+
+    public void ResetState()
+    {
+        StopAllCoroutines();
+
+        isAttacking = false;
+        hasReachedTarget = false;
+        canDealDamage = true;
+        isCharging = false;
+        isStopped = false;
+        isDead = false;
+        isVulnerable = true;
+
+        if (enemyCollider != null)
+            enemyCollider.enabled = true;
+
+        if (rb != null)
+        {
+            rb.gravityScale = 0;
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0;
+            rb.bodyType = RigidbodyType2D.Dynamic;
+        }
+
+        if (animator != null)
+        {
+            animator.Rebind(); 
+            animator.Update(0f);
+        }
+
+        gameObject.SetActive(true);
+    }
 }

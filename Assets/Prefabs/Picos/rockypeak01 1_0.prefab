@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5560498470273100673}
   - component: {fileID: 462227436414291618}
   - component: {fileID: -8649369481670233960}
-  - component: {fileID: -595128402540256695}
+  - component: {fileID: 7296853585857843078}
+  - component: {fileID: 4625431611424063569}
   m_Layer: 6
   m_Name: rockypeak01 1_0
   m_TagString: Enemy
@@ -189,7 +190,21 @@ PolygonCollider2D:
       - {x: -0.68, y: -0.41}
       - {x: -0.7, y: -0.42999998}
   m_UseDelaunayMesh: 0
---- !u!114 &-595128402540256695
+--- !u!114 &7296853585857843078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785703783772912354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0dc1771532bdd74b92cb6fde1c36670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.2
+  intensity: 0.05
+--- !u!114 &4625431611424063569
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -201,3 +216,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc8658b006cae374face00f8a926a884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageCooldown: 1.5
+  canDamage: 1
